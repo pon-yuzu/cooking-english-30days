@@ -620,6 +620,9 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
     </div>
 
     <!-- Footer Navigation -->
+    <div style="text-align: center; margin-top: 8px;">
+      <a href="index.html" class="btn btn-secondary" style="display: inline-flex; padding: 10px 20px; text-decoration: none;">🏠 ホームに戻る</a>
+    </div>
     <div class="footer-nav">
       {nav_prev}
       {nav_next}
@@ -976,7 +979,11 @@ def build_index_html(recipes):
   <div class="container">
     <h1>🍳 30日間クッキング英語</h1>
     <p class="subtitle">料理しながら英検5級レベルの英語を学ぼう！</p>
-    
+
+    <div style="text-align: center; margin-bottom: 20px;">
+      <a href="challenge.html" style="display: inline-block; background: white; color: #e8a4b8; font-weight: bold; font-size: 16px; padding: 16px 32px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.15)'">🎯 余力があるならチャレンジ！</a>
+    </div>
+
     <div class="card">
       <div class="day-grid">
 '''
