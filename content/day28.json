@@ -10,46 +10,124 @@
       "**Pour** the wasabi sauce over the octopus.",
       "**Stir** everything gently with chopsticks.",
       "**Put** it on a plate with a shiso leaf and sesame seeds. **Enjoy!**"
+    ],
+    "intro_ja": "たこわさはタコの刺身とわさびの日本のおつまみです。居酒屋で人気のサイドメニューです。",
+    "steps_ja": [
+      "生のタコを小さなひと口サイズに切ります。",
+      "タコをボウルに入れます。",
+      "わさび、しょうゆ、少しのみりんを小さなカップで混ぜます。",
+      "わさびだれをタコにかけます。",
+      "箸でやさしく混ぜます。",
+      "大葉とごまをのせてお皿に盛ります。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "octopus", "meaning": "タコ"},
-    {"word": "raw", "meaning": "生の"},
-    {"word": "snack", "meaning": "おつまみ・軽食"},
-    {"word": "side dish", "meaning": "副菜・小皿料理"},
-    {"word": "bite-size", "meaning": "一口サイズの"},
-    {"word": "sauce", "meaning": "たれ・ソース"},
-    {"word": "stir", "meaning": "かき混ぜる"},
-    {"word": "gently", "meaning": "やさしく"},
-    {"word": "chopsticks", "meaning": "箸"},
-    {"word": "plate", "meaning": "皿"}
+    {
+      "word": "octopus",
+      "meaning": "タコ"
+    },
+    {
+      "word": "raw",
+      "meaning": "生の"
+    },
+    {
+      "word": "snack",
+      "meaning": "おつまみ・軽食"
+    },
+    {
+      "word": "side dish",
+      "meaning": "副菜・小皿料理"
+    },
+    {
+      "word": "bite-size",
+      "meaning": "一口サイズの"
+    },
+    {
+      "word": "sauce",
+      "meaning": "たれ・ソース"
+    },
+    {
+      "word": "stir",
+      "meaning": "かき混ぜる"
+    },
+    {
+      "word": "gently",
+      "meaning": "やさしく"
+    },
+    {
+      "word": "chopsticks",
+      "meaning": "箸"
+    },
+    {
+      "word": "plate",
+      "meaning": "皿"
+    }
   ],
   "quiz1": {
     "question": "たこわさのレシピで、わさびだれを作るとき何を混ぜますか？",
-    "options": ["わさびと酢と砂糖", "わさびと醤油とみりん", "わさびとごま油と塩"],
+    "options": [
+      "わさびと酢と砂糖",
+      "わさびと醤油とみりん",
+      "わさびとごま油と塩"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Sunset Wharf Kitchen",
     "location": "Palm Beach, Sydney",
     "stars": 5,
-    "content": "I went to Sunset Wharf Kitchen at Palm Beach last Friday. It was right next to the water. I could see the sunset over the ocean. The sky was orange and pink. I ordered takowasa and it was very fresh. The wasabi was a little spicy but so tasty. The restaurant had a wooden deck and it felt very relaxing. I loved this place."
+    "content": "I went to Sunset Wharf Kitchen at Palm Beach last Friday. It was right next to the water. I could see the sunset over the ocean. The sky was orange and pink. I ordered takowasa and it was very fresh. The wasabi was a little spicy but so tasty. The restaurant had a wooden deck and it felt very relaxing. I loved this place.",
+    "content_ja": "金曜日にパームビーチのSunset Wharf Kitchenに行きました。水のすぐそばにありました。海に沈む夕日が見えました。空がオレンジとピンクになりました。たこわさを注文したらとても新鮮でした。わさびはちょっとピリッとしたけどとてもおいしかったです。木のデッキがあるレストランでとてもリラックスできました。このお店が大好きでした。"
   },
   "review_vocab": [
-    {"word": "sunset", "meaning": "夕日・日の入り"},
-    {"word": "wharf", "meaning": "波止場・桟橋"},
-    {"word": "right next to", "meaning": "すぐ隣に"},
-    {"word": "sky", "meaning": "空"},
-    {"word": "spicy", "meaning": "辛い"},
-    {"word": "tasty", "meaning": "おいしい"},
-    {"word": "wooden", "meaning": "木製の"},
-    {"word": "deck", "meaning": "デッキ・甲板"},
-    {"word": "loved", "meaning": "大好きだった（loveの過去形）"},
-    {"word": "felt", "meaning": "感じた（feelの過去形）"}
+    {
+      "word": "sunset",
+      "meaning": "夕日・日の入り"
+    },
+    {
+      "word": "wharf",
+      "meaning": "波止場・桟橋"
+    },
+    {
+      "word": "right next to",
+      "meaning": "すぐ隣に"
+    },
+    {
+      "word": "sky",
+      "meaning": "空"
+    },
+    {
+      "word": "spicy",
+      "meaning": "辛い"
+    },
+    {
+      "word": "tasty",
+      "meaning": "おいしい"
+    },
+    {
+      "word": "wooden",
+      "meaning": "木製の"
+    },
+    {
+      "word": "deck",
+      "meaning": "デッキ・甲板"
+    },
+    {
+      "word": "loved",
+      "meaning": "大好きだった（loveの過去形）"
+    },
+    {
+      "word": "felt",
+      "meaning": "感じた（feelの過去形）"
+    }
   ],
   "quiz2": {
     "question": "レビューのレストランで、空は何色でしたか？",
-    "options": ["青と白", "オレンジとピンク", "紫と黄色"],
+    "options": [
+      "青と白",
+      "オレンジとピンク",
+      "紫と黄色"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "友達とシドニーのフィッシュマーケットで買い物をする場面",
     "lines": [
-      {"speaker": "A", "text": "Wow, this fish market is so big!"},
-      {"speaker": "B", "text": "Yes! There are many kinds of fish and seafood here."},
-      {"speaker": "A", "text": "I want to buy octopus. I will make takowasa."},
-      {"speaker": "B", "text": "What is takowasa?"},
-      {"speaker": "A", "text": "It is raw octopus with wasabi. It is a Japanese snack."},
-      {"speaker": "B", "text": "Oh, that sounds interesting! Is it spicy?"},
-      {"speaker": "A", "text": "A little. But it is very good with cold beer."},
-      {"speaker": "B", "text": "I want to try it. How much octopus do we need?"},
-      {"speaker": "A", "text": "About 200 grams is enough for two people."},
-      {"speaker": "B", "text": "OK. Let me ask the staff. Excuse me, is this octopus sashimi grade?"},
-      {"speaker": "A", "text": "He said yes. Great! Let us buy it."},
-      {"speaker": "B", "text": "I am excited to try your takowasa tonight!"}
+      {
+        "speaker": "A",
+        "text": "Wow, this fish market is so big!",
+        "translation": "わぁ、この魚市場すごく大きいね！"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! There are many kinds of fish and seafood here.",
+        "translation": "うん！いろんな種類の魚や海鮮があるよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "I want to buy octopus. I will make takowasa.",
+        "translation": "タコを買いたいの。たこわさを作るんだ。"
+      },
+      {
+        "speaker": "B",
+        "text": "What is takowasa?",
+        "translation": "たこわさって何？"
+      },
+      {
+        "speaker": "A",
+        "text": "It is raw octopus with wasabi. It is a Japanese snack.",
+        "translation": "生のタコにわさびをあえた日本のおつまみだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that sounds interesting! Is it spicy?",
+        "translation": "面白そう！辛いの？"
+      },
+      {
+        "speaker": "A",
+        "text": "A little. But it is very good with cold beer.",
+        "translation": "ちょっとね。でも冷たいビールとすごく合うよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to try it. How much octopus do we need?",
+        "translation": "食べてみたい。タコはどのくらい必要？"
+      },
+      {
+        "speaker": "A",
+        "text": "About 200 grams is enough for two people.",
+        "translation": "200グラムくらいで2人分だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK. Let me ask the staff. Excuse me, is this octopus sashimi grade?",
+        "translation": "わかった。店員さんに聞いてみるね。すみません、このタコはお刺身用ですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "He said yes. Great! Let us buy it.",
+        "translation": "大丈夫だって。よし！買おう。"
+      },
+      {
+        "speaker": "B",
+        "text": "I am excited to try your takowasa tonight!",
+        "translation": "今夜のたこわさが楽しみ！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "fish market", "meaning": "魚市場"},
-    {"word": "seafood", "meaning": "魚介類・シーフード"},
-    {"word": "interesting", "meaning": "面白い・興味深い"},
-    {"word": "enough", "meaning": "十分な"},
-    {"word": "staff", "meaning": "スタッフ・店員"},
-    {"word": "grade", "meaning": "品質・等級"},
-    {"word": "excited", "meaning": "ワクワクした"},
-    {"word": "kinds", "meaning": "種類"},
-    {"word": "about", "meaning": "約・だいたい"},
-    {"word": "let me", "meaning": "〜させて"}
+    {
+      "word": "fish market",
+      "meaning": "魚市場"
+    },
+    {
+      "word": "seafood",
+      "meaning": "魚介類・シーフード"
+    },
+    {
+      "word": "interesting",
+      "meaning": "面白い・興味深い"
+    },
+    {
+      "word": "enough",
+      "meaning": "十分な"
+    },
+    {
+      "word": "staff",
+      "meaning": "スタッフ・店員"
+    },
+    {
+      "word": "grade",
+      "meaning": "品質・等級"
+    },
+    {
+      "word": "excited",
+      "meaning": "ワクワクした"
+    },
+    {
+      "word": "kinds",
+      "meaning": "種類"
+    },
+    {
+      "word": "about",
+      "meaning": "約・だいたい"
+    },
+    {
+      "word": "let me",
+      "meaning": "〜させて"
+    }
   ],
   "quiz3": {
     "question": "会話の中で、タコはどのくらいの量が必要だと言っていましたか？",
-    "options": ["100グラム", "200グラム", "300グラム"],
+    "options": [
+      "100グラム",
+      "200グラム",
+      "300グラム"
+    ],
     "correct": 1
   },
   "try_it_hint": "「〇〇はどこで買えますか？」と聞く練習をしましょう。例：Where can I buy fresh octopus? Is this sashimi grade?",
-  "meta": {"day": 28, "en": "Takowasa", "ja": "たこわさ", "emoji": "\ud83d\udc19"}
+  "meta": {
+    "day": 28,
+    "en": "Takowasa",
+    "ja": "たこわさ",
+    "emoji": "🐙"
+  }
 }

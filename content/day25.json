@@ -10,46 +10,124 @@
       "**Beat** two or three eggs in a bowl.",
       "**Pour** the eggs over the chicken and cook for one minute.",
       "**Put** the chicken and egg on top of hot rice in a bowl. **Enjoy!**"
+    ],
+    "intro_ja": "親子丼は鶏肉と卵の丼です。「親子」という名前は親と子どもを意味します。",
+    "steps_ja": [
+      "鶏もも肉と玉ねぎを小さく切ります。",
+      "しょうゆ、みりん、砂糖、だし汁を小さいフライパンで混ぜます。",
+      "玉ねぎと鶏肉をたれの中で中火で煮ます。",
+      "卵を2〜3個ボウルで溶きます。",
+      "鶏肉の上に卵をまわしかけ、1分煮ます。",
+      "あつあつのご飯の上にのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "rice bowl", "meaning": "丼もの"},
-    {"word": "chicken thigh", "meaning": "鶏もも肉"},
-    {"word": "onion", "meaning": "玉ねぎ"},
-    {"word": "beat", "meaning": "（卵を）溶く"},
-    {"word": "parent", "meaning": "親"},
-    {"word": "child", "meaning": "子"},
-    {"word": "pan", "meaning": "フライパン・浅い鍋"},
-    {"word": "sugar", "meaning": "砂糖"},
-    {"word": "on top of", "meaning": "〜の上に"},
-    {"word": "cooked rice", "meaning": "炊いたごはん"}
+    {
+      "word": "rice bowl",
+      "meaning": "丼もの"
+    },
+    {
+      "word": "chicken thigh",
+      "meaning": "鶏もも肉"
+    },
+    {
+      "word": "onion",
+      "meaning": "玉ねぎ"
+    },
+    {
+      "word": "beat",
+      "meaning": "（卵を）溶く"
+    },
+    {
+      "word": "parent",
+      "meaning": "親"
+    },
+    {
+      "word": "child",
+      "meaning": "子"
+    },
+    {
+      "word": "pan",
+      "meaning": "フライパン・浅い鍋"
+    },
+    {
+      "word": "sugar",
+      "meaning": "砂糖"
+    },
+    {
+      "word": "on top of",
+      "meaning": "〜の上に"
+    },
+    {
+      "word": "cooked rice",
+      "meaning": "炊いたごはん"
+    }
   ],
   "quiz1": {
     "question": "親子丼の「親子」とは英語で何という意味ですか？",
-    "options": ["husband and wife", "parent and child", "brother and sister"],
+    "options": [
+      "husband and wife",
+      "parent and child",
+      "brother and sister"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Riverbank Jasmine Cafe",
     "location": "Bulimba, Brisbane",
     "stars": 5,
-    "content": "I went to Riverbank Jasmine Cafe in Bulimba last Wednesday. It was right next to the Brisbane River. I sat on the wooden deck and watched boats on the river. The air smelled like jasmine flowers. I ordered oyakodon and green tea. The chicken was soft and the egg was creamy. The rice was hot and fluffy. It was a simple but wonderful meal. I felt like I was in Japan."
+    "content": "I went to Riverbank Jasmine Cafe in Bulimba last Wednesday. It was right next to the Brisbane River. I sat on the wooden deck and watched boats on the river. The air smelled like jasmine flowers. I ordered oyakodon and green tea. The chicken was soft and the egg was creamy. The rice was hot and fluffy. It was a simple but wonderful meal. I felt like I was in Japan.",
+    "content_ja": "水曜日にブリンバのRiverbank Jasmine Cafeに行きました。ブリスベン川のすぐそばにありました。木のデッキに座って川のボートを見ました。ジャスミンの花の香りがしました。親子丼と緑茶を注文しました。鶏肉はやわらかくて卵はクリーミーでした。ご飯はあつあつでふっくらしていました。シンプルだけど素敵な食事でした。まるで日本にいるような気分でした。"
   },
   "review_vocab": [
-    {"word": "right next to", "meaning": "すぐ隣に"},
-    {"word": "wooden", "meaning": "木の"},
-    {"word": "deck", "meaning": "デッキ"},
-    {"word": "boat", "meaning": "ボート"},
-    {"word": "air", "meaning": "空気"},
-    {"word": "creamy", "meaning": "クリーミーな・とろっとした"},
-    {"word": "fluffy", "meaning": "ふわふわの"},
-    {"word": "simple", "meaning": "シンプルな"},
-    {"word": "wonderful", "meaning": "すばらしい"},
-    {"word": "meal", "meaning": "食事"}
+    {
+      "word": "right next to",
+      "meaning": "すぐ隣に"
+    },
+    {
+      "word": "wooden",
+      "meaning": "木の"
+    },
+    {
+      "word": "deck",
+      "meaning": "デッキ"
+    },
+    {
+      "word": "boat",
+      "meaning": "ボート"
+    },
+    {
+      "word": "air",
+      "meaning": "空気"
+    },
+    {
+      "word": "creamy",
+      "meaning": "クリーミーな・とろっとした"
+    },
+    {
+      "word": "fluffy",
+      "meaning": "ふわふわの"
+    },
+    {
+      "word": "simple",
+      "meaning": "シンプルな"
+    },
+    {
+      "word": "wonderful",
+      "meaning": "すばらしい"
+    },
+    {
+      "word": "meal",
+      "meaning": "食事"
+    }
   ],
   "quiz2": {
     "question": "カフェの空気はどんなにおいがしましたか？",
-    "options": ["コーヒーのにおい", "ジャスミンの花のにおい", "パンのにおい"],
+    "options": [
+      "コーヒーのにおい",
+      "ジャスミンの花のにおい",
+      "パンのにおい"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "ワーホリ先のレストランで、お客さんにおすすめのメニューを紹介する場面",
     "lines": [
-      {"speaker": "A", "text": "Hi, welcome! Are you ready to order?"},
-      {"speaker": "B", "text": "Not yet. What do you recommend?"},
-      {"speaker": "A", "text": "Today, I recommend the oyakodon."},
-      {"speaker": "B", "text": "What is oyakodon?"},
-      {"speaker": "A", "text": "It is chicken and egg on rice. It is a Japanese rice bowl."},
-      {"speaker": "B", "text": "Why is it called oyakodon?"},
-      {"speaker": "A", "text": "Oyako means parent and child. The chicken is the parent and the egg is the child."},
-      {"speaker": "B", "text": "Oh, that is interesting! Is it good?"},
-      {"speaker": "A", "text": "Yes, it is very popular in Japan. The egg is soft and creamy."},
-      {"speaker": "B", "text": "OK, I will try it! And a green tea, please."},
-      {"speaker": "A", "text": "Good choice! It will be ready in ten minutes."},
-      {"speaker": "B", "text": "Great, thank you!"}
+      {
+        "speaker": "A",
+        "text": "Hi, welcome! Are you ready to order?",
+        "translation": "いらっしゃいませ！ご注文はお決まりですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. What do you recommend?",
+        "translation": "まだです。おすすめは何ですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "Today, I recommend the oyakodon.",
+        "translation": "今日は親子丼がおすすめです。"
+      },
+      {
+        "speaker": "B",
+        "text": "What is oyakodon?",
+        "translation": "親子丼って何ですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "It is chicken and egg on rice. It is a Japanese rice bowl.",
+        "translation": "鶏肉と卵をご飯にのせた丼です。"
+      },
+      {
+        "speaker": "B",
+        "text": "Why is it called oyakodon?",
+        "translation": "なんで「親子丼」って言うんですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "Oyako means parent and child. The chicken is the parent and the egg is the child.",
+        "translation": "「親子」は親と子どもという意味です。鶏が親で卵が子どもなの。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that is interesting! Is it good?",
+        "translation": "面白い！おいしい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, it is very popular in Japan. The egg is soft and creamy.",
+        "translation": "はい、日本でとても人気がありますよ。卵がやわらかくてクリーミーなの。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK, I will try it! And a green tea, please.",
+        "translation": "じゃあそれにします！あと緑茶もお願いします。"
+      },
+      {
+        "speaker": "A",
+        "text": "Good choice! It will be ready in ten minutes.",
+        "translation": "いい選択ですね！10分ほどでできますよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Great, thank you!",
+        "translation": "ありがとうございます！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "welcome", "meaning": "いらっしゃいませ"},
-    {"word": "order", "meaning": "注文する"},
-    {"word": "recommend", "meaning": "おすすめする"},
-    {"word": "called", "meaning": "〜と呼ばれている"},
-    {"word": "interesting", "meaning": "おもしろい"},
-    {"word": "popular", "meaning": "人気のある"},
-    {"word": "choice", "meaning": "選択"},
-    {"word": "ready", "meaning": "準備ができた"},
-    {"word": "minute", "meaning": "分"},
-    {"word": "not yet", "meaning": "まだです"}
+    {
+      "word": "welcome",
+      "meaning": "いらっしゃいませ"
+    },
+    {
+      "word": "order",
+      "meaning": "注文する"
+    },
+    {
+      "word": "recommend",
+      "meaning": "おすすめする"
+    },
+    {
+      "word": "called",
+      "meaning": "〜と呼ばれている"
+    },
+    {
+      "word": "interesting",
+      "meaning": "おもしろい"
+    },
+    {
+      "word": "popular",
+      "meaning": "人気のある"
+    },
+    {
+      "word": "choice",
+      "meaning": "選択"
+    },
+    {
+      "word": "ready",
+      "meaning": "準備ができた"
+    },
+    {
+      "word": "minute",
+      "meaning": "分"
+    },
+    {
+      "word": "not yet",
+      "meaning": "まだです"
+    }
   ],
   "quiz3": {
     "question": "お客さんは親子丼のほかに何を注文しましたか？",
-    "options": ["コーヒー", "緑茶", "水"],
+    "options": [
+      "コーヒー",
+      "緑茶",
+      "水"
+    ],
     "correct": 1
   },
   "try_it_hint": "「I recommend the ○○. It is ○○.」の形を使って、おすすめの料理を紹介してみましょう。例：I recommend the ramen. It is hot and delicious.",
-  "meta": {"day": 25, "en": "Oyakodon", "ja": "親子丼", "emoji": "\ud83d\udc14"}
+  "meta": {
+    "day": 25,
+    "en": "Oyakodon",
+    "ja": "親子丼",
+    "emoji": "🐔"
+  }
 }

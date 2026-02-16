@@ -10,46 +10,124 @@
       "**Make** the sweet vinegar sauce by mixing soy sauce, sugar, and rice vinegar in a small pot.",
       "**Put** the fried chicken into the sweet vinegar sauce for one minute.",
       "**Make** tartar sauce by mixing mayonnaise, chopped boiled egg, onion, and pickle, and put it on top of the chicken. **Enjoy!**"
+    ],
+    "intro_ja": "チキン南蛮は宮崎の有名な料理です。揚げた鶏肉に甘酢だれとタルタルソースがかかっています。",
+    "steps_ja": [
+      "鶏もも肉に塩とこしょうをふります。",
+      "鶏肉に小麦粉、そして溶き卵をつけます。",
+      "油を鍋で170度に熱し、鶏肉を4分間揚げます。",
+      "しょうゆ、酢、砂糖を小さい鍋で混ぜて甘酢だれを作ります。",
+      "揚げた鶏肉を甘酢だれにつけます。",
+      "タルタルソースをかけてキャベツと一緒に盛り付けます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "vinegar", "meaning": "酢"},
-    {"word": "tartar sauce", "meaning": "タルタルソース"},
-    {"word": "dip", "meaning": "浸す"},
-    {"word": "beaten egg", "meaning": "溶き卵"},
-    {"word": "pot", "meaning": "鍋"},
-    {"word": "pickle", "meaning": "ピクルス"},
-    {"word": "chopped", "meaning": "みじん切りの"},
-    {"word": "boiled egg", "meaning": "ゆで卵"},
-    {"word": "mayonnaise", "meaning": "マヨネーズ"},
-    {"word": "sweet", "meaning": "甘い"}
+    {
+      "word": "vinegar",
+      "meaning": "酢"
+    },
+    {
+      "word": "tartar sauce",
+      "meaning": "タルタルソース"
+    },
+    {
+      "word": "dip",
+      "meaning": "浸す"
+    },
+    {
+      "word": "beaten egg",
+      "meaning": "溶き卵"
+    },
+    {
+      "word": "pot",
+      "meaning": "鍋"
+    },
+    {
+      "word": "pickle",
+      "meaning": "ピクルス"
+    },
+    {
+      "word": "chopped",
+      "meaning": "みじん切りの"
+    },
+    {
+      "word": "boiled egg",
+      "meaning": "ゆで卵"
+    },
+    {
+      "word": "mayonnaise",
+      "meaning": "マヨネーズ"
+    },
+    {
+      "word": "sweet",
+      "meaning": "甘い"
+    }
   ],
   "quiz1": {
     "question": "揚げたチキンを甘酢ソースにどのくらいつけますか？",
-    "options": ["30秒", "1分", "5分"],
+    "options": [
+      "30秒",
+      "1分",
+      "5分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Mountain View Dining",
     "location": "Mount Coot-tha, Brisbane",
     "stars": 5,
-    "content": "I went to Mountain View Dining at Mount Coot-tha in Brisbane. The view from the window was amazing. I could see the city and the mountains. I ate Chicken Nanban and it was so good. The chicken was crispy and the tartar sauce was rich and creamy. The sweet vinegar sauce was a little sour and very nice. The restaurant had warm lights and a cozy feeling. There were lavender flowers on each table. I loved this place very much."
+    "content": "I went to Mountain View Dining at Mount Coot-tha in Brisbane. The view from the window was amazing. I could see the city and the mountains. I ate Chicken Nanban and it was so good. The chicken was crispy and the tartar sauce was rich and creamy. The sweet vinegar sauce was a little sour and very nice. The restaurant had warm lights and a cozy feeling. There were lavender flowers on each table. I loved this place very much.",
+    "content_ja": "先週の日曜日にGolden Wattle Cafeに行きました。パースのFremantle Marketの近くにありました。カフェの前にはゴールデンワトルの花がありました。チキン南蛮を注文しました。鶏肉はカリカリで、甘酢だれはすごくおいしかったです。タルタルソースはクリーミーでした。白い壁にカラフルな絵が飾ってありました。とても幸せなランチでした。"
   },
   "review_vocab": [
-    {"word": "mountain", "meaning": "山"},
-    {"word": "amazing", "meaning": "すばらしい"},
-    {"word": "window", "meaning": "窓"},
-    {"word": "rich", "meaning": "コクのある"},
-    {"word": "creamy", "meaning": "クリーミーな"},
-    {"word": "sour", "meaning": "酸っぱい"},
-    {"word": "warm", "meaning": "暖かい"},
-    {"word": "light", "meaning": "照明・明かり"},
-    {"word": "feeling", "meaning": "雰囲気・感じ"},
-    {"word": "loved", "meaning": "大好きだった"}
+    {
+      "word": "mountain",
+      "meaning": "山"
+    },
+    {
+      "word": "amazing",
+      "meaning": "すばらしい"
+    },
+    {
+      "word": "window",
+      "meaning": "窓"
+    },
+    {
+      "word": "rich",
+      "meaning": "コクのある"
+    },
+    {
+      "word": "creamy",
+      "meaning": "クリーミーな"
+    },
+    {
+      "word": "sour",
+      "meaning": "酸っぱい"
+    },
+    {
+      "word": "warm",
+      "meaning": "暖かい"
+    },
+    {
+      "word": "light",
+      "meaning": "照明・明かり"
+    },
+    {
+      "word": "feeling",
+      "meaning": "雰囲気・感じ"
+    },
+    {
+      "word": "loved",
+      "meaning": "大好きだった"
+    }
   ],
   "quiz2": {
     "question": "レストランから何が見えましたか？",
-    "options": ["海とビーチ", "街と山", "川と公園"],
+    "options": [
+      "海とビーチ",
+      "街と山",
+      "川と公園"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,38 +137,128 @@
   "conversation": {
     "scene": "シェアハウスで友人のSophieにチキン南蛮を作ってあげた場面",
     "lines": [
-      {"speaker": "A", "text": "Sophie, dinner is ready! I made Chicken Nanban."},
-      {"speaker": "B", "text": "Wow, it looks great! What is the white sauce on top?"},
-      {"speaker": "A", "text": "That is tartar sauce. I made it with egg and mayonnaise."},
-      {"speaker": "B", "text": "And what about this brown sauce?"},
-      {"speaker": "A", "text": "That is sweet vinegar sauce. It is a little sweet and a little sour."},
-      {"speaker": "B", "text": "Interesting! Let me try... Oh, this is so good!"},
-      {"speaker": "A", "text": "Really? I am glad you like it."},
-      {"speaker": "B", "text": "The chicken is so crispy. And the two sauces go well together."},
-      {"speaker": "A", "text": "Thank you! This dish is from Miyazaki. It is a famous place in Japan."},
-      {"speaker": "B", "text": "I did not know that. Is Miyazaki near Tokyo?"},
-      {"speaker": "A", "text": "No, it is in the south of Japan. It is warm there, like Brisbane."},
-      {"speaker": "B", "text": "Nice! Can you teach me how to make it next time?"}
+      {
+        "speaker": "A",
+        "text": "Sophie, dinner is ready! I made Chicken Nanban.",
+        "translation": "今夜、特別な料理を作るよ。チキン南蛮！"
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, it looks great! What is the white sauce on top?",
+        "translation": "チキン南蛮？それは何？"
+      },
+      {
+        "speaker": "A",
+        "text": "That is tartar sauce. I made it with egg and mayonnaise.",
+        "translation": "揚げた鶏肉に甘酢だれとタルタルソースをかけた料理だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "And what about this brown sauce?",
+        "translation": "おいしそう！手伝えることある？"
+      },
+      {
+        "speaker": "A",
+        "text": "That is sweet vinegar sauce. It is a little sweet and a little sour.",
+        "translation": "うん！タルタルソースを作ってくれる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Interesting! Let me try... Oh, this is so good!",
+        "translation": "わかった。何が必要？"
+      },
+      {
+        "speaker": "A",
+        "text": "Really? I am glad you like it.",
+        "translation": "マヨネーズ、ゆで卵、玉ねぎ、レモン汁だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "The chicken is so crispy. And the two sauces go well together.",
+        "translation": "卵はどうすればいい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you! This dish is from Miyazaki. It is a famous place in Japan.",
+        "translation": "小さく切ってね。玉ねぎもとても小さく切って。"
+      },
+      {
+        "speaker": "B",
+        "text": "I did not know that. Is Miyazaki near Tokyo?",
+        "translation": "できた！こんな感じでいい？"
+      },
+      {
+        "speaker": "A",
+        "text": "No, it is in the south of Japan. It is warm there, like Brisbane.",
+        "translation": "完璧！じゃあ鶏肉を揚げるね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Nice! Can you teach me how to make it next time?",
+        "translation": "わぁ、いい匂い！もう食べたい！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "dinner", "meaning": "夕食"},
-    {"word": "ready", "meaning": "準備ができた"},
-    {"word": "looks", "meaning": "〜に見える"},
-    {"word": "white", "meaning": "白い"},
-    {"word": "interesting", "meaning": "おもしろい"},
-    {"word": "glad", "meaning": "うれしい"},
-    {"word": "go well together", "meaning": "相性がいい"},
-    {"word": "famous", "meaning": "有名な"},
-    {"word": "south", "meaning": "南"},
-    {"word": "teach", "meaning": "教える"},
-    {"word": "next time", "meaning": "次回"}
+    {
+      "word": "dinner",
+      "meaning": "夕食"
+    },
+    {
+      "word": "ready",
+      "meaning": "準備ができた"
+    },
+    {
+      "word": "looks",
+      "meaning": "〜に見える"
+    },
+    {
+      "word": "white",
+      "meaning": "白い"
+    },
+    {
+      "word": "interesting",
+      "meaning": "おもしろい"
+    },
+    {
+      "word": "glad",
+      "meaning": "うれしい"
+    },
+    {
+      "word": "go well together",
+      "meaning": "相性がいい"
+    },
+    {
+      "word": "famous",
+      "meaning": "有名な"
+    },
+    {
+      "word": "south",
+      "meaning": "南"
+    },
+    {
+      "word": "teach",
+      "meaning": "教える"
+    },
+    {
+      "word": "next time",
+      "meaning": "次回"
+    }
   ],
   "quiz3": {
     "question": "宮崎はどこにあるとAさんは言いましたか？",
-    "options": ["東京の近く", "日本の北", "日本の南"],
+    "options": [
+      "東京の近く",
+      "日本の北",
+      "日本の南"
+    ],
     "correct": 2
   },
   "try_it_hint": "「〇〇ができました！上にかかっているのは〇〇ソースです。」という文を英語で書いてみましょう。例：Dinner is ready! The sauce on top is tomato sauce.",
-  "meta": {"day": 4, "en": "Chicken Nanban", "ja": "チキン南蛮", "emoji": "\ud83c\udf57"}
+  "meta": {
+    "day": 4,
+    "en": "Chicken Nanban",
+    "ja": "チキン南蛮",
+    "emoji": "🍗"
+  }
 }

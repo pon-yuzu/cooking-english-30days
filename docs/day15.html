@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>たこ焼きは大阪の小さな丸いボールです。中にタコが入っていて、外はカリカリです。</p>
+          <p>1. 小麦粉、卵、水、だしの素をボウルで混ぜて生地を作ります。</p>
+          <p>2. タコ、ネギ、紅しょうがを小さく切ります。</p>
+          <p>3. たこ焼き器に油を熱し、それぞれの穴に生地を流します。</p>
+          <p>4. タコとネギをそれぞれの穴に入れます。</p>
+          <p>5. 底が焼けたら竹串でひとつずつ返します。</p>
+          <p>6. 丸くきつね色になるまで焼きます。ソース、マヨネーズ、かつお節をのせます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Sunset Bay Kitchen last Thursday. It was a fun little restaurant in Woolloongabba. The inside was warm and colorful. There were yellow and pink lights on the walls. I ordered takoyaki and a cold drink. The takoyaki were hot and crispy outside. The octopus inside was soft. The staff were very friendly. I sat on a comfortable sofa and enjoyed my meal. It was a wonderful evening.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>木曜日にSunset Bay Kitchenに行きました。ウーロンガバーにある楽しい小さなレストランでした。中はあたたかくてカラフルでした。壁に黄色やピンクのライトがありました。たこ焼きと冷たい飲み物を注文しました。たこ焼きは外がカリカリで中がアツアツでした。中のタコはやわらかかったです。スタッフはとてもフレンドリーでした。心地よいソファに座って食事を楽しみました。素敵な夕べでした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,63 +732,106 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 週末のパーティーで、友達のOliviaとたこ焼きを焼きながら話す場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Olivia, have you ever eaten takoyaki?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Olivia, have you ever eaten takoyaki?</span>
+            <div class="dialogue-translation">オリビア、たこ焼き食べたことある？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">No, I have not. What is it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">No, I have not. What is it?</span>
+            <div class="dialogue-translation">ないよ。何それ？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is a small round ball with octopus inside. It is from Osaka.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is a small round ball with octopus inside. It is from Osaka.</span>
+            <div class="dialogue-translation">中にタコが入った小さな丸いボールだよ。大阪のなの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Octopus? That sounds fun! How do you cook it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Octopus? That sounds fun! How do you cook it?</span>
+            <div class="dialogue-translation">タコ？楽しそう！どうやって作るの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">You pour batter into this special pan. See the small holes?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You pour batter into this special pan. See the small holes?</span>
+            <div class="dialogue-translation">この特別な鉄板に生地を流すの。小さな穴が見える？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes! They are so cute. What do I put in?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! They are so cute. What do I put in?</span>
+            <div class="dialogue-translation">うん！かわいいね。何を入れるの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Put one piece of octopus and some green onion in each hole.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Put one piece of octopus and some green onion in each hole.</span>
+            <div class="dialogue-translation">タコをひとつとネギをそれぞれの穴に入れてね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">OK, I did it. What is next?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK, I did it. What is next?</span>
+            <div class="dialogue-translation">できた。次はどうするの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Now we wait. When the bottom is cooked, turn it with this pick.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Now we wait. When the bottom is cooked, turn it with this pick.</span>
+            <div class="dialogue-translation">待って。底が焼けたらこの竹串で返すの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, it is hard to turn! But I will try.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, it is hard to turn! But I will try.</span>
+            <div class="dialogue-translation">あ、返すの難しい！でもやってみる。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">You did it! Look, it is a perfect ball!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You did it! Look, it is a perfect ball!</span>
+            <div class="dialogue-translation">できた！見て、きれいな丸だよ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Wow, I am so proud! Can I eat it now?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Wow, I am so proud! Can I eat it now?</span>
+            <div class="dialogue-translation">わぁ、すごい！もう食べていい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Yes! But be careful. It is very hot inside.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! But be careful. It is very hot inside.</span>
+            <div class="dialogue-translation">うん！でも気をつけてね。中がすごくアツいから。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Mmm! It is crispy and delicious. I love takoyaki!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Mmm! It is crispy and delicious. I love takoyaki!</span>
+            <div class="dialogue-translation">うーん！カリカリでおいしい。たこ焼き大好き！</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -855,6 +989,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

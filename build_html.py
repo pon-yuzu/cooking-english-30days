@@ -405,6 +405,77 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
     .nav-link {{
       text-decoration: none;
     }}
+
+    .translation-toggle {{
+      margin-top: 12px;
+    }}
+
+    .translation-toggle summary {{
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }}
+
+    .translation-toggle summary::-webkit-details-marker {{
+      display: none;
+    }}
+
+    .translation-toggle[open] summary {{
+      border-radius: 8px 8px 0 0;
+    }}
+
+    .translation-content {{
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }}
+
+    .translation-content p {{
+      margin-bottom: 8px;
+    }}
+
+    .translation-content p:last-child {{
+      margin-bottom: 0;
+    }}
+
+    .conversation-line {{
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }}
+
+    .dialogue-wrap {{
+      flex: 1;
+    }}
+
+    .dialogue-translation {{
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }}
+
+    .conversation-line.show-trans .dialogue-translation {{
+      display: block;
+    }}
+
+    .tap-hint {{
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }}
   </style>
 </head>
 <body>
@@ -434,12 +505,14 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
         {recipe_steps}
       </div>
       
+      {recipe_translation_html}
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
         {recipe_vocab}
@@ -481,12 +554,14 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
         <p>{review_content}</p>
       </div>
       
+      {review_translation_html}
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
         {review_vocab}
@@ -540,6 +615,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 {conversation_scene}</p>
         {conversation_lines}
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -644,6 +720,11 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
       quiz2: {quiz2_correct},
       quiz3: {quiz3_correct}
     }};
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {{
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }}
 
     // Toggle vocabulary section
     function toggleVocab(id) {{
@@ -830,17 +911,65 @@ def generate_quiz_options_html(quiz, quiz_id):
 
 
 def generate_conversation_html(conversation):
-    """Generate HTML for conversation lines"""
+    """Generate HTML for conversation lines with optional translations"""
     html = ""
     for line in conversation.get("lines", []):
         speaker = line.get("speaker", "A")
         text = line.get("text", "")
+        translation = line.get("translation", "")
         speaker_class = "speaker b" if speaker == "B" else "speaker"
-        html += f'''        <div class="conversation-line">
+        if translation:
+            html += f'''        <div class="conversation-line" onclick="toggleTranslation(this)">
+          <span class="{speaker_class}">{speaker}:</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">{text}</span>
+            <div class="dialogue-translation">{translation}</div>
+          </div>
+        </div>
+'''
+        else:
+            html += f'''        <div class="conversation-line">
           <span class="{speaker_class}">{speaker}:</span>
           <span class="dialogue">{text}</span>
         </div>
 '''
+    return html
+
+
+def generate_recipe_translation_html(content):
+    """Generate HTML for recipe translation toggle"""
+    recipe = content.get("recipe", {})
+    intro_ja = recipe.get("intro_ja", "")
+    steps_ja = recipe.get("steps_ja", [])
+    if not intro_ja and not steps_ja:
+        return ""
+
+    html = '      <details class="translation-toggle">\n'
+    html += '        <summary>👆 日本語訳を見る</summary>\n'
+    html += '        <div class="translation-content">\n'
+    if intro_ja:
+        html += f'          <p>{intro_ja}</p>\n'
+    if steps_ja:
+        for i, step in enumerate(steps_ja, 1):
+            html += f'          <p>{i}. {step}</p>\n'
+    html += '        </div>\n'
+    html += '      </details>'
+    return html
+
+
+def generate_review_translation_html(content):
+    """Generate HTML for review translation toggle"""
+    review = content.get("review", {})
+    content_ja = review.get("content_ja", "")
+    if not content_ja:
+        return ""
+
+    html = '      <details class="translation-toggle">\n'
+    html += '        <summary>👆 日本語訳を見る</summary>\n'
+    html += '        <div class="translation-content">\n'
+    html += f'          <p>{content_ja}</p>\n'
+    html += '        </div>\n'
+    html += '      </details>'
     return html
 
 
@@ -894,6 +1023,7 @@ def build_html(day, content):
         recipe_intro=recipe.get("intro", ""),
         recipe_ingredients=recipe.get("ingredients", ""),
         recipe_steps=generate_steps_html(recipe.get("steps", [])),
+        recipe_translation_html=generate_recipe_translation_html(content),
         recipe_vocab=generate_vocab_html(content.get("recipe_vocab", [])),
         quiz1_question=content.get("quiz1", {}).get("question", ""),
         quiz1_options=generate_quiz_options_html(content.get("quiz1", {}), "quiz1"),
@@ -902,6 +1032,7 @@ def build_html(day, content):
         review_location=review.get("location", ""),
         review_stars=generate_stars(review.get("stars", 5)),
         review_content=review.get("content", ""),
+        review_translation_html=generate_review_translation_html(content),
         review_vocab=generate_vocab_html(content.get("review_vocab", [])),
         quiz2_question=content.get("quiz2", {}).get("question", ""),
         quiz2_options=generate_quiz_options_html(content.get("quiz2", {}), "quiz2"),

@@ -10,46 +10,124 @@
       "**Fold** the wrapper in half and press the edges together.",
       "**Heat** oil in a pan and put the gyoza in the pan.",
       "**Add** a little water, cover the pan, and cook for five minutes. **Enjoy!**"
+    ],
+    "intro_ja": "餃子は小さな日本の包み料理です。中にお肉と野菜が入っています。",
+    "steps_ja": [
+      "キャベツをとても小さく切ります。",
+      "豚肉、キャベツ、にんにく、しょうが、しょうゆ、ごま油、塩、こしょうを大きなボウルで混ぜます。",
+      "それぞれの餃子の皮に少しのお肉をのせます。",
+      "皮を半分に折って、ふちを押し合わせます。",
+      "フライパンに油を熱し、餃子をフライパンに入れます。",
+      "少し水を加え、ふたをして5分間焼きます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "dumpling", "meaning": "小さな包み料理（餃子など）"},
-    {"word": "ground pork", "meaning": "豚ひき肉"},
-    {"word": "cabbage", "meaning": "キャベツ"},
-    {"word": "wrapper", "meaning": "（餃子の）皮"},
-    {"word": "fold", "meaning": "折りたたむ"},
-    {"word": "press", "meaning": "押す"},
-    {"word": "edge", "meaning": "端・ふち"},
-    {"word": "cover", "meaning": "ふたをする"},
-    {"word": "mix", "meaning": "混ぜる"},
-    {"word": "heat", "meaning": "熱する"}
+    {
+      "word": "dumpling",
+      "meaning": "小さな包み料理（餃子など）"
+    },
+    {
+      "word": "ground pork",
+      "meaning": "豚ひき肉"
+    },
+    {
+      "word": "cabbage",
+      "meaning": "キャベツ"
+    },
+    {
+      "word": "wrapper",
+      "meaning": "（餃子の）皮"
+    },
+    {
+      "word": "fold",
+      "meaning": "折りたたむ"
+    },
+    {
+      "word": "press",
+      "meaning": "押す"
+    },
+    {
+      "word": "edge",
+      "meaning": "端・ふち"
+    },
+    {
+      "word": "cover",
+      "meaning": "ふたをする"
+    },
+    {
+      "word": "mix",
+      "meaning": "混ぜる"
+    },
+    {
+      "word": "heat",
+      "meaning": "熱する"
+    }
   ],
   "quiz1": {
     "question": "餃子の皮に肉をのせた後、次にすることは何ですか？",
-    "options": ["フライパンに油を入れる", "皮を半分に折って端を押さえる", "キャベツを細かく切る"],
+    "options": [
+      "フライパンに油を入れる",
+      "皮を半分に折って端を押さえる",
+      "キャベツを細かく切る"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Ocean Breeze Dumpling Cafe",
     "location": "Manly Beach, Sydney",
     "stars": 5,
-    "content": "I went to Ocean Breeze Dumpling Cafe last Sunday. It was near Manly Beach. I sat on the terrace and saw the beautiful ocean. The wind was warm and nice. I ate gyoza and they were very good. The skin was crispy and the meat was juicy. Pink and yellow flowers were on the table. It was a very cozy and happy place."
+    "content": "I went to Ocean Breeze Dumpling Cafe last Sunday. It was near Manly Beach. I sat on the terrace and saw the beautiful ocean. The wind was warm and nice. I ate gyoza and they were very good. The skin was crispy and the meat was juicy. Pink and yellow flowers were on the table. It was a very cozy and happy place.",
+    "content_ja": "先週の日曜日にOcean Breeze Dumpling Cafeに行きました。マンリービーチの近くにありました。テラスに座って美しい海を見ました。風は暖かくて気持ちよかったです。餃子を食べたらとてもおいしかったです。皮はパリパリで、お肉はジューシーでした。テーブルにはピンクと黄色の花がありました。とても居心地のいい幸せな場所でした。"
   },
   "review_vocab": [
-    {"word": "ocean", "meaning": "海・大洋"},
-    {"word": "breeze", "meaning": "そよ風"},
-    {"word": "terrace", "meaning": "テラス"},
-    {"word": "beautiful", "meaning": "美しい"},
-    {"word": "crispy", "meaning": "パリパリした"},
-    {"word": "juicy", "meaning": "ジューシーな"},
-    {"word": "cozy", "meaning": "居心地のよい"},
-    {"word": "warm", "meaning": "暖かい"},
-    {"word": "skin", "meaning": "（餃子の）皮"},
-    {"word": "place", "meaning": "場所"}
+    {
+      "word": "ocean",
+      "meaning": "海・大洋"
+    },
+    {
+      "word": "breeze",
+      "meaning": "そよ風"
+    },
+    {
+      "word": "terrace",
+      "meaning": "テラス"
+    },
+    {
+      "word": "beautiful",
+      "meaning": "美しい"
+    },
+    {
+      "word": "crispy",
+      "meaning": "パリパリした"
+    },
+    {
+      "word": "juicy",
+      "meaning": "ジューシーな"
+    },
+    {
+      "word": "cozy",
+      "meaning": "居心地のよい"
+    },
+    {
+      "word": "warm",
+      "meaning": "暖かい"
+    },
+    {
+      "word": "skin",
+      "meaning": "（餃子の）皮"
+    },
+    {
+      "word": "place",
+      "meaning": "場所"
+    }
   ],
   "quiz2": {
     "question": "レビューでは、テーブルの上に何がありましたか？",
-    "options": ["キャンドル", "ピンクと黄色の花", "メニュー"],
+    "options": [
+      "キャンドル",
+      "ピンクと黄色の花",
+      "メニュー"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "シェアハウスのキッチンで、ハウスメイトのEmmaと一緒に餃子を作る場面",
     "lines": [
-      {"speaker": "A", "text": "Hi Emma! I will make gyoza tonight. Do you want to help me?"},
-      {"speaker": "B", "text": "Sure! I love gyoza. What do we need?"},
-      {"speaker": "A", "text": "We need pork, cabbage, garlic, and gyoza wrappers."},
-      {"speaker": "B", "text": "OK. I can cut the cabbage. How small?"},
-      {"speaker": "A", "text": "Very small, please. Like this."},
-      {"speaker": "B", "text": "Got it! What do you do next?"},
-      {"speaker": "A", "text": "I mix the pork and vegetables together."},
-      {"speaker": "B", "text": "Can I try to fold one?"},
-      {"speaker": "A", "text": "Of course! Put a little meat here. Then fold it like this."},
-      {"speaker": "B", "text": "Oh, it is not easy! But it is fun."},
-      {"speaker": "A", "text": "You are good at it! Now I will cook them in the pan."},
-      {"speaker": "B", "text": "Wow, they smell so good! Can I eat one now?"}
+      {
+        "speaker": "A",
+        "text": "Hi Emma! I will make gyoza tonight. Do you want to help me?",
+        "translation": "こんにちは、エマ！今夜、餃子を作るよ。手伝ってくれる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure! I love gyoza. What do we need?",
+        "translation": "もちろん！餃子大好き。何が必要？"
+      },
+      {
+        "speaker": "A",
+        "text": "We need pork, cabbage, garlic, and gyoza wrappers.",
+        "translation": "豚肉、キャベツ、にんにく、餃子の皮が必要だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK. I can cut the cabbage. How small?",
+        "translation": "わかった。キャベツを切れるよ。どのくらい小さく？"
+      },
+      {
+        "speaker": "A",
+        "text": "Very small, please. Like this.",
+        "translation": "とても小さく、お願い。こんな感じで。"
+      },
+      {
+        "speaker": "B",
+        "text": "Got it! What do you do next?",
+        "translation": "了解！次は何をするの？"
+      },
+      {
+        "speaker": "A",
+        "text": "I mix the pork and vegetables together.",
+        "translation": "豚肉と野菜を一緒に混ぜるよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Can I try to fold one?",
+        "translation": "ひとつ折ってみてもいい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Of course! Put a little meat here. Then fold it like this.",
+        "translation": "もちろん！ここに少しお肉をのせて。それからこうやって折るの。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it is not easy! But it is fun.",
+        "translation": "あ、簡単じゃないね！でも楽しい。"
+      },
+      {
+        "speaker": "A",
+        "text": "You are good at it! Now I will cook them in the pan.",
+        "translation": "上手だよ！じゃあフライパンで焼くね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, they smell so good! Can I eat one now?",
+        "translation": "わぁ、すごくいい匂い！今ひとつ食べていい？"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "tonight", "meaning": "今夜"},
-    {"word": "help", "meaning": "手伝う"},
-    {"word": "need", "meaning": "必要とする"},
-    {"word": "cut", "meaning": "切る"},
-    {"word": "together", "meaning": "一緒に"},
-    {"word": "try", "meaning": "やってみる"},
-    {"word": "of course", "meaning": "もちろん"},
-    {"word": "easy", "meaning": "簡単な"},
-    {"word": "fun", "meaning": "楽しい"},
-    {"word": "smell", "meaning": "においがする"}
+    {
+      "word": "tonight",
+      "meaning": "今夜"
+    },
+    {
+      "word": "help",
+      "meaning": "手伝う"
+    },
+    {
+      "word": "need",
+      "meaning": "必要とする"
+    },
+    {
+      "word": "cut",
+      "meaning": "切る"
+    },
+    {
+      "word": "together",
+      "meaning": "一緒に"
+    },
+    {
+      "word": "try",
+      "meaning": "やってみる"
+    },
+    {
+      "word": "of course",
+      "meaning": "もちろん"
+    },
+    {
+      "word": "easy",
+      "meaning": "簡単な"
+    },
+    {
+      "word": "fun",
+      "meaning": "楽しい"
+    },
+    {
+      "word": "smell",
+      "meaning": "においがする"
+    }
   ],
   "quiz3": {
     "question": "Emmaは餃子作りで最初に何を手伝いましたか？",
-    "options": ["肉を混ぜた", "キャベツを切った", "餃子を焼いた"],
+    "options": [
+      "肉を混ぜた",
+      "キャベツを切った",
+      "餃子を焼いた"
+    ],
     "correct": 1
   },
   "try_it_hint": "「今夜〇〇を作ります。手伝ってくれますか？」という文を英語で書いてみましょう。例：I will make curry tonight. Do you want to help me?",
-  "meta": {"day": 1, "en": "Gyoza", "ja": "餃子", "emoji": "\ud83e\udd5f"}
+  "meta": {
+    "day": 1,
+    "en": "Gyoza",
+    "ja": "餃子",
+    "emoji": "🥟"
+  }
 }

@@ -10,46 +10,124 @@
       "**Pour** the batter into the pan and make a round shape.",
       "**Put** pork slices on top and cook for four minutes. Then turn it over.",
       "**Cook** for four more minutes and put sauce, mayonnaise, and bonito flakes on top. **Enjoy!**"
+    ],
+    "intro_ja": "お好み焼きは日本のお好み焼きです。キャベツ、お肉、おいしいソースがのっています。",
+    "steps_ja": [
+      "小麦粉、卵、水をボウルで混ぜて生地を作ります。",
+      "キャベツを細切りにして生地に加えます。",
+      "フライパンに油を熱します。",
+      "生地をフライパンに流して丸い形にします。",
+      "豚肉を上にのせて4分焼きます。それからひっくり返します。",
+      "さらに4分焼いて、ソース、マヨネーズ、かつお節をのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "savory", "meaning": "しょっぱい系の・甘くない"},
-    {"word": "pancake", "meaning": "パンケーキ"},
-    {"word": "flour", "meaning": "小麦粉"},
-    {"word": "batter", "meaning": "生地"},
-    {"word": "pork belly", "meaning": "豚バラ肉"},
-    {"word": "slice", "meaning": "薄切り"},
-    {"word": "round", "meaning": "丸い"},
-    {"word": "shape", "meaning": "形"},
-    {"word": "mayonnaise", "meaning": "マヨネーズ"},
-    {"word": "bonito flakes", "meaning": "かつお節"}
+    {
+      "word": "savory",
+      "meaning": "しょっぱい系の・甘くない"
+    },
+    {
+      "word": "pancake",
+      "meaning": "パンケーキ"
+    },
+    {
+      "word": "flour",
+      "meaning": "小麦粉"
+    },
+    {
+      "word": "batter",
+      "meaning": "生地"
+    },
+    {
+      "word": "pork belly",
+      "meaning": "豚バラ肉"
+    },
+    {
+      "word": "slice",
+      "meaning": "薄切り"
+    },
+    {
+      "word": "round",
+      "meaning": "丸い"
+    },
+    {
+      "word": "shape",
+      "meaning": "形"
+    },
+    {
+      "word": "mayonnaise",
+      "meaning": "マヨネーズ"
+    },
+    {
+      "word": "bonito flakes",
+      "meaning": "かつお節"
+    }
   ],
   "quiz1": {
     "question": "お好み焼きをひっくり返す前に、何分焼きますか？",
-    "options": ["2分", "4分", "6分"],
+    "options": [
+      "2分",
+      "4分",
+      "6分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Pink Blossom Terrace",
     "location": "Balmoral Beach, Sydney",
     "stars": 5,
-    "content": "I visited Pink Blossom Terrace last weekend. It was a small restaurant near Balmoral Beach. The terrace had pink flowers and white chairs. I could see the calm blue sea from my table. I ordered okonomiyaki and green tea. The pancake was hot and crispy. The sauce and mayonnaise were perfect together. It was a beautiful and peaceful place. I took many photos."
+    "content": "I visited Pink Blossom Terrace last weekend. It was a small restaurant near Balmoral Beach. The terrace had pink flowers and white chairs. I could see the calm blue sea from my table. I ordered okonomiyaki and green tea. The pancake was hot and crispy. The sauce and mayonnaise were perfect together. It was a beautiful and peaceful place. I took many photos.",
+    "content_ja": "先週末にPink Blossom Terraceに行きました。バルモラルビーチ近くの小さなレストランでした。テラスにはピンクの花と白い椅子がありました。テーブルから穏やかな青い海が見えました。お好み焼きと緑茶を注文しました。あつあつでカリカリでした。ソースとマヨネーズの組み合わせが最高でした。きれいで静かな場所でした。たくさん写真を撮りました。"
   },
   "review_vocab": [
-    {"word": "blossom", "meaning": "花"},
-    {"word": "terrace", "meaning": "テラス"},
-    {"word": "calm", "meaning": "穏やかな"},
-    {"word": "sea", "meaning": "海"},
-    {"word": "crispy", "meaning": "カリッとした"},
-    {"word": "perfect", "meaning": "完璧な"},
-    {"word": "peaceful", "meaning": "穏やかな・のどかな"},
-    {"word": "photo", "meaning": "写真"},
-    {"word": "chair", "meaning": "椅子"},
-    {"word": "together", "meaning": "一緒に"}
+    {
+      "word": "blossom",
+      "meaning": "花"
+    },
+    {
+      "word": "terrace",
+      "meaning": "テラス"
+    },
+    {
+      "word": "calm",
+      "meaning": "穏やかな"
+    },
+    {
+      "word": "sea",
+      "meaning": "海"
+    },
+    {
+      "word": "crispy",
+      "meaning": "カリッとした"
+    },
+    {
+      "word": "perfect",
+      "meaning": "完璧な"
+    },
+    {
+      "word": "peaceful",
+      "meaning": "穏やかな・のどかな"
+    },
+    {
+      "word": "photo",
+      "meaning": "写真"
+    },
+    {
+      "word": "chair",
+      "meaning": "椅子"
+    },
+    {
+      "word": "together",
+      "meaning": "一緒に"
+    }
   ],
   "quiz2": {
     "question": "レストランから何が見えましたか？",
-    "options": ["穏やかな青い海", "街の明かり", "山と森"],
+    "options": [
+      "穏やかな青い海",
+      "街の明かり",
+      "山と森"
+    ],
     "correct": 0
   },
   "australia_tips": {
@@ -59,39 +137,134 @@
   "conversation": {
     "scene": "シェアハウスでお好み焼きパーティーを開き、ハウスメイトのJackに作り方を教える場面",
     "lines": [
-      {"speaker": "A", "text": "Jack, tonight we will make okonomiyaki. It is a Japanese pancake."},
-      {"speaker": "B", "text": "A pancake? Is it sweet?"},
-      {"speaker": "A", "text": "No, it is not sweet. It is savory. It has cabbage and pork inside."},
-      {"speaker": "B", "text": "Oh, interesting! What do I do first?"},
-      {"speaker": "A", "text": "First, cut the cabbage into thin pieces."},
-      {"speaker": "B", "text": "Like this? Is this thin enough?"},
-      {"speaker": "A", "text": "Yes, that is good! Now mix it with the batter."},
-      {"speaker": "B", "text": "OK. Can I cook it in the pan?"},
-      {"speaker": "A", "text": "Sure! Make a round shape. Put pork on top."},
-      {"speaker": "B", "text": "When do I turn it over?"},
-      {"speaker": "A", "text": "After four minutes. Be careful, it is heavy."},
-      {"speaker": "B", "text": "I did it! It looks great!"},
-      {"speaker": "A", "text": "Now put sauce and mayonnaise on top."},
-      {"speaker": "B", "text": "This is so much fun. And it smells amazing!"}
+      {
+        "speaker": "A",
+        "text": "Jack, tonight we will make okonomiyaki. It is a Japanese pancake.",
+        "translation": "ジャック、今夜お好み焼きを作るよ。日本のパンケーキだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "A pancake? Is it sweet?",
+        "translation": "パンケーキ？甘いの？"
+      },
+      {
+        "speaker": "A",
+        "text": "No, it is not sweet. It is savory. It has cabbage and pork inside.",
+        "translation": "ううん、甘くないよ。塩味なの。中にキャベツと豚肉が入っているよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, interesting! What do I do first?",
+        "translation": "面白い！最初に何をするの？"
+      },
+      {
+        "speaker": "A",
+        "text": "First, cut the cabbage into thin pieces.",
+        "translation": "まずキャベツを細く切ってね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Like this? Is this thin enough?",
+        "translation": "こんな感じ？これで十分薄い？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, that is good! Now mix it with the batter.",
+        "translation": "うん、いい感じ！じゃあ生地と混ぜて。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK. Can I cook it in the pan?",
+        "translation": "わかった。フライパンで焼いてもいい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Sure! Make a round shape. Put pork on top.",
+        "translation": "もちろん！丸い形にして。豚肉を上にのせてね。"
+      },
+      {
+        "speaker": "B",
+        "text": "When do I turn it over?",
+        "translation": "いつひっくり返すの？"
+      },
+      {
+        "speaker": "A",
+        "text": "After four minutes. Be careful, it is heavy.",
+        "translation": "4分後だよ。重いから気をつけて。"
+      },
+      {
+        "speaker": "B",
+        "text": "I did it! It looks great!",
+        "translation": "できた！きれいにできた！"
+      },
+      {
+        "speaker": "A",
+        "text": "Now put sauce and mayonnaise on top.",
+        "translation": "じゃあソースとマヨネーズをかけてね。"
+      },
+      {
+        "speaker": "B",
+        "text": "This is so much fun. And it smells amazing!",
+        "translation": "すごく楽しい。めっちゃいい匂い！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "savory", "meaning": "甘くない・しょっぱい系の"},
-    {"word": "inside", "meaning": "中に"},
-    {"word": "interesting", "meaning": "面白い"},
-    {"word": "enough", "meaning": "十分に"},
-    {"word": "batter", "meaning": "生地"},
-    {"word": "careful", "meaning": "気をつけて"},
-    {"word": "heavy", "meaning": "重い"},
-    {"word": "looks", "meaning": "〜に見える"},
-    {"word": "amazing", "meaning": "すごい"},
-    {"word": "so much fun", "meaning": "とても楽しい"}
+    {
+      "word": "savory",
+      "meaning": "甘くない・しょっぱい系の"
+    },
+    {
+      "word": "inside",
+      "meaning": "中に"
+    },
+    {
+      "word": "interesting",
+      "meaning": "面白い"
+    },
+    {
+      "word": "enough",
+      "meaning": "十分に"
+    },
+    {
+      "word": "batter",
+      "meaning": "生地"
+    },
+    {
+      "word": "careful",
+      "meaning": "気をつけて"
+    },
+    {
+      "word": "heavy",
+      "meaning": "重い"
+    },
+    {
+      "word": "looks",
+      "meaning": "〜に見える"
+    },
+    {
+      "word": "amazing",
+      "meaning": "すごい"
+    },
+    {
+      "word": "so much fun",
+      "meaning": "とても楽しい"
+    }
   ],
   "quiz3": {
     "question": "Jackがお好み焼きをひっくり返すとき、何に気をつけるように言われましたか？",
-    "options": ["熱いから", "重いから", "やわらかいから"],
+    "options": [
+      "熱いから",
+      "重いから",
+      "やわらかいから"
+    ],
     "correct": 1
   },
   "try_it_hint": "「これは甘いですか？」「いいえ、甘くないです。しょっぱい系です。」という会話を英語で書いてみましょう。例：Is it sweet? No, it is not sweet. It is savory.",
-  "meta": {"day": 14, "en": "Okonomiyaki", "ja": "お好み焼き", "emoji": "\ud83e\udd5e"}
+  "meta": {
+    "day": 14,
+    "en": "Okonomiyaki",
+    "ja": "お好み焼き",
+    "emoji": "🥞"
+  }
 }

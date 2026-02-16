@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>油淋鶏は中華風の揚げ鶏です。甘酸っぱいネギだれがかかっています。</p>
+          <p>1. 鶏もも肉に塩とこしょうをふります。</p>
+          <p>2. 鶏肉に片栗粉をまぶします。</p>
+          <p>3. 油を鍋で170度に熱し、鶏肉をきつね色になるまで揚げます。</p>
+          <p>4. 長ネギ、しょうゆ、酢、砂糖、ごま油を小さいボウルで混ぜてたれを作ります。</p>
+          <p>5. 揚げた鶏肉を切って皿に盛ります。</p>
+          <p>6. ネギだれをたっぷりかけます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Harbour Blossom Cafe at Darling Harbour in Sydney. The restaurant was right next to the water. I sat outside and enjoyed the harbour view. There were boats and city lights on the water. It was a cool evening. I ordered Yurinjii and it was wonderful. The chicken was very crispy and the green onion sauce was fresh and sour. There were pink flowers on the table and the chairs were very comfortable. I had a really nice time.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>木曜日の夜にStarlight Terrace Kitchenに行きました。ダーリングハーバーにありました。テラスからきれいな夜景が見えました。油淋鶏を注文しました。鶏肉はカリカリで、ネギだれはさっぱりしていてとてもおいしかったです。テーブルにジャスミンの花がありました。星がきれいな素敵な夜でした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,53 +732,89 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 シェアハウスのディナーパーティーで、いろいろな国の人たちに油淋鶏を紹介する場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Everyone, please try this dish. It is called Yurinjii.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Everyone, please try this dish. It is called Yurinjii.</span>
+            <div class="dialogue-translation">今夜は油淋鶏を作るよ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yurinjii? How do you spell it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yurinjii? How do you spell it?</span>
+            <div class="dialogue-translation">ユーリンチー？何それ？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Y-U-R-I-N-J-I-I. It is fried chicken with green onion sauce.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Y-U-R-I-N-J-I-I. It is fried chicken with green onion sauce.</span>
+            <div class="dialogue-translation">揚げた鶏肉にネギの甘酸っぱいたれをかけた料理だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">It smells amazing! What is in the sauce?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It smells amazing! What is in the sauce?</span>
+            <div class="dialogue-translation">おいしそう！難しくないの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Green onion, soy sauce, vinegar, and sesame oil.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Green onion, soy sauce, vinegar, and sesame oil.</span>
+            <div class="dialogue-translation">ぜんぜん！鶏肉を揚げてたれをかけるだけ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, I can smell the sesame oil. I love it.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, I can smell the sesame oil. I love it.</span>
+            <div class="dialogue-translation">たれは何で作るの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Please take some lettuce too. It is good together.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Please take some lettuce too. It is good together.</span>
+            <div class="dialogue-translation">長ネギ、しょうゆ、お酢、砂糖、ごま油だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Mmm! The chicken is so crispy and the sauce is really fresh.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Mmm! The chicken is so crispy and the sauce is really fresh.</span>
+            <div class="dialogue-translation">わたしがたれを作ろうか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">I am happy you like it! It is a popular dish in Japan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I am happy you like it! It is a popular dish in Japan.</span>
+            <div class="dialogue-translation">ありがとう！ネギを細かく切ってくれる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Is it Chinese food or Japanese food?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Is it Chinese food or Japanese food?</span>
+            <div class="dialogue-translation">いいよ。あ、目が痛い！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is Chinese-style, but many Japanese people eat it at home.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is Chinese-style, but many Japanese people eat it at home.</span>
+            <div class="dialogue-translation">大丈夫？水で洗ってね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">That is interesting. I want to learn this recipe!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That is interesting. I want to learn this recipe!</span>
+            <div class="dialogue-translation">大丈夫！おいしいもののためなら頑張れるよ！</div>
+          </div>
         </div>
         <div class="conversation-line">
           <span class="speaker">A:</span>
@@ -698,6 +825,7 @@
           <span class="dialogue">Thank you so much! This is the best dinner party.</span>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -865,6 +993,11 @@
       quiz2: 1,
       quiz3: 0
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

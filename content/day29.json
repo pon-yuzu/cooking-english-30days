@@ -10,46 +10,124 @@
       "**Mix** everything well with your hands.",
       "**Put** a plate on top and something heavy on the plate.",
       "**Wait** for 30 minutes, then take out the vegetables and put them on a plate. **Enjoy!**"
+    ],
+    "intro_ja": "漬物は日本の漬け野菜です。浅漬けはさっと漬けた軽い漬物です。とても簡単で30分でできます。",
+    "steps_ja": [
+      "きゅうり、キャベツ、にんじんを薄く切ります。",
+      "野菜を全部大きなボウルに入れます。",
+      "塩、小さく切った昆布、少しのしょうがを加えます。",
+      "手でよく混ぜます。",
+      "お皿をのせて上に重しをのせます。",
+      "30分待ってから野菜を取り出してお皿に盛ります。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "pickled", "meaning": "漬けた"},
-    {"word": "vegetable", "meaning": "野菜"},
-    {"word": "quick", "meaning": "早い・すぐできる"},
-    {"word": "cucumber", "meaning": "きゅうり"},
-    {"word": "carrot", "meaning": "にんじん"},
-    {"word": "dried", "meaning": "乾燥した"},
-    {"word": "kelp", "meaning": "昆布"},
-    {"word": "chili flakes", "meaning": "唐辛子フレーク"},
-    {"word": "heavy", "meaning": "重い"},
-    {"word": "take out", "meaning": "取り出す"}
+    {
+      "word": "pickled",
+      "meaning": "漬けた"
+    },
+    {
+      "word": "vegetable",
+      "meaning": "野菜"
+    },
+    {
+      "word": "quick",
+      "meaning": "早い・すぐできる"
+    },
+    {
+      "word": "cucumber",
+      "meaning": "きゅうり"
+    },
+    {
+      "word": "carrot",
+      "meaning": "にんじん"
+    },
+    {
+      "word": "dried",
+      "meaning": "乾燥した"
+    },
+    {
+      "word": "kelp",
+      "meaning": "昆布"
+    },
+    {
+      "word": "chili flakes",
+      "meaning": "唐辛子フレーク"
+    },
+    {
+      "word": "heavy",
+      "meaning": "重い"
+    },
+    {
+      "word": "take out",
+      "meaning": "取り出す"
+    }
   ],
   "quiz1": {
     "question": "浅漬けを作るとき、野菜の上に何をのせますか？",
-    "options": ["タオル", "お皿と重いもの", "ラップ"],
+    "options": [
+      "タオル",
+      "お皿と重いもの",
+      "ラップ"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Rooftop Garden Cafe",
     "location": "Hamilton, Brisbane",
     "stars": 5,
-    "content": "I found Rooftop Garden Cafe in Hamilton, Brisbane. It was on the top floor of a small building. There were many plants and flowers everywhere. I saw lavender and mimosa flowers around me. I ordered a Japanese set meal with tsukemono. The pickles were crunchy and fresh. The view of the river was beautiful. It was my favorite lunch this month."
+    "content": "I found Rooftop Garden Cafe in Hamilton, Brisbane. It was on the top floor of a small building. There were many plants and flowers everywhere. I saw lavender and mimosa flowers around me. I ordered a Japanese set meal with tsukemono. The pickles were crunchy and fresh. The view of the river was beautiful. It was my favorite lunch this month.",
+    "content_ja": "ブリスベンのハミルトンでRooftop Garden Cafeを見つけました。小さなビルの最上階にありました。たくさんの植物や花がありました。ラベンダーやミモザの花に囲まれていました。浅漬けつきの和定食を注文しました。漬物はパリパリで新鮮でした。川の景色がきれいでした。今月一番のお気に入りランチでした。"
   },
   "review_vocab": [
-    {"word": "rooftop", "meaning": "屋上"},
-    {"word": "floor", "meaning": "階"},
-    {"word": "plants", "meaning": "植物"},
-    {"word": "everywhere", "meaning": "あちこちに"},
-    {"word": "lavender", "meaning": "ラベンダー"},
-    {"word": "mimosa", "meaning": "ミモザ"},
-    {"word": "set meal", "meaning": "定食"},
-    {"word": "crunchy", "meaning": "ポリポリした・歯ごたえのある"},
-    {"word": "river", "meaning": "川"},
-    {"word": "favorite", "meaning": "お気に入りの"}
+    {
+      "word": "rooftop",
+      "meaning": "屋上"
+    },
+    {
+      "word": "floor",
+      "meaning": "階"
+    },
+    {
+      "word": "plants",
+      "meaning": "植物"
+    },
+    {
+      "word": "everywhere",
+      "meaning": "あちこちに"
+    },
+    {
+      "word": "lavender",
+      "meaning": "ラベンダー"
+    },
+    {
+      "word": "mimosa",
+      "meaning": "ミモザ"
+    },
+    {
+      "word": "set meal",
+      "meaning": "定食"
+    },
+    {
+      "word": "crunchy",
+      "meaning": "ポリポリした・歯ごたえのある"
+    },
+    {
+      "word": "river",
+      "meaning": "川"
+    },
+    {
+      "word": "favorite",
+      "meaning": "お気に入りの"
+    }
   ],
   "quiz2": {
     "question": "レビューのレストランには何の花がありましたか？",
-    "options": ["バラとひまわり", "ラベンダーとミモザ", "ジャスミンとチューリップ"],
+    "options": [
+      "バラとひまわり",
+      "ラベンダーとミモザ",
+      "ジャスミンとチューリップ"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "スーパーで買い物中に、オーストラリア人の同僚と野菜の話をする場面",
     "lines": [
-      {"speaker": "A", "text": "Hey, what are you making tonight?"},
-      {"speaker": "B", "text": "I will make Japanese pickles. We call them tsukemono."},
-      {"speaker": "A", "text": "Pickles? Like the ones in a jar?"},
-      {"speaker": "B", "text": "No, these are different. I use fresh vegetables and salt."},
-      {"speaker": "A", "text": "What vegetables do you need?"},
-      {"speaker": "B", "text": "Cucumber, cabbage, and carrot. They are all here."},
-      {"speaker": "A", "text": "That is easy. How do you make them?"},
-      {"speaker": "B", "text": "I cut them, add salt, and wait for 30 minutes."},
-      {"speaker": "A", "text": "Only 30 minutes? That is very fast!"},
-      {"speaker": "B", "text": "Yes! That is why we call it asazuke. It means quick pickle."},
-      {"speaker": "A", "text": "Can I try some when it is ready?"},
-      {"speaker": "B", "text": "Of course! I will make enough for both of us."}
+      {
+        "speaker": "A",
+        "text": "Hey, what are you making tonight?",
+        "translation": "ねえ、今夜何作るの？"
+      },
+      {
+        "speaker": "B",
+        "text": "I will make Japanese pickles. We call them tsukemono.",
+        "translation": "日本の漬物を作るよ。つけものって言うの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Pickles? Like the ones in a jar?",
+        "translation": "漬物？瓶に入ったやつみたいなの？"
+      },
+      {
+        "speaker": "B",
+        "text": "No, these are different. I use fresh vegetables and salt.",
+        "translation": "ううん、これは違うの。生野菜と塩を使うの。"
+      },
+      {
+        "speaker": "A",
+        "text": "What vegetables do you need?",
+        "translation": "どんな野菜が必要？"
+      },
+      {
+        "speaker": "B",
+        "text": "Cucumber, cabbage, and carrot. They are all here.",
+        "translation": "きゅうり、キャベツ、にんじん。全部ここにあるよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "That is easy. How do you make them?",
+        "translation": "簡単そうだね。どうやって作るの？"
+      },
+      {
+        "speaker": "B",
+        "text": "I cut them, add salt, and wait for 30 minutes.",
+        "translation": "切って、塩をふって、30分待つだけ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Only 30 minutes? That is very fast!",
+        "translation": "30分だけ？すごく早いね！"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! That is why we call it asazuke. It means quick pickle.",
+        "translation": "うん！だから浅漬けって言うの。「浅い漬物」っていう意味。"
+      },
+      {
+        "speaker": "A",
+        "text": "Can I try some when it is ready?",
+        "translation": "できたら食べてみてもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! I will make enough for both of us.",
+        "translation": "もちろん！2人分作るよ。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "pickles", "meaning": "漬物・ピクルス"},
-    {"word": "jar", "meaning": "びん・ジャー"},
-    {"word": "different", "meaning": "違う"},
-    {"word": "vegetables", "meaning": "野菜"},
-    {"word": "fast", "meaning": "速い・早い"},
-    {"word": "ready", "meaning": "できあがった"},
-    {"word": "both", "meaning": "両方"},
-    {"word": "only", "meaning": "たった〜だけ"},
-    {"word": "means", "meaning": "〜という意味"},
-    {"word": "tonight", "meaning": "今夜"}
+    {
+      "word": "pickles",
+      "meaning": "漬物・ピクルス"
+    },
+    {
+      "word": "jar",
+      "meaning": "びん・ジャー"
+    },
+    {
+      "word": "different",
+      "meaning": "違う"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "野菜"
+    },
+    {
+      "word": "fast",
+      "meaning": "速い・早い"
+    },
+    {
+      "word": "ready",
+      "meaning": "できあがった"
+    },
+    {
+      "word": "both",
+      "meaning": "両方"
+    },
+    {
+      "word": "only",
+      "meaning": "たった〜だけ"
+    },
+    {
+      "word": "means",
+      "meaning": "〜という意味"
+    },
+    {
+      "word": "tonight",
+      "meaning": "今夜"
+    }
   ],
   "quiz3": {
     "question": "会話の中で、浅漬けはどのくらいの時間でできると言っていましたか？",
-    "options": ["10分", "30分", "1時間"],
+    "options": [
+      "10分",
+      "30分",
+      "1時間"
+    ],
     "correct": 1
   },
   "try_it_hint": "「〇〇の作り方はとても簡単です」と説明する文を練習しましょう。例：It is very easy. I cut the vegetables, add salt, and wait for 30 minutes.",
-  "meta": {"day": 29, "en": "Tsukemono", "ja": "浅漬け", "emoji": "\ud83e\udd52"}
+  "meta": {
+    "day": 29,
+    "en": "Tsukemono",
+    "ja": "浅漬け",
+    "emoji": "🥒"
+  }
 }

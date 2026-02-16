@@ -10,46 +10,124 @@
       "**Close** the wrapper around the meat but leave the top open.",
       "**Put** one green pea on top of each shumai.",
       "**Steam** the shumai for about ten minutes until they are cooked. **Enjoy!**"
+    ],
+    "intro_ja": "シュウマイは小さな中華風の蒸し餃子です。中に豚肉と玉ねぎが入っています。",
+    "steps_ja": [
+      "豚肉と玉ねぎをとても小さく切ります。",
+      "豚肉、玉ねぎ、しょうゆ、ごま油、塩、こしょうをボウルで混ぜます。",
+      "それぞれのシュウマイの皮に少しのお肉をのせます。",
+      "皮をお肉のまわりに巻きます。上を開けておきます。",
+      "蒸し器に水を入れて沸かします。",
+      "シュウマイを蒸し器に入れて10分間蒸します。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "steamed", "meaning": "蒸した"},
-    {"word": "tasty", "meaning": "おいしい"},
-    {"word": "onion", "meaning": "玉ねぎ"},
-    {"word": "corn starch", "meaning": "片栗粉"},
-    {"word": "sugar", "meaning": "砂糖"},
-    {"word": "middle", "meaning": "真ん中"},
-    {"word": "close", "meaning": "閉じる"},
-    {"word": "leave", "meaning": "〜のままにする"},
-    {"word": "top", "meaning": "上"},
-    {"word": "until", "meaning": "〜まで"}
+    {
+      "word": "steamed",
+      "meaning": "蒸した"
+    },
+    {
+      "word": "tasty",
+      "meaning": "おいしい"
+    },
+    {
+      "word": "onion",
+      "meaning": "玉ねぎ"
+    },
+    {
+      "word": "corn starch",
+      "meaning": "片栗粉"
+    },
+    {
+      "word": "sugar",
+      "meaning": "砂糖"
+    },
+    {
+      "word": "middle",
+      "meaning": "真ん中"
+    },
+    {
+      "word": "close",
+      "meaning": "閉じる"
+    },
+    {
+      "word": "leave",
+      "meaning": "〜のままにする"
+    },
+    {
+      "word": "top",
+      "meaning": "上"
+    },
+    {
+      "word": "until",
+      "meaning": "〜まで"
+    }
   ],
   "quiz1": {
     "question": "シュウマイの上にのせるものは何ですか？",
-    "options": ["コーン", "グリーンピース", "チーズ"],
+    "options": [
+      "コーン",
+      "グリーンピース",
+      "チーズ"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "River Garden Kitchen",
     "location": "South Bank, Brisbane",
     "stars": 5,
-    "content": "I visited River Garden Kitchen last weekend. It was at South Bank in Brisbane. I sat in the garden area near the river. The view was so pretty. I could see the city and the water. I ordered shumai and they were very soft and hot. The garden had many flowers, and I saw some yellow and lavender ones. The staff were kind and the music was quiet. I felt very relaxed there."
+    "content": "I visited River Garden Kitchen last weekend. It was at South Bank in Brisbane. I sat in the garden area near the river. The view was so pretty. I could see the city and the water. I ordered shumai and they were very soft and hot. The garden had many flowers, and I saw some yellow and lavender ones. The staff were kind and the music was quiet. I felt very relaxed there.",
+    "content_ja": "先週の金曜日にFern Valley Dumpling Houseに行きました。ブリスベンのSouth Bankの静かな通りにありました。中にシダ植物がたくさんありました。とても緑が多くて涼しかったです。シュウマイとお茶を注文しました。シュウマイはやわらかくて温かかったです。お肉はジューシーで、皮は薄かったです。テーブルの上に小さな黄色い花がありました。とても素敵なお店でした。"
   },
   "review_vocab": [
-    {"word": "visited", "meaning": "訪れた"},
-    {"word": "garden", "meaning": "庭・ガーデン"},
-    {"word": "river", "meaning": "川"},
-    {"word": "pretty", "meaning": "きれいな"},
-    {"word": "view", "meaning": "景色"},
-    {"word": "ordered", "meaning": "注文した"},
-    {"word": "soft", "meaning": "やわらかい"},
-    {"word": "staff", "meaning": "スタッフ・店員"},
-    {"word": "quiet", "meaning": "静かな"},
-    {"word": "relaxed", "meaning": "リラックスした"}
+    {
+      "word": "visited",
+      "meaning": "訪れた"
+    },
+    {
+      "word": "garden",
+      "meaning": "庭・ガーデン"
+    },
+    {
+      "word": "river",
+      "meaning": "川"
+    },
+    {
+      "word": "pretty",
+      "meaning": "きれいな"
+    },
+    {
+      "word": "view",
+      "meaning": "景色"
+    },
+    {
+      "word": "ordered",
+      "meaning": "注文した"
+    },
+    {
+      "word": "soft",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "staff",
+      "meaning": "スタッフ・店員"
+    },
+    {
+      "word": "quiet",
+      "meaning": "静かな"
+    },
+    {
+      "word": "relaxed",
+      "meaning": "リラックスした"
+    }
   ],
   "quiz2": {
     "question": "このレストランはどこにありましたか？",
-    "options": ["シドニーのビーチ沿い", "ブリスベンのサウスバンク", "ゴールドコーストの山の近く"],
+    "options": [
+      "シドニーのビーチ沿い",
+      "ブリスベンのサウスバンク",
+      "ゴールドコーストの山の近く"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,41 +137,140 @@
   "conversation": {
     "scene": "職場（カフェ）の休憩時間に、同僚のLiamにシュウマイの話をする場面",
     "lines": [
-      {"speaker": "A", "text": "Liam, do you know shumai?"},
-      {"speaker": "B", "text": "Shumai? No, I do not know. What is it?"},
-      {"speaker": "A", "text": "It is a small steamed dumpling from Japan."},
-      {"speaker": "B", "text": "Oh, like dim sum? I like dim sum!"},
-      {"speaker": "A", "text": "Yes! Shumai is a kind of dim sum. It is very soft."},
-      {"speaker": "B", "text": "What is inside?"},
-      {"speaker": "A", "text": "Pork and onion. And there is a green pea on top."},
-      {"speaker": "B", "text": "That sounds cute. Is it hard to make?"},
-      {"speaker": "A", "text": "No, it is easy. You do not need an oven."},
-      {"speaker": "B", "text": "Really? How do you cook it?"},
-      {"speaker": "A", "text": "You steam it. It takes about ten minutes."},
-      {"speaker": "B", "text": "Nice! Can you make some for our next day off?"},
-      {"speaker": "A", "text": "Sure! I will bring some to the share house."},
-      {"speaker": "B", "text": "Great! I cannot wait. Thank you!"}
+      {
+        "speaker": "A",
+        "text": "Liam, do you know shumai?",
+        "translation": "こんにちは！何を作っているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Shumai? No, I do not know. What is it?",
+        "translation": "シュウマイを作っているよ！日本の蒸し餃子だよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "It is a small steamed dumpling from Japan.",
+        "translation": "おいしそう！中には何が入っているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, like dim sum? I like dim sum!",
+        "translation": "豚肉と玉ねぎ。それから少しのしょうゆとごま油。"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes! Shumai is a kind of dim sum. It is very soft.",
+        "translation": "どうやって作るの？"
+      },
+      {
+        "speaker": "B",
+        "text": "What is inside?",
+        "translation": "まず、お肉をこの皮にのせるの。それからまわりに巻くよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Pork and onion. And there is a green pea on top.",
+        "translation": "やってみてもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "That sounds cute. Is it hard to make?",
+        "translation": "もちろん！こうやってね。上は開けたままにしてね。"
+      },
+      {
+        "speaker": "A",
+        "text": "No, it is easy. You do not need an oven.",
+        "translation": "こんな感じ？"
+      },
+      {
+        "speaker": "B",
+        "text": "Really? How do you cook it?",
+        "translation": "うん、上手！次は蒸すよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "You steam it. It takes about ten minutes.",
+        "translation": "いい匂い！待ちきれないよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Nice! Can you make some for our next day off?",
+        "translation": "ほら、できたよ！食べてみて。"
+      },
+      {
+        "speaker": "A",
+        "text": "Sure! I will bring some to the share house."
+      },
+      {
+        "speaker": "B",
+        "text": "Great! I cannot wait. Thank you!"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "steamed", "meaning": "蒸した"},
-    {"word": "kind", "meaning": "種類"},
-    {"word": "inside", "meaning": "中に"},
-    {"word": "sound", "meaning": "〜に聞こえる"},
-    {"word": "hard", "meaning": "難しい"},
-    {"word": "oven", "meaning": "オーブン"},
-    {"word": "really", "meaning": "本当に？"},
-    {"word": "steam", "meaning": "蒸す"},
-    {"word": "next", "meaning": "次の"},
-    {"word": "day off", "meaning": "休みの日"},
-    {"word": "bring", "meaning": "持ってくる"},
-    {"word": "cannot wait", "meaning": "待ちきれない"}
+    {
+      "word": "steamed",
+      "meaning": "蒸した"
+    },
+    {
+      "word": "kind",
+      "meaning": "種類"
+    },
+    {
+      "word": "inside",
+      "meaning": "中に"
+    },
+    {
+      "word": "sound",
+      "meaning": "〜に聞こえる"
+    },
+    {
+      "word": "hard",
+      "meaning": "難しい"
+    },
+    {
+      "word": "oven",
+      "meaning": "オーブン"
+    },
+    {
+      "word": "really",
+      "meaning": "本当に？"
+    },
+    {
+      "word": "steam",
+      "meaning": "蒸す"
+    },
+    {
+      "word": "next",
+      "meaning": "次の"
+    },
+    {
+      "word": "day off",
+      "meaning": "休みの日"
+    },
+    {
+      "word": "bring",
+      "meaning": "持ってくる"
+    },
+    {
+      "word": "cannot wait",
+      "meaning": "待ちきれない"
+    }
   ],
   "quiz3": {
     "question": "Liamはシュウマイについて何と言いましたか？",
-    "options": ["作るのが難しそうだと言った", "次の休みに作ってほしいと頼んだ", "dim sumは好きではないと言った"],
+    "options": [
+      "作るのが難しそうだと言った",
+      "次の休みに作ってほしいと頼んだ",
+      "dim sumは好きではないと言った"
+    ],
     "correct": 1
   },
   "try_it_hint": "「〇〇を知っていますか？日本の料理です。」という文を英語で書いてみましょう。例：Do you know takoyaki? It is a Japanese food.",
-  "meta": {"day": 2, "en": "Shumai", "ja": "シュウマイ", "emoji": "\ud83d\udfe1"}
+  "meta": {
+    "day": 2,
+    "en": "Shumai",
+    "ja": "シュウマイ",
+    "emoji": "🟡"
+  }
 }

@@ -10,46 +10,124 @@
       "**Drain** the udon noodles and put them in bowls.",
       "**Pour** the hot soup over the noodles.",
       "**Add** green onion, fish cake, and an egg on top. **Enjoy!**"
+    ],
+    "intro_ja": "うどんは太い日本の麺です。あたたかいスープの中でやわらかくてもちもちです。",
+    "steps_ja": [
+      "大きな鍋でお湯を沸かし、うどんをゆでます。",
+      "別の鍋でだし汁、しょうゆ、みりん、塩を混ぜてスープを作ります。",
+      "スープを中火で温めます。",
+      "うどんをザルにあけて丼に入れます。",
+      "温かいスープを麺にかけます。",
+      "ネギ、かまぼこ、卵をのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "thick", "meaning": "太い"},
-    {"word": "chewy", "meaning": "もちもちした"},
-    {"word": "soup", "meaning": "スープ・汁"},
-    {"word": "medium heat", "meaning": "中火"},
-    {"word": "another", "meaning": "もう一つの・別の"},
-    {"word": "bowl", "meaning": "丼・お椀"},
-    {"word": "pour", "meaning": "注ぐ"},
-    {"word": "fish cake", "meaning": "かまぼこ"},
-    {"word": "noodle", "meaning": "麺"},
-    {"word": "over", "meaning": "〜の上に"}
+    {
+      "word": "thick",
+      "meaning": "太い"
+    },
+    {
+      "word": "chewy",
+      "meaning": "もちもちした"
+    },
+    {
+      "word": "soup",
+      "meaning": "スープ・汁"
+    },
+    {
+      "word": "medium heat",
+      "meaning": "中火"
+    },
+    {
+      "word": "another",
+      "meaning": "もう一つの・別の"
+    },
+    {
+      "word": "bowl",
+      "meaning": "丼・お椀"
+    },
+    {
+      "word": "pour",
+      "meaning": "注ぐ"
+    },
+    {
+      "word": "fish cake",
+      "meaning": "かまぼこ"
+    },
+    {
+      "word": "noodle",
+      "meaning": "麺"
+    },
+    {
+      "word": "over",
+      "meaning": "〜の上に"
+    }
   ],
   "quiz1": {
     "question": "うどんのスープには何が入っていますか？",
-    "options": ["だし・醤油・みりん・塩", "だし・味噌・酒・砂糖", "だし・ケチャップ・塩・酢"],
+    "options": [
+      "だし・醤油・みりん・塩",
+      "だし・味噌・酒・砂糖",
+      "だし・ケチャップ・塩・酢"
+    ],
     "correct": 0
   },
   "review": {
     "restaurant": "Botanical Bowl",
     "location": "Glebe, Sydney",
     "stars": 5,
-    "content": "I visited Botanical Bowl in Glebe on a rainy day. The restaurant was near a big park with many trees. Inside, it was warm and cozy. There were pink cushions on the chairs. I ordered hot udon with egg and fish cake. The noodles were thick and chewy. The soup was so warm and comforting. Soft jazz music was playing. It was a perfect rainy day lunch."
+    "content": "I visited Botanical Bowl in Glebe on a rainy day. The restaurant was near a big park with many trees. Inside, it was warm and cozy. There were pink cushions on the chairs. I ordered hot udon with egg and fish cake. The noodles were thick and chewy. The soup was so warm and comforting. Soft jazz music was playing. It was a perfect rainy day lunch.",
+    "content_ja": "雨の日にグリーブのBotanical Bowlに行きました。大きな公園の近くのレストランでした。中はあたたかくて居心地がよかったです。椅子にピンクのクッションがありました。卵とかまぼこのせ温かいうどんを注文しました。麺は太くてもちもちでした。スープはあたたかくてほっとしました。やさしいジャズが流れていました。雨の日のランチにぴったりでした。"
   },
   "review_vocab": [
-    {"word": "rainy", "meaning": "雨の"},
-    {"word": "park", "meaning": "公園"},
-    {"word": "inside", "meaning": "中は"},
-    {"word": "cushion", "meaning": "クッション"},
-    {"word": "chair", "meaning": "椅子"},
-    {"word": "comforting", "meaning": "ほっとする"},
-    {"word": "jazz", "meaning": "ジャズ"},
-    {"word": "playing", "meaning": "流れていた（音楽が）"},
-    {"word": "perfect", "meaning": "完璧な"},
-    {"word": "lunch", "meaning": "昼食"}
+    {
+      "word": "rainy",
+      "meaning": "雨の"
+    },
+    {
+      "word": "park",
+      "meaning": "公園"
+    },
+    {
+      "word": "inside",
+      "meaning": "中は"
+    },
+    {
+      "word": "cushion",
+      "meaning": "クッション"
+    },
+    {
+      "word": "chair",
+      "meaning": "椅子"
+    },
+    {
+      "word": "comforting",
+      "meaning": "ほっとする"
+    },
+    {
+      "word": "jazz",
+      "meaning": "ジャズ"
+    },
+    {
+      "word": "playing",
+      "meaning": "流れていた（音楽が）"
+    },
+    {
+      "word": "perfect",
+      "meaning": "完璧な"
+    },
+    {
+      "word": "lunch",
+      "meaning": "昼食"
+    }
   ],
   "quiz2": {
     "question": "このレストランに行った日の天気はどうでしたか？",
-    "options": ["晴れ", "曇り", "雨"],
+    "options": [
+      "晴れ",
+      "曇り",
+      "雨"
+    ],
     "correct": 2
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "シェアハウスで風邪をひいたハウスメイトにうどんを作ってあげる場面",
     "lines": [
-      {"speaker": "A", "text": "Hi, are you OK? You look sick."},
-      {"speaker": "B", "text": "I have a cold. My throat hurts."},
-      {"speaker": "A", "text": "Oh no. I will make udon for you."},
-      {"speaker": "B", "text": "What is udon?"},
-      {"speaker": "A", "text": "It is Japanese thick noodles in hot soup."},
-      {"speaker": "B", "text": "That sounds nice. Is it easy to eat?"},
-      {"speaker": "A", "text": "Yes! The noodles are soft and the soup is warm."},
-      {"speaker": "B", "text": "That is just what I need."},
-      {"speaker": "A", "text": "I will also put an egg in it. Eggs are good for you."},
-      {"speaker": "B", "text": "Thank you so much. You are very kind."},
-      {"speaker": "A", "text": "Here you go! Please eat it while it is hot."},
-      {"speaker": "B", "text": "Wow, this is so good. I feel better already!"}
+      {
+        "speaker": "A",
+        "text": "Hi, are you OK? You look sick.",
+        "translation": "大丈夫？具合悪そうだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a cold. My throat hurts.",
+        "translation": "風邪ひいちゃった。のどが痛いの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh no. I will make udon for you.",
+        "translation": "それは大変。うどんを作ってあげるね。"
+      },
+      {
+        "speaker": "B",
+        "text": "What is udon?",
+        "translation": "うどんって何？"
+      },
+      {
+        "speaker": "A",
+        "text": "It is Japanese thick noodles in hot soup.",
+        "translation": "日本の太い麺で、温かいスープに入っているの。"
+      },
+      {
+        "speaker": "B",
+        "text": "That sounds nice. Is it easy to eat?",
+        "translation": "よさそうだね。食べやすい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes! The noodles are soft and the soup is warm.",
+        "translation": "うん！麺はやわらかくてスープはあたたかいよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "That is just what I need.",
+        "translation": "ちょうど必要なものだ。"
+      },
+      {
+        "speaker": "A",
+        "text": "I will also put an egg in it. Eggs are good for you.",
+        "translation": "卵も入れるね。卵は体にいいよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you so much. You are very kind.",
+        "translation": "本当にありがとう。やさしいね。"
+      },
+      {
+        "speaker": "A",
+        "text": "Here you go! Please eat it while it is hot.",
+        "translation": "はい、どうぞ！あたたかいうちに食べてね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, this is so good. I feel better already!",
+        "translation": "わぁ、おいしい。もう元気になった気がする！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "sick", "meaning": "具合が悪い"},
-    {"word": "cold", "meaning": "風邪"},
-    {"word": "throat", "meaning": "のど"},
-    {"word": "hurt", "meaning": "痛い"},
-    {"word": "sound", "meaning": "〜のように聞こえる"},
-    {"word": "just", "meaning": "ちょうど"},
-    {"word": "need", "meaning": "必要とする"},
-    {"word": "kind", "meaning": "やさしい"},
-    {"word": "here you go", "meaning": "はい、どうぞ"},
-    {"word": "feel better", "meaning": "気分がよくなる"}
+    {
+      "word": "sick",
+      "meaning": "具合が悪い"
+    },
+    {
+      "word": "cold",
+      "meaning": "風邪"
+    },
+    {
+      "word": "throat",
+      "meaning": "のど"
+    },
+    {
+      "word": "hurt",
+      "meaning": "痛い"
+    },
+    {
+      "word": "sound",
+      "meaning": "〜のように聞こえる"
+    },
+    {
+      "word": "just",
+      "meaning": "ちょうど"
+    },
+    {
+      "word": "need",
+      "meaning": "必要とする"
+    },
+    {
+      "word": "kind",
+      "meaning": "やさしい"
+    },
+    {
+      "word": "here you go",
+      "meaning": "はい、どうぞ"
+    },
+    {
+      "word": "feel better",
+      "meaning": "気分がよくなる"
+    }
   ],
   "quiz3": {
     "question": "ハウスメイトはどこが痛いと言っていますか？",
-    "options": ["おなか", "のど", "頭"],
+    "options": [
+      "おなか",
+      "のど",
+      "頭"
+    ],
     "correct": 1
   },
   "try_it_hint": "「I will make ○○ for you.」の形を使って、誰かのために料理を作ると伝えてみましょう。例：I will make soup for you.",
-  "meta": {"day": 24, "en": "Udon", "ja": "うどん", "emoji": "\ud83c\udf5c"}
+  "meta": {
+    "day": 24,
+    "en": "Udon",
+    "ja": "うどん",
+    "emoji": "🍜"
+  }
 }

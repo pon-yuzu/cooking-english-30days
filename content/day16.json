@@ -10,46 +10,124 @@
       "**Add** the onion, potatoes, and carrot to the pot.",
       "**Pour** water, soy sauce, sugar, and mirin into the pot.",
       "**Cook** on low heat for 20 minutes until soft. **Enjoy!**"
+    ],
+    "intro_ja": "肉じゃがは日本のお肉とじゃがいもの煮物です。甘くてあたたかい、寒い日にぴったりの料理です。",
+    "steps_ja": [
+      "じゃがいもとにんじんを大きめに切ります。",
+      "玉ねぎを薄く切ります。",
+      "大きな鍋に油を熱し、牛肉を炒めます。",
+      "玉ねぎ、じゃがいも、にんじんを鍋に加えます。",
+      "水、しょうゆ、砂糖、みりんを鍋に入れます。",
+      "弱火で20分、やわらかくなるまで煮ます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "stew", "meaning": "シチュー、煮込み料理"},
-    {"word": "potato", "meaning": "じゃがいも"},
-    {"word": "thin", "meaning": "薄い"},
-    {"word": "slice", "meaning": "薄く切る"},
-    {"word": "pot", "meaning": "鍋"},
-    {"word": "pour", "meaning": "注ぐ"},
-    {"word": "low heat", "meaning": "弱火"},
-    {"word": "soft", "meaning": "やわらかい"},
-    {"word": "piece", "meaning": "一切れ、かけら"},
-    {"word": "warm", "meaning": "あたたかい"}
+    {
+      "word": "stew",
+      "meaning": "シチュー、煮込み料理"
+    },
+    {
+      "word": "potato",
+      "meaning": "じゃがいも"
+    },
+    {
+      "word": "thin",
+      "meaning": "薄い"
+    },
+    {
+      "word": "slice",
+      "meaning": "薄く切る"
+    },
+    {
+      "word": "pot",
+      "meaning": "鍋"
+    },
+    {
+      "word": "pour",
+      "meaning": "注ぐ"
+    },
+    {
+      "word": "low heat",
+      "meaning": "弱火"
+    },
+    {
+      "word": "soft",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "piece",
+      "meaning": "一切れ、かけら"
+    },
+    {
+      "word": "warm",
+      "meaning": "あたたかい"
+    }
   ],
   "quiz1": {
     "question": "レシピによると、煮込む時間はどのくらいですか？",
-    "options": ["10分", "20分", "30分"],
+    "options": [
+      "10分",
+      "20分",
+      "30分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Jasmine River Kitchen",
     "location": "Southbank, Brisbane",
     "stars": 5,
-    "content": "I went to Jasmine River Kitchen last Sunday. It was by the river in Southbank. The view of the water was so pretty. I sat at a table near the window. The nikujaga was very warm and sweet. The potatoes were so soft. It was like my mother's cooking. The restaurant was small and cozy. I saw pink flowers on each table. I want to go there again."
+    "content": "I went to Jasmine River Kitchen last Sunday. It was by the river in Southbank. The view of the water was so pretty. I sat at a table near the window. The nikujaga was very warm and sweet. The potatoes were so soft. It was like my mother's cooking. The restaurant was small and cozy. I saw pink flowers on each table. I want to go there again.",
+    "content_ja": "先週の日曜日にJasmine River Kitchenに行きました。サウスバンクの川沿いにありました。窓からの水の景色がとてもきれいでした。窓際のテーブルに座りました。肉じゃがはとてもあたたかくて甘かったです。じゃがいもがとてもやわらかくて、お母さんの料理みたいでした。小さくて居心地のいいレストランでした。テーブルにピンクの花がありました。また行きたいです。"
   },
   "review_vocab": [
-    {"word": "river", "meaning": "川"},
-    {"word": "view", "meaning": "景色、眺め"},
-    {"word": "pretty", "meaning": "きれいな"},
-    {"word": "window", "meaning": "窓"},
-    {"word": "cozy", "meaning": "居心地の良い"},
-    {"word": "flower", "meaning": "花"},
-    {"word": "table", "meaning": "テーブル"},
-    {"word": "again", "meaning": "また"},
-    {"word": "cooking", "meaning": "料理"},
-    {"word": "each", "meaning": "それぞれの"}
+    {
+      "word": "river",
+      "meaning": "川"
+    },
+    {
+      "word": "view",
+      "meaning": "景色、眺め"
+    },
+    {
+      "word": "pretty",
+      "meaning": "きれいな"
+    },
+    {
+      "word": "window",
+      "meaning": "窓"
+    },
+    {
+      "word": "cozy",
+      "meaning": "居心地の良い"
+    },
+    {
+      "word": "flower",
+      "meaning": "花"
+    },
+    {
+      "word": "table",
+      "meaning": "テーブル"
+    },
+    {
+      "word": "again",
+      "meaning": "また"
+    },
+    {
+      "word": "cooking",
+      "meaning": "料理"
+    },
+    {
+      "word": "each",
+      "meaning": "それぞれの"
+    }
   ],
   "quiz2": {
     "question": "このレストランはどこにありますか？",
-    "options": ["海のそば", "川のそば", "山のそば"],
+    "options": [
+      "海のそば",
+      "川のそば",
+      "山のそば"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "シェアハウスのキッチンで、肉じゃがを作っている時にハウスメイトが来た場面",
     "lines": [
-      {"speaker": "A", "text": "Hi! What are you cooking? It smells good!"},
-      {"speaker": "B", "text": "Hi! I am making nikujaga. It is a Japanese stew."},
-      {"speaker": "A", "text": "Nikujaga? What is in it?"},
-      {"speaker": "B", "text": "Meat, potatoes, onion, and carrot."},
-      {"speaker": "A", "text": "Oh, it looks warm and nice."},
-      {"speaker": "B", "text": "Yes! It is sweet and salty. Do you want some?"},
-      {"speaker": "A", "text": "Really? Can I try it?"},
-      {"speaker": "B", "text": "Of course! Please wait ten minutes. It is almost ready."},
-      {"speaker": "A", "text": "Thank you! I love trying new food."},
-      {"speaker": "B", "text": "I am happy. This is my mother's recipe."},
-      {"speaker": "A", "text": "That is so nice. Your mother is a good cook!"},
-      {"speaker": "B", "text": "Thank you! Please sit down. I will bring it to you."}
+      {
+        "speaker": "A",
+        "text": "Hi! What are you cooking? It smells good!",
+        "translation": "こんにちは！何を料理しているの？いい匂い！"
+      },
+      {
+        "speaker": "B",
+        "text": "Hi! I am making nikujaga. It is a Japanese stew.",
+        "translation": "こんにちは！肉じゃがを作っているよ。日本の煮物だよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Nikujaga? What is in it?",
+        "translation": "肉じゃが？中には何が入っているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Meat, potatoes, onion, and carrot.",
+        "translation": "お肉、じゃがいも、玉ねぎ、にんじんだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks warm and nice.",
+        "translation": "あたたかそうでいいね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! It is sweet and salty. Do you want some?",
+        "translation": "うん！甘くてしょっぱいの。食べる？"
+      },
+      {
+        "speaker": "A",
+        "text": "Really? Can I try it?",
+        "translation": "本当に？食べてみてもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! Please wait ten minutes. It is almost ready.",
+        "translation": "もちろん！あと10分待ってね。もうすぐできるよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you! I love trying new food.",
+        "translation": "ありがとう！新しい料理を試すの大好き。"
+      },
+      {
+        "speaker": "B",
+        "text": "I am happy. This is my mother's recipe.",
+        "translation": "うれしい。これ、お母さんのレシピなんだ。"
+      },
+      {
+        "speaker": "A",
+        "text": "That is so nice. Your mother is a good cook!",
+        "translation": "それは素敵だね。お母さん、料理上手なんだね！"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you! Please sit down. I will bring it to you.",
+        "translation": "ありがとう！座ってて。持っていくね。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "smell", "meaning": "におい、におう"},
-    {"word": "stew", "meaning": "シチュー、煮込み"},
-    {"word": "salty", "meaning": "塩辛い"},
-    {"word": "try", "meaning": "試す、食べてみる"},
-    {"word": "of course", "meaning": "もちろん"},
-    {"word": "almost", "meaning": "もうすぐ、ほとんど"},
-    {"word": "ready", "meaning": "準備ができた"},
-    {"word": "recipe", "meaning": "レシピ"},
-    {"word": "cook", "meaning": "料理する人、料理する"},
-    {"word": "bring", "meaning": "持ってくる"}
+    {
+      "word": "smell",
+      "meaning": "におい、におう"
+    },
+    {
+      "word": "stew",
+      "meaning": "シチュー、煮込み"
+    },
+    {
+      "word": "salty",
+      "meaning": "塩辛い"
+    },
+    {
+      "word": "try",
+      "meaning": "試す、食べてみる"
+    },
+    {
+      "word": "of course",
+      "meaning": "もちろん"
+    },
+    {
+      "word": "almost",
+      "meaning": "もうすぐ、ほとんど"
+    },
+    {
+      "word": "ready",
+      "meaning": "準備ができた"
+    },
+    {
+      "word": "recipe",
+      "meaning": "レシピ"
+    },
+    {
+      "word": "cook",
+      "meaning": "料理する人、料理する"
+    },
+    {
+      "word": "bring",
+      "meaning": "持ってくる"
+    }
   ],
   "quiz3": {
     "question": "会話で、Bさんは肉じゃがを誰のレシピで作っていますか？",
-    "options": ["友達のレシピ", "自分のレシピ", "お母さんのレシピ"],
+    "options": [
+      "友達のレシピ",
+      "自分のレシピ",
+      "お母さんのレシピ"
+    ],
     "correct": 2
   },
   "try_it_hint": "「I am making ___. It is a Japanese ___. Do you want some?」のように、自分が作っている料理を紹介してみましょう！",
-  "meta": {"day": 16, "en": "Nikujaga", "ja": "肉じゃが", "emoji": "🥔"}
+  "meta": {
+    "day": 16,
+    "en": "Nikujaga",
+    "ja": "肉じゃが",
+    "emoji": "🥔"
+  }
 }

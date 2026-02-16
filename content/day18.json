@@ -10,46 +10,124 @@
       "**Heat** oil in a deep pan to 170 degrees.",
       "**Fry** the pork for 4 minutes on each side until golden.",
       "**Cut** the tonkatsu into pieces and serve with cabbage. **Enjoy!**"
+    ],
+    "intro_ja": "とんかつは日本のトンカツです。外はカリカリで中はジューシーな豚カツレツです。",
+    "steps_ja": [
+      "豚肉を手で軽くたたいて平らにします。",
+      "豚肉の両面に塩とこしょうをふります。",
+      "小麦粉、卵、パン粉の順につけます。",
+      "油を深い鍋で170度に熱します。",
+      "豚肉を片面4分ずつ、きつね色になるまで揚げます。",
+      "とんかつを切り分けてキャベツと一緒に盛ります。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "pork", "meaning": "豚肉"},
-    {"word": "fried", "meaning": "揚げた"},
-    {"word": "crispy", "meaning": "サクサクの"},
-    {"word": "juicy", "meaning": "ジューシーな"},
-    {"word": "flour", "meaning": "小麦粉"},
-    {"word": "egg", "meaning": "卵"},
-    {"word": "breadcrumbs", "meaning": "パン粉"},
-    {"word": "fry", "meaning": "揚げる"},
-    {"word": "golden", "meaning": "きつね色の"},
-    {"word": "serve", "meaning": "盛り付ける"}
+    {
+      "word": "pork",
+      "meaning": "豚肉"
+    },
+    {
+      "word": "fried",
+      "meaning": "揚げた"
+    },
+    {
+      "word": "crispy",
+      "meaning": "サクサクの"
+    },
+    {
+      "word": "juicy",
+      "meaning": "ジューシーな"
+    },
+    {
+      "word": "flour",
+      "meaning": "小麦粉"
+    },
+    {
+      "word": "egg",
+      "meaning": "卵"
+    },
+    {
+      "word": "breadcrumbs",
+      "meaning": "パン粉"
+    },
+    {
+      "word": "fry",
+      "meaning": "揚げる"
+    },
+    {
+      "word": "golden",
+      "meaning": "きつね色の"
+    },
+    {
+      "word": "serve",
+      "meaning": "盛り付ける"
+    }
   ],
   "quiz1": {
     "question": "パン粉をつける前に、豚肉に何をつけますか？",
-    "options": ["塩と砂糖", "小麦粉と卵", "ソースとキャベツ"],
+    "options": [
+      "塩と砂糖",
+      "小麦粉と卵",
+      "ソースとキャベツ"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Mimosa Garden Dining",
     "location": "Newtown, Sydney",
     "stars": 5,
-    "content": "I found Mimosa Garden Dining on a quiet street in Newtown. There was a lovely garden patio with yellow mimosa flowers. I sat outside under a big tree. The air was fresh and nice. I ordered the tonkatsu set. The pork was very crispy and hot. The cabbage was fresh and green. The sauce was sweet and rich. The staff were friendly and kind. I loved this place very much."
+    "content": "I found Mimosa Garden Dining on a quiet street in Newtown. There was a lovely garden patio with yellow mimosa flowers. I sat outside under a big tree. The air was fresh and nice. I ordered the tonkatsu set. The pork was very crispy and hot. The cabbage was fresh and green. The sauce was sweet and rich. The staff were friendly and kind. I loved this place very much.",
+    "content_ja": "ニュータウンの静かな通りでMimosa Garden Diningを見つけました。素敵なガーデンパティオに黄色いミモザの花がありました。大きな木の下で外に座りました。空気はさわやかで気持ちよかったです。とんかつ定食を注文しました。豚肉はとてもカリカリであつあつでした。キャベツは新鮮で緑が鮮やかでした。ソースは甘くて濃厚でした。スタッフはフレンドリーで親切でした。このお店がとても気に入りました。"
   },
   "review_vocab": [
-    {"word": "garden", "meaning": "庭"},
-    {"word": "patio", "meaning": "テラス、中庭"},
-    {"word": "outside", "meaning": "外で"},
-    {"word": "air", "meaning": "空気"},
-    {"word": "fresh", "meaning": "新鮮な"},
-    {"word": "rich", "meaning": "濃厚な"},
-    {"word": "staff", "meaning": "スタッフ、店員"},
-    {"word": "friendly", "meaning": "フレンドリーな"},
-    {"word": "kind", "meaning": "親切な"},
-    {"word": "street", "meaning": "通り"}
+    {
+      "word": "garden",
+      "meaning": "庭"
+    },
+    {
+      "word": "patio",
+      "meaning": "テラス、中庭"
+    },
+    {
+      "word": "outside",
+      "meaning": "外で"
+    },
+    {
+      "word": "air",
+      "meaning": "空気"
+    },
+    {
+      "word": "fresh",
+      "meaning": "新鮮な"
+    },
+    {
+      "word": "rich",
+      "meaning": "濃厚な"
+    },
+    {
+      "word": "staff",
+      "meaning": "スタッフ、店員"
+    },
+    {
+      "word": "friendly",
+      "meaning": "フレンドリーな"
+    },
+    {
+      "word": "kind",
+      "meaning": "親切な"
+    },
+    {
+      "word": "street",
+      "meaning": "通り"
+    }
   ],
   "quiz2": {
     "question": "レビューによると、レストランの庭にはどんな花がありましたか？",
-    "options": ["ジャスミン", "バラ", "ミモザ"],
+    "options": [
+      "ジャスミン",
+      "バラ",
+      "ミモザ"
+    ],
     "correct": 2
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "オーストラリアのレストランで、とんかつを注文する場面",
     "lines": [
-      {"speaker": "A", "text": "Hello! Welcome to our restaurant. Here is the menu."},
-      {"speaker": "B", "text": "Thank you. What do you recommend?"},
-      {"speaker": "A", "text": "Our tonkatsu is very popular today."},
-      {"speaker": "B", "text": "Oh, I love tonkatsu! What comes with it?"},
-      {"speaker": "A", "text": "It comes with rice, cabbage, and miso soup."},
-      {"speaker": "B", "text": "That sounds great. I will have the tonkatsu set, please."},
-      {"speaker": "A", "text": "Sure. Would you like something to drink?"},
-      {"speaker": "B", "text": "Yes, can I have green tea, please?"},
-      {"speaker": "A", "text": "Of course. Hot or cold?"},
-      {"speaker": "B", "text": "Hot, please."},
-      {"speaker": "A", "text": "OK. Your food will be ready in 10 minutes."},
-      {"speaker": "B", "text": "Thank you very much!"}
+      {
+        "speaker": "A",
+        "text": "Hello! Welcome to our restaurant. Here is the menu.",
+        "translation": "いらっしゃいませ！メニューをどうぞ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you. What do you recommend?",
+        "translation": "ありがとう。おすすめは何ですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "Our tonkatsu is very popular today.",
+        "translation": "今日はとんかつがとても人気ですよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, I love tonkatsu! What comes with it?",
+        "translation": "あ、とんかつ大好き！何がついてくるの？"
+      },
+      {
+        "speaker": "A",
+        "text": "It comes with rice, cabbage, and miso soup.",
+        "translation": "ご飯、キャベツ、味噌汁がついてきます。"
+      },
+      {
+        "speaker": "B",
+        "text": "That sounds great. I will have the tonkatsu set, please.",
+        "translation": "いいですね。とんかつ定食をお願いします。"
+      },
+      {
+        "speaker": "A",
+        "text": "Sure. Would you like something to drink?",
+        "translation": "かしこまりました。お飲み物はいかがですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, can I have green tea, please?",
+        "translation": "はい、緑茶をお願いします。"
+      },
+      {
+        "speaker": "A",
+        "text": "Of course. Hot or cold?",
+        "translation": "温かいのと冷たいの、どちらがいいですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "Hot, please.",
+        "translation": "温かいのをお願いします。"
+      },
+      {
+        "speaker": "A",
+        "text": "OK. Your food will be ready in 10 minutes.",
+        "translation": "わかりました。10分ほどでお料理をお持ちします。"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you very much!",
+        "translation": "ありがとうございます！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "welcome", "meaning": "ようこそ"},
-    {"word": "menu", "meaning": "メニュー"},
-    {"word": "recommend", "meaning": "おすすめする"},
-    {"word": "popular", "meaning": "人気のある"},
-    {"word": "come with", "meaning": "〜がついてくる"},
-    {"word": "miso soup", "meaning": "味噌汁"},
-    {"word": "drink", "meaning": "飲み物、飲む"},
-    {"word": "green tea", "meaning": "緑茶"},
-    {"word": "hot", "meaning": "熱い、暑い"},
-    {"word": "cold", "meaning": "冷たい、寒い"}
+    {
+      "word": "welcome",
+      "meaning": "ようこそ"
+    },
+    {
+      "word": "menu",
+      "meaning": "メニュー"
+    },
+    {
+      "word": "recommend",
+      "meaning": "おすすめする"
+    },
+    {
+      "word": "popular",
+      "meaning": "人気のある"
+    },
+    {
+      "word": "come with",
+      "meaning": "〜がついてくる"
+    },
+    {
+      "word": "miso soup",
+      "meaning": "味噌汁"
+    },
+    {
+      "word": "drink",
+      "meaning": "飲み物、飲む"
+    },
+    {
+      "word": "green tea",
+      "meaning": "緑茶"
+    },
+    {
+      "word": "hot",
+      "meaning": "熱い、暑い"
+    },
+    {
+      "word": "cold",
+      "meaning": "冷たい、寒い"
+    }
   ],
   "quiz3": {
     "question": "会話で、Bさんは飲み物に何を頼みましたか？",
-    "options": ["冷たい緑茶", "熱い緑茶", "コーヒー"],
+    "options": [
+      "冷たい緑茶",
+      "熱い緑茶",
+      "コーヒー"
+    ],
     "correct": 1
   },
   "try_it_hint": "「I will have the ___, please. Can I have ___, please?」のように、レストランで注文する練習をしてみましょう！",
-  "meta": {"day": 18, "en": "Tonkatsu", "ja": "とんかつ", "emoji": "🐷"}
+  "meta": {
+    "day": 18,
+    "en": "Tonkatsu",
+    "ja": "とんかつ",
+    "emoji": "🐷"
+  }
 }

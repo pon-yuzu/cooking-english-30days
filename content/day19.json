@@ -10,46 +10,124 @@
       "**Mix** soy sauce, sugar, mirin, and sake in a small pot and boil.",
       "**Grill** the sticks on a hot pan for 3 minutes on each side.",
       "**Brush** the sauce on the chicken and grill one more minute. **Enjoy!**"
+    ],
+    "intro_ja": "焼き鳥は日本のグリルチキンの串焼きです。たれは甘くてしょっぱいです。",
+    "steps_ja": [
+      "鶏肉を小さく切ります。",
+      "長ネギを短く切ります。",
+      "鶏肉とネギを竹串に刺します。",
+      "しょうゆ、砂糖、みりん、酒を小さい鍋で混ぜて沸かします。",
+      "串をアツいフライパンで片面3分ずつ焼きます。",
+      "たれをはけで塗ってもう1分焼きます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "chicken", "meaning": "鶏肉"},
-    {"word": "grill", "meaning": "焼く"},
-    {"word": "stick", "meaning": "串、棒"},
-    {"word": "thigh", "meaning": "もも肉"},
-    {"word": "green onion", "meaning": "長ねぎ"},
-    {"word": "boil", "meaning": "沸騰させる"},
-    {"word": "brush", "meaning": "塗る"},
-    {"word": "side", "meaning": "面、側"},
-    {"word": "short", "meaning": "短い"},
-    {"word": "bamboo", "meaning": "竹"}
+    {
+      "word": "chicken",
+      "meaning": "鶏肉"
+    },
+    {
+      "word": "grill",
+      "meaning": "焼く"
+    },
+    {
+      "word": "stick",
+      "meaning": "串、棒"
+    },
+    {
+      "word": "thigh",
+      "meaning": "もも肉"
+    },
+    {
+      "word": "green onion",
+      "meaning": "長ねぎ"
+    },
+    {
+      "word": "boil",
+      "meaning": "沸騰させる"
+    },
+    {
+      "word": "brush",
+      "meaning": "塗る"
+    },
+    {
+      "word": "side",
+      "meaning": "面、側"
+    },
+    {
+      "word": "short",
+      "meaning": "短い"
+    },
+    {
+      "word": "bamboo",
+      "meaning": "竹"
+    }
   ],
   "quiz1": {
     "question": "レシピによると、串には鶏肉と何をさしますか？",
-    "options": ["にんじん", "長ねぎ", "たまねぎ"],
+    "options": [
+      "にんじん",
+      "長ねぎ",
+      "たまねぎ"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Hilltop Lantern",
     "location": "Surry Hills, Sydney",
     "stars": 5,
-    "content": "I went to Hilltop Lantern with my friends on Friday night. It was on a small hill in Surry Hills. We could see the city lights from the terrace. The night was cool and nice. We ordered many yakitori sticks. The chicken was juicy and the sauce was perfect. We also had cold drinks. The lanterns on the terrace were so pretty. They had warm yellow light. We talked and laughed all night. It was a very fun time."
+    "content": "I went to Hilltop Lantern with my friends on Friday night. It was on a small hill in Surry Hills. We could see the city lights from the terrace. The night was cool and nice. We ordered many yakitori sticks. The chicken was juicy and the sauce was perfect. We also had cold drinks. The lanterns on the terrace were so pretty. They had warm yellow light. We talked and laughed all night. It was a very fun time.",
+    "content_ja": "金曜日の夜に友達とHilltop Lanternに行きました。サリーヒルズの小さな丘の上にありました。テラスから街の明かりが見えました。夜は涼しくて気持ちよかったです。焼き鳥をたくさん注文しました。鶏肉はジューシーでたれは最高でした。冷たい飲み物も飲みました。テラスのランタンがとてもきれいでした。あたたかい黄色い光でした。夜中ずっとおしゃべりして笑いました。とても楽しい時間でした。"
   },
   "review_vocab": [
-    {"word": "hill", "meaning": "丘"},
-    {"word": "lantern", "meaning": "ランタン、灯り"},
-    {"word": "city lights", "meaning": "街の灯り"},
-    {"word": "terrace", "meaning": "テラス"},
-    {"word": "cool", "meaning": "涼しい"},
-    {"word": "perfect", "meaning": "完璧な"},
-    {"word": "light", "meaning": "光、灯り"},
-    {"word": "laugh", "meaning": "笑う"},
-    {"word": "fun", "meaning": "楽しい"},
-    {"word": "night", "meaning": "夜"}
+    {
+      "word": "hill",
+      "meaning": "丘"
+    },
+    {
+      "word": "lantern",
+      "meaning": "ランタン、灯り"
+    },
+    {
+      "word": "city lights",
+      "meaning": "街の灯り"
+    },
+    {
+      "word": "terrace",
+      "meaning": "テラス"
+    },
+    {
+      "word": "cool",
+      "meaning": "涼しい"
+    },
+    {
+      "word": "perfect",
+      "meaning": "完璧な"
+    },
+    {
+      "word": "light",
+      "meaning": "光、灯り"
+    },
+    {
+      "word": "laugh",
+      "meaning": "笑う"
+    },
+    {
+      "word": "fun",
+      "meaning": "楽しい"
+    },
+    {
+      "word": "night",
+      "meaning": "夜"
+    }
   ],
   "quiz2": {
     "question": "レビューによると、テラスから何が見えましたか？",
-    "options": ["街の灯り", "海", "山"],
+    "options": [
+      "街の灯り",
+      "海",
+      "山"
+    ],
     "correct": 0
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "オーストラリアの公園でBBQをしている場面で、焼き鳥を紹介する",
     "lines": [
-      {"speaker": "A", "text": "What are those sticks? They look interesting!"},
-      {"speaker": "B", "text": "These are yakitori. It is Japanese grilled chicken."},
-      {"speaker": "A", "text": "Oh nice! Did you make the sauce too?"},
-      {"speaker": "B", "text": "Yes! I mixed soy sauce, sugar, and mirin."},
-      {"speaker": "A", "text": "It smells amazing. Can I try one?"},
-      {"speaker": "B", "text": "Yes, please! Be careful, it is very hot."},
-      {"speaker": "A", "text": "Mmm! This is so good! The sauce is sweet."},
-      {"speaker": "B", "text": "Thank you! In Japan, we eat yakitori at small shops."},
-      {"speaker": "A", "text": "Really? I want to go to Japan someday."},
-      {"speaker": "B", "text": "You should! Japan has many good food shops."},
-      {"speaker": "A", "text": "Can you make more yakitori? Everyone wants some!"},
-      {"speaker": "B", "text": "Of course! I am happy everyone likes it."}
+      {
+        "speaker": "A",
+        "text": "What are those sticks? They look interesting!",
+        "translation": "その串は何？面白そう！"
+      },
+      {
+        "speaker": "B",
+        "text": "These are yakitori. It is Japanese grilled chicken.",
+        "translation": "焼き鳥だよ。日本のグリルチキンなの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh nice! Did you make the sauce too?",
+        "translation": "いいね！たれも自分で作ったの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! I mixed soy sauce, sugar, and mirin.",
+        "translation": "うん！しょうゆ、砂糖、みりんを混ぜたの。"
+      },
+      {
+        "speaker": "A",
+        "text": "It smells amazing. Can I try one?",
+        "translation": "すごくいい匂い。ひとつ食べてもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please! Be careful, it is very hot.",
+        "translation": "どうぞ！気をつけてね、すごくアツいよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Mmm! This is so good! The sauce is sweet.",
+        "translation": "うーん！おいしい！たれが甘いね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you! In Japan, we eat yakitori at small shops.",
+        "translation": "ありがとう！日本では小さなお店で焼き鳥を食べるんだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Really? I want to go to Japan someday.",
+        "translation": "へぇ、いつか日本に行きたいな。"
+      },
+      {
+        "speaker": "B",
+        "text": "You should! Japan has many good food shops.",
+        "translation": "行くべきだよ！日本にはおいしいお店がたくさんあるよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Can you make more yakitori? Everyone wants some!",
+        "translation": "もっと焼き鳥作れる？みんな欲しがってるよ！"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! I am happy everyone likes it.",
+        "translation": "もちろん！みんなが気に入ってくれてうれしい。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "interesting", "meaning": "面白い、興味深い"},
-    {"word": "grilled", "meaning": "焼いた"},
-    {"word": "amazing", "meaning": "すごい"},
-    {"word": "careful", "meaning": "気をつけて"},
-    {"word": "shop", "meaning": "お店"},
-    {"word": "someday", "meaning": "いつか"},
-    {"word": "should", "meaning": "〜すべきだ"},
-    {"word": "everyone", "meaning": "みんな"},
-    {"word": "more", "meaning": "もっと"},
-    {"word": "happy", "meaning": "うれしい"}
+    {
+      "word": "interesting",
+      "meaning": "面白い、興味深い"
+    },
+    {
+      "word": "grilled",
+      "meaning": "焼いた"
+    },
+    {
+      "word": "amazing",
+      "meaning": "すごい"
+    },
+    {
+      "word": "careful",
+      "meaning": "気をつけて"
+    },
+    {
+      "word": "shop",
+      "meaning": "お店"
+    },
+    {
+      "word": "someday",
+      "meaning": "いつか"
+    },
+    {
+      "word": "should",
+      "meaning": "〜すべきだ"
+    },
+    {
+      "word": "everyone",
+      "meaning": "みんな"
+    },
+    {
+      "word": "more",
+      "meaning": "もっと"
+    },
+    {
+      "word": "happy",
+      "meaning": "うれしい"
+    }
   ],
   "quiz3": {
     "question": "会話で、Aさんはいつか何をしたいと言っていますか？",
-    "options": ["オーストラリアに行きたい", "日本に行きたい", "料理を習いたい"],
+    "options": [
+      "オーストラリアに行きたい",
+      "日本に行きたい",
+      "料理を習いたい"
+    ],
     "correct": 1
   },
   "try_it_hint": "「These are ___. It is Japanese ___. Can I try one?」のように、BBQで日本料理を紹介してみましょう！",
-  "meta": {"day": 19, "en": "Yakitori", "ja": "焼き鳥", "emoji": "🍢"}
+  "meta": {
+    "day": 19,
+    "en": "Yakitori",
+    "ja": "焼き鳥",
+    "emoji": "🍢"
+  }
 }

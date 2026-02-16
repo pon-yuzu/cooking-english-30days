@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>カツ丼はとんかつと卵の丼です。日本でとても人気のある、ほっとする料理です。</p>
+          <p>1. ご飯を炊いて丼に盛ります。</p>
+          <p>2. 玉ねぎを薄く切ります。</p>
+          <p>3. しょうゆ、みりん、砂糖、だし汁を小さいフライパンで混ぜます。</p>
+          <p>4. 玉ねぎを加えて2分煮ます。</p>
+          <p>5. とんかつを玉ねぎの上にのせ、溶き卵をかけます。</p>
+          <p>6. ふたをして1分煮たら、全部をご飯の上にのせます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Harbour View Donburi House last Saturday. It was in Barangaroo, near the water. I could see the Harbour Bridge from my seat. The restaurant was small and cozy. I ordered katsudon and it was so good. The pork was crispy and the egg was soft. There were pretty yellow flowers on each table. I felt warm and happy.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週の土曜日にHarbour View Donburi Houseに行きました。バランガルーの水辺にありました。席からハーバーブリッジが見えました。小さくて居心地のいいレストランでした。カツ丼を注文したらとてもおいしかったです。豚肉はカリカリで卵はやわらかかったです。テーブルにきれいな黄色い花がありました。あたたかくて幸せな気持ちになりました。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 日本食レストランでアルバイト中、お客さんにカツ丼を説明する場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Excuse me, what is katsudon?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Excuse me, what is katsudon?</span>
+            <div class="dialogue-translation">すみません、カツ丼って何ですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">It is a rice bowl with a fried pork cutlet and egg on top.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is a rice bowl with a fried pork cutlet and egg on top.</span>
+            <div class="dialogue-translation">トンカツと卵をご飯にのせた丼ですよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">That sounds good! Is it big?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That sounds good! Is it big?</span>
+            <div class="dialogue-translation">おいしそう！大きいですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, it is quite big. Most people feel full after eating it.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, it is quite big. Most people feel full after eating it.</span>
+            <div class="dialogue-translation">はい、かなり大きいです。ほとんどの人がお腹いっぱいになりますよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Is the pork crispy?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Is the pork crispy?</span>
+            <div class="dialogue-translation">豚肉はカリカリですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, it is very crispy. We cook it fresh every time.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, it is very crispy. We cook it fresh every time.</span>
+            <div class="dialogue-translation">はい、とてもカリカリです。毎回揚げたてで作っています。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Great! I will have one katsudon, please.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Great! I will have one katsudon, please.</span>
+            <div class="dialogue-translation">いいですね！カツ丼をひとつお願いします。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Sure. Would you like a drink too?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Sure. Would you like a drink too?</span>
+            <div class="dialogue-translation">かしこまりました。お飲み物もいかがですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Yes, can I have green tea?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, can I have green tea?</span>
+            <div class="dialogue-translation">はい、緑茶をお願いします。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Of course. One katsudon and one green tea.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Of course. One katsudon and one green tea.</span>
+            <div class="dialogue-translation">カツ丼1つと緑茶1つですね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">How long will it take?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">How long will it take?</span>
+            <div class="dialogue-translation">どのくらいかかりますか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">About ten minutes. Please wait here.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">About ten minutes. Please wait here.</span>
+            <div class="dialogue-translation">10分ほどです。こちらでお待ちください。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 1,
       quiz3: 2
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

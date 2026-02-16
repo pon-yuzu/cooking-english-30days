@@ -10,46 +10,124 @@
       "**Pour** the matcha mix into the pot and stir again.",
       "**Put** the mix into small cups or glasses.",
       "**Cool** them in the fridge for three hours, then add cream on top. **Enjoy!**"
+    ],
+    "intro_ja": "抹茶プリンは甘くてクリーミーな日本のデザートです。きれいな緑色でやさしいお茶の味がします。",
+    "steps_ja": [
+      "抹茶パウダーと少しのお湯をカップでなめらかになるまで混ぜます。",
+      "鍋で牛乳と砂糖を温めます。沸騰させないでください。",
+      "ゼラチンパウダーを温かい牛乳に加えてよく混ぜます。",
+      "抹茶を鍋に入れてまた混ぜます。",
+      "小さなカップやグラスに注ぎます。",
+      "冷蔵庫で3時間冷やして、クリームをのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "dessert", "meaning": "デザート"},
-    {"word": "creamy", "meaning": "クリーミーな"},
-    {"word": "gentle", "meaning": "やさしい・穏やかな"},
-    {"word": "powder", "meaning": "粉"},
-    {"word": "smooth", "meaning": "なめらかな"},
-    {"word": "boil", "meaning": "沸騰させる"},
-    {"word": "gelatin", "meaning": "ゼラチン"},
-    {"word": "fridge", "meaning": "冷蔵庫"},
-    {"word": "vanilla", "meaning": "バニラ"},
-    {"word": "cream", "meaning": "クリーム"}
+    {
+      "word": "dessert",
+      "meaning": "デザート"
+    },
+    {
+      "word": "creamy",
+      "meaning": "クリーミーな"
+    },
+    {
+      "word": "gentle",
+      "meaning": "やさしい・穏やかな"
+    },
+    {
+      "word": "powder",
+      "meaning": "粉"
+    },
+    {
+      "word": "smooth",
+      "meaning": "なめらかな"
+    },
+    {
+      "word": "boil",
+      "meaning": "沸騰させる"
+    },
+    {
+      "word": "gelatin",
+      "meaning": "ゼラチン"
+    },
+    {
+      "word": "fridge",
+      "meaning": "冷蔵庫"
+    },
+    {
+      "word": "vanilla",
+      "meaning": "バニラ"
+    },
+    {
+      "word": "cream",
+      "meaning": "クリーム"
+    }
   ],
   "quiz1": {
     "question": "抹茶プリンはどのくらい冷蔵庫で冷やしますか？",
-    "options": ["1時間", "2時間", "3時間"],
+    "options": [
+      "1時間",
+      "2時間",
+      "3時間"
+    ],
     "correct": 2
   },
   "review": {
     "restaurant": "Jasmine & Mimosa Dessert Cafe",
     "location": "Mosman, Sydney",
     "stars": 5,
-    "content": "I visited Jasmine & Mimosa Dessert Cafe in Mosman to celebrate my last day of the 30-day cooking challenge. The cafe was on a hill and I could see the harbour and the blue ocean. The walls were painted in soft pink and lavender. There were jasmine and mimosa flowers by the window. I ordered matcha pudding and it was the best dessert I ever had. It was smooth and sweet. I felt so happy and proud of myself. This was a perfect ending to my 30-day journey."
+    "content": "I visited Jasmine & Mimosa Dessert Cafe in Mosman to celebrate my last day of the 30-day cooking challenge. The cafe was on a hill and I could see the harbour and the blue ocean. The walls were painted in soft pink and lavender. There were jasmine and mimosa flowers by the window. I ordered matcha pudding and it was the best dessert I ever had. It was smooth and sweet. I felt so happy and proud of myself. This was a perfect ending to my 30-day journey.",
+    "content_ja": "30日間クッキングチャレンジの最終日を祝うためにモスマンのJasmine & Mimosa Dessert Cafeに行きました。丘の上にあるカフェでハーバーと青い海が見えました。壁はやさしいピンクとラベンダーに塗られていました。窓辺にジャスミンとミモザの花がありました。抹茶プリンを注文したら今まで食べた中で一番おいしいデザートでした。なめらかで甘かったです。とても幸せで、自分を誇りに思いました。30日間の旅の完璧な締めくくりでした。"
   },
   "review_vocab": [
-    {"word": "celebrate", "meaning": "お祝いする"},
-    {"word": "challenge", "meaning": "チャレンジ・挑戦"},
-    {"word": "hill", "meaning": "丘"},
-    {"word": "painted", "meaning": "塗られた"},
-    {"word": "window", "meaning": "窓"},
-    {"word": "best", "meaning": "最高の"},
-    {"word": "proud", "meaning": "誇りに思う"},
-    {"word": "perfect", "meaning": "完璧な"},
-    {"word": "ending", "meaning": "終わり・結末"},
-    {"word": "journey", "meaning": "旅・道のり"}
+    {
+      "word": "celebrate",
+      "meaning": "お祝いする"
+    },
+    {
+      "word": "challenge",
+      "meaning": "チャレンジ・挑戦"
+    },
+    {
+      "word": "hill",
+      "meaning": "丘"
+    },
+    {
+      "word": "painted",
+      "meaning": "塗られた"
+    },
+    {
+      "word": "window",
+      "meaning": "窓"
+    },
+    {
+      "word": "best",
+      "meaning": "最高の"
+    },
+    {
+      "word": "proud",
+      "meaning": "誇りに思う"
+    },
+    {
+      "word": "perfect",
+      "meaning": "完璧な"
+    },
+    {
+      "word": "ending",
+      "meaning": "終わり・結末"
+    },
+    {
+      "word": "journey",
+      "meaning": "旅・道のり"
+    }
   ],
   "quiz2": {
     "question": "レビューの人はなぜこのカフェを訪れましたか？",
-    "options": ["友達の誕生日だから", "30日チャレンジの最終日を祝うため", "新しいカフェだから"],
+    "options": [
+      "友達の誕生日だから",
+      "30日チャレンジの最終日を祝うため",
+      "新しいカフェだから"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,39 +137,134 @@
   "conversation": {
     "scene": "30日チャレンジの最終日、シェアハウスの友達と一緒にお祝いパーティーをする場面",
     "lines": [
-      {"speaker": "A", "text": "Today is my last day of the 30-day cooking challenge!"},
-      {"speaker": "B", "text": "Congratulations! That is amazing. What will you make today?"},
-      {"speaker": "A", "text": "Matcha pudding! It is a Japanese green tea dessert."},
-      {"speaker": "B", "text": "I love matcha! Can I watch you make it?"},
-      {"speaker": "A", "text": "Of course! First, I mix matcha and hot water."},
-      {"speaker": "B", "text": "The color is so beautiful. It is bright green."},
-      {"speaker": "A", "text": "Thank you. Now I add it to the warm milk."},
-      {"speaker": "B", "text": "When can we eat it?"},
-      {"speaker": "A", "text": "We need to wait three hours. It goes in the fridge."},
-      {"speaker": "B", "text": "OK! I will wait. You learned so many recipes in 30 days."},
-      {"speaker": "A", "text": "Yes! I learned new English words too. I feel more confident now."},
-      {"speaker": "B", "text": "You should be proud. Your English is much better now!"},
-      {"speaker": "A", "text": "Thank you, that means a lot. Let us enjoy the pudding together!"},
-      {"speaker": "B", "text": "Cheers to 30 days! You did a great job!"}
+      {
+        "speaker": "A",
+        "text": "Today is my last day of the 30-day cooking challenge!",
+        "translation": "今日で30日間クッキングチャレンジの最終日だよ！"
+      },
+      {
+        "speaker": "B",
+        "text": "Congratulations! That is amazing. What will you make today?",
+        "translation": "おめでとう！すごいね。今日は何を作るの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Matcha pudding! It is a Japanese green tea dessert.",
+        "translation": "抹茶プリン！日本の緑茶デザートだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "I love matcha! Can I watch you make it?",
+        "translation": "抹茶大好き！作るところ見てもいい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Of course! First, I mix matcha and hot water.",
+        "translation": "もちろん！まず抹茶とお湯を混ぜるよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "The color is so beautiful. It is bright green.",
+        "translation": "色がきれいだね。鮮やかな緑！"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you. Now I add it to the warm milk.",
+        "translation": "ありがとう。次は温かい牛乳に加えるよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "When can we eat it?",
+        "translation": "いつ食べられるの？"
+      },
+      {
+        "speaker": "A",
+        "text": "We need to wait three hours. It goes in the fridge.",
+        "translation": "3時間待たないと。冷蔵庫に入れるの。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK! I will wait. You learned so many recipes in 30 days.",
+        "translation": "わかった！待つよ。30日間でたくさんのレシピ覚えたんだね。"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes! I learned new English words too. I feel more confident now.",
+        "translation": "うん！新しい英単語も覚えたよ。自信がついた。"
+      },
+      {
+        "speaker": "B",
+        "text": "You should be proud. Your English is much better now!",
+        "translation": "誇りに思っていいよ。英語がすごく上手になったよ！"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you, that means a lot. Let us enjoy the pudding together!",
+        "translation": "ありがとう、すごくうれしい。一緒にプリン食べよう！"
+      },
+      {
+        "speaker": "B",
+        "text": "Cheers to 30 days! You did a great job!",
+        "translation": "30日間に乾杯！よく頑張ったね！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "congratulations", "meaning": "おめでとう"},
-    {"word": "amazing", "meaning": "すごい"},
-    {"word": "bright", "meaning": "鮮やかな・明るい"},
-    {"word": "learned", "meaning": "学んだ（learnの過去形）"},
-    {"word": "confident", "meaning": "自信がある"},
-    {"word": "proud", "meaning": "誇りに思う"},
-    {"word": "means a lot", "meaning": "とてもうれしい（直訳：大きな意味がある）"},
-    {"word": "cheers", "meaning": "乾杯"},
-    {"word": "great job", "meaning": "よくがんばった"},
-    {"word": "together", "meaning": "一緒に"}
+    {
+      "word": "congratulations",
+      "meaning": "おめでとう"
+    },
+    {
+      "word": "amazing",
+      "meaning": "すごい"
+    },
+    {
+      "word": "bright",
+      "meaning": "鮮やかな・明るい"
+    },
+    {
+      "word": "learned",
+      "meaning": "学んだ（learnの過去形）"
+    },
+    {
+      "word": "confident",
+      "meaning": "自信がある"
+    },
+    {
+      "word": "proud",
+      "meaning": "誇りに思う"
+    },
+    {
+      "word": "means a lot",
+      "meaning": "とてもうれしい（直訳：大きな意味がある）"
+    },
+    {
+      "word": "cheers",
+      "meaning": "乾杯"
+    },
+    {
+      "word": "great job",
+      "meaning": "よくがんばった"
+    },
+    {
+      "word": "together",
+      "meaning": "一緒に"
+    }
   ],
   "quiz3": {
     "question": "会話の中で、30日間のチャレンジを通じて何を学んだと言っていましたか？",
-    "options": ["新しいレシピだけ", "新しいレシピと英単語", "英語の歌"],
+    "options": [
+      "新しいレシピだけ",
+      "新しいレシピと英単語",
+      "英語の歌"
+    ],
     "correct": 1
   },
   "try_it_hint": "「30日間がんばりました！」という気持ちを英語で書いてみましょう。例：I learned 30 recipes in 30 days. I feel more confident now. I am proud of myself!",
-  "meta": {"day": 30, "en": "Matcha Pudding", "ja": "抹茶プリン", "emoji": "\ud83c\udf75"}
+  "meta": {
+    "day": 30,
+    "en": "Matcha Pudding",
+    "ja": "抹茶プリン",
+    "emoji": "🍵"
+  }
 }

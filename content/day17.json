@@ -10,46 +10,124 @@
       "**Add** the onion and ginger and cook for 3 minutes.",
       "**Put** the beef in the pan and cook for 5 minutes.",
       "**Put** the beef and sauce on the rice in a bowl. **Enjoy!**"
+    ],
+    "intro_ja": "牛丼は日本の牛肉丼です。薄切りの牛肉と玉ねぎを甘いたれで煮てご飯にのせます。",
+    "steps_ja": [
+      "炊飯器でご飯を炊きます。",
+      "玉ねぎを薄く切ります。",
+      "しょうゆ、砂糖、みりん、水をフライパンで混ぜます。",
+      "玉ねぎとしょうがを加えて3分煮ます。",
+      "牛肉を入れて5分煮ます。",
+      "ご飯を盛った丼に牛肉とたれをのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "beef", "meaning": "牛肉"},
-    {"word": "bowl", "meaning": "丼、ボウル"},
-    {"word": "sauce", "meaning": "たれ、ソース"},
-    {"word": "rice", "meaning": "ごはん"},
-    {"word": "ginger", "meaning": "しょうが"},
-    {"word": "mix", "meaning": "混ぜる"},
-    {"word": "pan", "meaning": "フライパン"},
-    {"word": "cook", "meaning": "料理する、煮る"},
-    {"word": "minute", "meaning": "分"},
-    {"word": "rice cooker", "meaning": "炊飯器"}
+    {
+      "word": "beef",
+      "meaning": "牛肉"
+    },
+    {
+      "word": "bowl",
+      "meaning": "丼、ボウル"
+    },
+    {
+      "word": "sauce",
+      "meaning": "たれ、ソース"
+    },
+    {
+      "word": "rice",
+      "meaning": "ごはん"
+    },
+    {
+      "word": "ginger",
+      "meaning": "しょうが"
+    },
+    {
+      "word": "mix",
+      "meaning": "混ぜる"
+    },
+    {
+      "word": "pan",
+      "meaning": "フライパン"
+    },
+    {
+      "word": "cook",
+      "meaning": "料理する、煮る"
+    },
+    {
+      "word": "minute",
+      "meaning": "分"
+    },
+    {
+      "word": "rice cooker",
+      "meaning": "炊飯器"
+    }
   ],
   "quiz1": {
     "question": "レシピによると、牛肉はどのくらい煮ますか？",
-    "options": ["3分", "5分", "10分"],
+    "options": [
+      "3分",
+      "5分",
+      "10分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Sunset Bowl Cafe",
     "location": "Circular Quay, Sydney",
     "stars": 5,
-    "content": "I visited Sunset Bowl Cafe on Saturday evening. It was near the Sydney Opera House. I could see the sunset over the harbour. The sky was orange and pink. It was so beautiful. I ordered the gyudon. The beef was tender and the sauce was sweet. The rice was hot and fluffy. The cafe was small and quiet. I felt very relaxed there. It was a wonderful evening."
+    "content": "I visited Sunset Bowl Cafe on Saturday evening. It was near the Sydney Opera House. I could see the sunset over the harbour. The sky was orange and pink. It was so beautiful. I ordered the gyudon. The beef was tender and the sauce was sweet. The rice was hot and fluffy. The cafe was small and quiet. I felt very relaxed there. It was a wonderful evening.",
+    "content_ja": "土曜日の夕方にSunset Bowl Cafeに行きました。シドニーのオペラハウスの近くにありました。ハーバー越しの夕日が見えました。空がオレンジとピンクになりました。とてもきれいでした。牛丼を注文しました。牛肉はやわらかくてたれは甘かったです。ご飯はあつあつでふっくらしていました。カフェは小さくて静かでした。とてもリラックスしました。素敵な夕べでした。"
   },
   "review_vocab": [
-    {"word": "sunset", "meaning": "夕焼け、日の入り"},
-    {"word": "harbour", "meaning": "港"},
-    {"word": "sky", "meaning": "空"},
-    {"word": "beautiful", "meaning": "美しい"},
-    {"word": "tender", "meaning": "やわらかい"},
-    {"word": "fluffy", "meaning": "ふわふわの"},
-    {"word": "quiet", "meaning": "静かな"},
-    {"word": "relaxed", "meaning": "リラックスした"},
-    {"word": "wonderful", "meaning": "すばらしい"},
-    {"word": "evening", "meaning": "夕方、夜"}
+    {
+      "word": "sunset",
+      "meaning": "夕焼け、日の入り"
+    },
+    {
+      "word": "harbour",
+      "meaning": "港"
+    },
+    {
+      "word": "sky",
+      "meaning": "空"
+    },
+    {
+      "word": "beautiful",
+      "meaning": "美しい"
+    },
+    {
+      "word": "tender",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "fluffy",
+      "meaning": "ふわふわの"
+    },
+    {
+      "word": "quiet",
+      "meaning": "静かな"
+    },
+    {
+      "word": "relaxed",
+      "meaning": "リラックスした"
+    },
+    {
+      "word": "wonderful",
+      "meaning": "すばらしい"
+    },
+    {
+      "word": "evening",
+      "meaning": "夕方、夜"
+    }
   ],
   "quiz2": {
     "question": "レビューによると、空は何色でしたか？",
-    "options": ["青と白", "オレンジとピンク", "赤と黄色"],
+    "options": [
+      "青と白",
+      "オレンジとピンク",
+      "赤と黄色"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "オーストラリアのカフェで、友達とランチを食べている場面",
     "lines": [
-      {"speaker": "A", "text": "What did you have for dinner last night?"},
-      {"speaker": "B", "text": "I made gyudon at home. It is a beef bowl."},
-      {"speaker": "A", "text": "A beef bowl? How do you make it?"},
-      {"speaker": "B", "text": "I cook beef and onion in a sweet sauce. Then I put it on rice."},
-      {"speaker": "A", "text": "That sounds easy and good!"},
-      {"speaker": "B", "text": "Yes, it is very easy. It takes only 15 minutes."},
-      {"speaker": "A", "text": "Wow! I want to learn. Can you teach me?"},
-      {"speaker": "B", "text": "Sure! Come to my house this weekend."},
-      {"speaker": "A", "text": "Great! What do I need to buy?"},
-      {"speaker": "B", "text": "Just bring some beef. I have rice and soy sauce."},
-      {"speaker": "A", "text": "OK! I will buy beef at the supermarket."},
-      {"speaker": "B", "text": "Perfect. Let's cook together on Saturday!"}
+      {
+        "speaker": "A",
+        "text": "What did you have for dinner last night?",
+        "translation": "昨日の夜ごはん何食べた？"
+      },
+      {
+        "speaker": "B",
+        "text": "I made gyudon at home. It is a beef bowl.",
+        "translation": "家で牛丼を作ったよ。牛肉丼だよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "A beef bowl? How do you make it?",
+        "translation": "牛肉丼？どうやって作るの？"
+      },
+      {
+        "speaker": "B",
+        "text": "I cook beef and onion in a sweet sauce. Then I put it on rice.",
+        "translation": "牛肉と玉ねぎを甘いたれで煮て、ご飯にのせるの。"
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds easy and good!",
+        "translation": "簡単そうでおいしそう！"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is very easy. It takes only 15 minutes.",
+        "translation": "うん、すごく簡単だよ。15分しかかからないの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Wow! I want to learn. Can you teach me?",
+        "translation": "えー！習いたいな。教えてくれる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure! Come to my house this weekend.",
+        "translation": "もちろん！今週末うちにおいでよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Great! What do I need to buy?",
+        "translation": "やった！何を買えばいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "Just bring some beef. I have rice and soy sauce.",
+        "translation": "牛肉だけ持ってきて。ご飯としょうゆはあるから。"
+      },
+      {
+        "speaker": "A",
+        "text": "OK! I will buy beef at the supermarket.",
+        "translation": "わかった！スーパーで牛肉買うね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Perfect. Let's cook together on Saturday!",
+        "translation": "完璧。土曜日に一緒に作ろう！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "dinner", "meaning": "夕食"},
-    {"word": "last night", "meaning": "昨夜"},
-    {"word": "sound", "meaning": "〜のように聞こえる"},
-    {"word": "easy", "meaning": "簡単な"},
-    {"word": "only", "meaning": "たった〜だけ"},
-    {"word": "teach", "meaning": "教える"},
-    {"word": "weekend", "meaning": "週末"},
-    {"word": "need", "meaning": "必要とする"},
-    {"word": "supermarket", "meaning": "スーパーマーケット"},
-    {"word": "together", "meaning": "一緒に"}
+    {
+      "word": "dinner",
+      "meaning": "夕食"
+    },
+    {
+      "word": "last night",
+      "meaning": "昨夜"
+    },
+    {
+      "word": "sound",
+      "meaning": "〜のように聞こえる"
+    },
+    {
+      "word": "easy",
+      "meaning": "簡単な"
+    },
+    {
+      "word": "only",
+      "meaning": "たった〜だけ"
+    },
+    {
+      "word": "teach",
+      "meaning": "教える"
+    },
+    {
+      "word": "weekend",
+      "meaning": "週末"
+    },
+    {
+      "word": "need",
+      "meaning": "必要とする"
+    },
+    {
+      "word": "supermarket",
+      "meaning": "スーパーマーケット"
+    },
+    {
+      "word": "together",
+      "meaning": "一緒に"
+    }
   ],
   "quiz3": {
     "question": "会話で、二人はいつ一緒に料理しますか？",
-    "options": ["日曜日", "金曜日", "土曜日"],
+    "options": [
+      "日曜日",
+      "金曜日",
+      "土曜日"
+    ],
     "correct": 2
   },
   "try_it_hint": "「I made ___ at home. It takes only ___ minutes.」のように、自分が作った料理と時間を伝えてみましょう！",
-  "meta": {"day": 17, "en": "Gyudon", "ja": "牛丼", "emoji": "🥩"}
+  "meta": {
+    "day": 17,
+    "en": "Gyudon",
+    "ja": "牛丼",
+    "emoji": "🥩"
+  }
 }

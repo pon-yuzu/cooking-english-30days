@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>卵焼きは甘い日本の巻き卵です。お弁当の定番おかずです。</p>
+          <p>1. 卵を4つボウルに割り入れます。</p>
+          <p>2. 砂糖、しょうゆ、みりん、少しの塩を卵に加えます。</p>
+          <p>3. 箸でよく混ぜます。</p>
+          <p>4. 卵焼き器に少しの油を熱します。</p>
+          <p>5. 薄く卵液を流し入れ、端に巻いていきます。</p>
+          <p>6. また卵液を流して巻く、を3〜4回繰り返します。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Mimosa Garden Kitchen last Saturday. It was in a quiet street in Paddington. The garden had many yellow mimosa flowers. I sat at a small table under a tree. I ate tamagoyaki with salad. The egg was soft and sweet. The garden was cozy and very pretty. I felt happy and relaxed there.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週の土曜日にMimosa Garden Kitchenに行きました。パディントンの静かな通りにありました。庭にはたくさんの黄色いミモザの花がありました。木の下の小さなテーブルに座りました。卵焼きとサラダを食べました。卵はやわらかくて甘かったです。庭は居心地がよくてとてもきれいでした。幸せでリラックスした気分になりました。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 カフェのキッチンで、先輩スタッフのLiamにお弁当の卵焼きを見せる場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hi Liam! Look at my lunch box.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi Liam! Look at my lunch box.</span>
+            <div class="dialogue-translation">リアム、わたしのお弁当見て！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Wow, that looks nice! What is the yellow thing?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Wow, that looks nice! What is the yellow thing?</span>
+            <div class="dialogue-translation">わぁ、きれいだね！黄色いのは何？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is tamagoyaki. It is a Japanese rolled egg.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is tamagoyaki. It is a Japanese rolled egg.</span>
+            <div class="dialogue-translation">卵焼きだよ。日本の巻き卵なの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Rolled egg? How do you make it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Rolled egg? How do you make it?</span>
+            <div class="dialogue-translation">巻き卵？どうやって作るの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">I mix eggs with sugar and soy sauce. Then I cook it in a pan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I mix eggs with sugar and soy sauce. Then I cook it in a pan.</span>
+            <div class="dialogue-translation">卵に砂糖としょうゆを混ぜて、フライパンで焼くの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Is it sweet or salty?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Is it sweet or salty?</span>
+            <div class="dialogue-translation">甘いの？しょっぱいの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is a little sweet and a little salty.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is a little sweet and a little salty.</span>
+            <div class="dialogue-translation">ちょっと甘くてちょっとしょっぱいよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">That sounds interesting. Can I try a piece?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That sounds interesting. Can I try a piece?</span>
+            <div class="dialogue-translation">面白そうだね。ひとつ食べてみてもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Sure! Here you go.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Sure! Here you go.</span>
+            <div class="dialogue-translation">もちろん！はい、どうぞ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Mmm! It is soft and tasty. I like it!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Mmm! It is soft and tasty. I like it!</span>
+            <div class="dialogue-translation">うーん！やわらかくておいしい。好き！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you! I make it every morning for my bento.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! I make it every morning for my bento.</span>
+            <div class="dialogue-translation">ありがとう！毎朝お弁当用に作っているの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">You should sell it at the cafe! People will love it.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You should sell it at the cafe! People will love it.</span>
+            <div class="dialogue-translation">カフェで売ったらいいよ！みんな好きになると思う。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 2,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

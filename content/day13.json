@@ -10,46 +10,124 @@
       "**Add** the meat, potato, and carrot and cook for three minutes.",
       "**Pour** water into the pot and cook for twenty minutes.",
       "**Add** the curry roux and stir until the sauce is thick. **Enjoy!**"
+    ],
+    "intro_ja": "日本のカレーはとろっとしたあたたかい料理です。日本人の多くがカレーライスを大好きです。",
+    "steps_ja": [
+      "お肉、じゃがいも、にんじん、玉ねぎを小さく切ります。",
+      "大きな鍋に油を熱します。",
+      "玉ねぎがやわらかくなるまで炒めます。",
+      "お肉、じゃがいも、にんじんを加えて3分炒めます。",
+      "鍋に水を入れて20分煮ます。",
+      "カレールーを加えてとろみがつくまで混ぜます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "curry", "meaning": "カレー"},
-    {"word": "thick", "meaning": "とろっとした・濃い"},
-    {"word": "potato", "meaning": "じゃがいも"},
-    {"word": "carrot", "meaning": "にんじん"},
-    {"word": "onion", "meaning": "たまねぎ"},
-    {"word": "roux", "meaning": "ルー"},
-    {"word": "pot", "meaning": "鍋"},
-    {"word": "stir", "meaning": "かき混ぜる"},
-    {"word": "light brown", "meaning": "きつね色の"},
-    {"word": "beef", "meaning": "牛肉"}
+    {
+      "word": "curry",
+      "meaning": "カレー"
+    },
+    {
+      "word": "thick",
+      "meaning": "とろっとした・濃い"
+    },
+    {
+      "word": "potato",
+      "meaning": "じゃがいも"
+    },
+    {
+      "word": "carrot",
+      "meaning": "にんじん"
+    },
+    {
+      "word": "onion",
+      "meaning": "たまねぎ"
+    },
+    {
+      "word": "roux",
+      "meaning": "ルー"
+    },
+    {
+      "word": "pot",
+      "meaning": "鍋"
+    },
+    {
+      "word": "stir",
+      "meaning": "かき混ぜる"
+    },
+    {
+      "word": "light brown",
+      "meaning": "きつね色の"
+    },
+    {
+      "word": "beef",
+      "meaning": "牛肉"
+    }
   ],
   "quiz1": {
     "question": "カレールーを入れる前に、水を入れてどのくらい煮ますか？",
-    "options": ["10分", "20分", "30分"],
+    "options": [
+      "10分",
+      "20分",
+      "30分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Lavender Hill Cafe",
     "location": "Coogee Beach, Sydney",
     "stars": 5,
-    "content": "I went to Lavender Hill Cafe on a sunny Sunday. It was near Coogee Beach. The walls were painted in soft lavender. I sat by the window and watched the waves. I had Japanese curry with rice. It was thick and very warm. The cafe was small and cozy. Soft music was playing. I wanted to stay there all day."
+    "content": "I went to Lavender Hill Cafe on a sunny Sunday. It was near Coogee Beach. The walls were painted in soft lavender. I sat by the window and watched the waves. I had Japanese curry with rice. It was thick and very warm. The cafe was small and cozy. Soft music was playing. I wanted to stay there all day.",
+    "content_ja": "晴れた日曜日にLavender Hill Cafeに行きました。クージービーチの近くにありました。壁がやさしいラベンダー色に塗られていました。窓際に座って波を見ました。カレーライスを食べました。とろっとしていてとてもあたたかかったです。小さくて居心地のいいカフェでした。やさしい音楽が流れていました。一日中そこにいたかったです。"
   },
   "review_vocab": [
-    {"word": "sunny", "meaning": "晴れた"},
-    {"word": "wall", "meaning": "壁"},
-    {"word": "painted", "meaning": "塗られた"},
-    {"word": "lavender", "meaning": "ラベンダー色"},
-    {"word": "window", "meaning": "窓"},
-    {"word": "wave", "meaning": "波"},
-    {"word": "warm", "meaning": "温かい"},
-    {"word": "music", "meaning": "音楽"},
-    {"word": "playing", "meaning": "流れていた"},
-    {"word": "stay", "meaning": "滞在する・いる"}
+    {
+      "word": "sunny",
+      "meaning": "晴れた"
+    },
+    {
+      "word": "wall",
+      "meaning": "壁"
+    },
+    {
+      "word": "painted",
+      "meaning": "塗られた"
+    },
+    {
+      "word": "lavender",
+      "meaning": "ラベンダー色"
+    },
+    {
+      "word": "window",
+      "meaning": "窓"
+    },
+    {
+      "word": "wave",
+      "meaning": "波"
+    },
+    {
+      "word": "warm",
+      "meaning": "温かい"
+    },
+    {
+      "word": "music",
+      "meaning": "音楽"
+    },
+    {
+      "word": "playing",
+      "meaning": "流れていた"
+    },
+    {
+      "word": "stay",
+      "meaning": "滞在する・いる"
+    }
   ],
   "quiz2": {
     "question": "カフェの壁は何色でしたか？",
-    "options": ["ピンク", "ラベンダー色", "黄色"],
+    "options": [
+      "ピンク",
+      "ラベンダー色",
+      "黄色"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "スーパーマーケットで、友達のMiaと一緒にカレーの材料を買う場面",
     "lines": [
-      {"speaker": "A", "text": "Mia, I want to make Japanese curry tonight. Can you help me find the things?"},
-      {"speaker": "B", "text": "Sure! What do we need?"},
-      {"speaker": "A", "text": "We need potatoes, carrots, onions, and beef."},
-      {"speaker": "B", "text": "OK, the vegetables are over there. How many potatoes?"},
-      {"speaker": "A", "text": "Two big ones, please. And three carrots."},
-      {"speaker": "B", "text": "Got it. Where is the beef?"},
-      {"speaker": "A", "text": "It is near the back of the store. I need diced beef."},
-      {"speaker": "B", "text": "What about the curry sauce?"},
-      {"speaker": "A", "text": "I need curry roux. It is in the Asian food section."},
-      {"speaker": "B", "text": "I found it! This one?"},
-      {"speaker": "A", "text": "Yes, that is the one. Thank you!"},
-      {"speaker": "B", "text": "Japanese curry smells so good. I cannot wait for dinner!"}
+      {
+        "speaker": "A",
+        "text": "Mia, I want to make Japanese curry tonight. Can you help me find the things?",
+        "translation": "ミア、今夜カレーを作りたいの。材料探すの手伝って！"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure! What do we need?",
+        "translation": "いいよ！何が必要？"
+      },
+      {
+        "speaker": "A",
+        "text": "We need potatoes, carrots, onions, and beef.",
+        "translation": "じゃがいも、にんじん、玉ねぎ、牛肉が必要だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK, the vegetables are over there. How many potatoes?",
+        "translation": "わかった、野菜はあっちだね。じゃがいもはいくつ？"
+      },
+      {
+        "speaker": "A",
+        "text": "Two big ones, please. And three carrots.",
+        "translation": "大きいの2つお願い。にんじんは3本。"
+      },
+      {
+        "speaker": "B",
+        "text": "Got it. Where is the beef?",
+        "translation": "了解。牛肉はどこ？"
+      },
+      {
+        "speaker": "A",
+        "text": "It is near the back of the store. I need diced beef.",
+        "translation": "お店の奥の方だよ。角切りの牛肉が必要。"
+      },
+      {
+        "speaker": "B",
+        "text": "What about the curry sauce?",
+        "translation": "カレーのソースは？"
+      },
+      {
+        "speaker": "A",
+        "text": "I need curry roux. It is in the Asian food section.",
+        "translation": "カレールーが必要だよ。アジア食品コーナーにあるの。"
+      },
+      {
+        "speaker": "B",
+        "text": "I found it! This one?",
+        "translation": "見つけた！これ？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, that is the one. Thank you!",
+        "translation": "そう、それそれ。ありがとう！"
+      },
+      {
+        "speaker": "B",
+        "text": "Japanese curry smells so good. I cannot wait for dinner!",
+        "translation": "カレーっていい匂いだよね。夕ごはんが楽しみ！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "find", "meaning": "見つける"},
-    {"word": "vegetables", "meaning": "野菜"},
-    {"word": "over there", "meaning": "あそこに"},
-    {"word": "how many", "meaning": "いくつ"},
-    {"word": "back", "meaning": "奥"},
-    {"word": "store", "meaning": "お店"},
-    {"word": "diced", "meaning": "角切りの"},
-    {"word": "section", "meaning": "コーナー・売り場"},
-    {"word": "found", "meaning": "見つけた（findの過去形）"},
-    {"word": "cannot wait", "meaning": "待ちきれない"}
+    {
+      "word": "find",
+      "meaning": "見つける"
+    },
+    {
+      "word": "vegetables",
+      "meaning": "野菜"
+    },
+    {
+      "word": "over there",
+      "meaning": "あそこに"
+    },
+    {
+      "word": "how many",
+      "meaning": "いくつ"
+    },
+    {
+      "word": "back",
+      "meaning": "奥"
+    },
+    {
+      "word": "store",
+      "meaning": "お店"
+    },
+    {
+      "word": "diced",
+      "meaning": "角切りの"
+    },
+    {
+      "word": "section",
+      "meaning": "コーナー・売り場"
+    },
+    {
+      "word": "found",
+      "meaning": "見つけた（findの過去形）"
+    },
+    {
+      "word": "cannot wait",
+      "meaning": "待ちきれない"
+    }
   ],
   "quiz3": {
     "question": "カレールーはスーパーのどこにありましたか？",
-    "options": ["野菜コーナー", "肉コーナー", "アジア食材コーナー"],
+    "options": [
+      "野菜コーナー",
+      "肉コーナー",
+      "アジア食材コーナー"
+    ],
     "correct": 2
   },
   "try_it_hint": "「〇〇はどこにありますか？」「あそこにあります。」という文を英語で書いてみましょう。例：Where is the beef? It is over there.",
-  "meta": {"day": 13, "en": "Japanese Curry", "ja": "カレー", "emoji": "\ud83c\udf5b"}
+  "meta": {
+    "day": 13,
+    "en": "Japanese Curry",
+    "ja": "カレー",
+    "emoji": "🍛"
+  }
 }

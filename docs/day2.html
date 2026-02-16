@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>シュウマイは小さな中華風の蒸し餃子です。中に豚肉と玉ねぎが入っています。</p>
+          <p>1. 豚肉と玉ねぎをとても小さく切ります。</p>
+          <p>2. 豚肉、玉ねぎ、しょうゆ、ごま油、塩、こしょうをボウルで混ぜます。</p>
+          <p>3. それぞれのシュウマイの皮に少しのお肉をのせます。</p>
+          <p>4. 皮をお肉のまわりに巻きます。上を開けておきます。</p>
+          <p>5. 蒸し器に水を入れて沸かします。</p>
+          <p>6. シュウマイを蒸し器に入れて10分間蒸します。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I visited River Garden Kitchen last weekend. It was at South Bank in Brisbane. I sat in the garden area near the river. The view was so pretty. I could see the city and the water. I ordered shumai and they were very soft and hot. The garden had many flowers, and I saw some yellow and lavender ones. The staff were kind and the music was quiet. I felt very relaxed there.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週の金曜日にFern Valley Dumpling Houseに行きました。ブリスベンのSouth Bankの静かな通りにありました。中にシダ植物がたくさんありました。とても緑が多くて涼しかったです。シュウマイとお茶を注文しました。シュウマイはやわらかくて温かかったです。お肉はジューシーで、皮は薄かったです。テーブルの上に小さな黄色い花がありました。とても素敵なお店でした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,53 +732,89 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 職場（カフェ）の休憩時間に、同僚のLiamにシュウマイの話をする場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Liam, do you know shumai?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Liam, do you know shumai?</span>
+            <div class="dialogue-translation">こんにちは！何を作っているの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Shumai? No, I do not know. What is it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Shumai? No, I do not know. What is it?</span>
+            <div class="dialogue-translation">シュウマイを作っているよ！日本の蒸し餃子だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is a small steamed dumpling from Japan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is a small steamed dumpling from Japan.</span>
+            <div class="dialogue-translation">おいしそう！中には何が入っているの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, like dim sum? I like dim sum!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, like dim sum? I like dim sum!</span>
+            <div class="dialogue-translation">豚肉と玉ねぎ。それから少しのしょうゆとごま油。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Yes! Shumai is a kind of dim sum. It is very soft.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! Shumai is a kind of dim sum. It is very soft.</span>
+            <div class="dialogue-translation">どうやって作るの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">What is inside?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">What is inside?</span>
+            <div class="dialogue-translation">まず、お肉をこの皮にのせるの。それからまわりに巻くよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Pork and onion. And there is a green pea on top.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Pork and onion. And there is a green pea on top.</span>
+            <div class="dialogue-translation">やってみてもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">That sounds cute. Is it hard to make?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That sounds cute. Is it hard to make?</span>
+            <div class="dialogue-translation">もちろん！こうやってね。上は開けたままにしてね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">No, it is easy. You do not need an oven.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">No, it is easy. You do not need an oven.</span>
+            <div class="dialogue-translation">こんな感じ？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Really? How do you cook it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Really? How do you cook it?</span>
+            <div class="dialogue-translation">うん、上手！次は蒸すよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">You steam it. It takes about ten minutes.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You steam it. It takes about ten minutes.</span>
+            <div class="dialogue-translation">いい匂い！待ちきれないよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Nice! Can you make some for our next day off?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Nice! Can you make some for our next day off?</span>
+            <div class="dialogue-translation">ほら、できたよ！食べてみて。</div>
+          </div>
         </div>
         <div class="conversation-line">
           <span class="speaker">A:</span>
@@ -698,6 +825,7 @@
           <span class="dialogue">Great! I cannot wait. Thank you!</span>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -865,6 +993,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

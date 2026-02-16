@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>チャーハンは日本風の炒飯です。ご飯を野菜や卵と一緒に炒めた料理です。</p>
+          <p>1. 卵を割ってボウルで混ぜます。</p>
+          <p>2. ハム、長ネギ、にんじんを小さく切ります。</p>
+          <p>3. フライパンに油を熱して卵を炒めます。</p>
+          <p>4. ご飯を入れて強火で炒めます。</p>
+          <p>5. ハム、長ネギ、にんじんを加えて一緒に炒めます。</p>
+          <p>6. しょうゆ、塩、こしょうで味付けします。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I visited Jasmine Garden Kitchen in Fortitude Valley last Friday. The restaurant had a beautiful garden terrace. I could see jasmine flowers everywhere. The smell was so nice. I ordered fried rice with chicken. It was hot and very tasty. The place was casual and cozy. I sat in a pink chair under a big tree. I want to go back again.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>金曜日のランチにSakura Wok Kitchenに行きました。シドニーのChippendale にありました。お店の中は明るくてモダンでした。チャーハンを注文しました。ご飯はパラパラで卵はふわふわでした。テーブルに小さなピンクの花がありました。また来たいと思いました。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,53 +732,89 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 レストランのキッチンでアルバイト中、同僚にチャーハンの作り方を教える場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Can you teach me how to make fried rice?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Can you teach me how to make fried rice?</span>
+            <div class="dialogue-translation">チャーハンを作ってみたいの。教えてくれる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Sure! First, heat oil in the pan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Sure! First, heat oil in the pan.</span>
+            <div class="dialogue-translation">もちろん！まず冷やご飯が必要だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">OK. What is next?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK. What is next?</span>
+            <div class="dialogue-translation">冷やご飯？温かいのじゃだめ？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Crack an egg and mix it quickly.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Crack an egg and mix it quickly.</span>
+            <div class="dialogue-translation">冷やご飯の方がパラパラに炒められるの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Like this?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Like this?</span>
+            <div class="dialogue-translation">なるほど！他に何が必要？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, that is good! Now add the rice.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, that is good! Now add the rice.</span>
+            <div class="dialogue-translation">卵、ハム、長ネギ、にんじんだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Should I stir it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Should I stir it?</span>
+            <div class="dialogue-translation">わかった。まず何をする？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, stir it well on high heat.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, stir it well on high heat.</span>
+            <div class="dialogue-translation">まず卵を炒めて、それからご飯を入れるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">When do I add the vegetables?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">When do I add the vegetables?</span>
+            <div class="dialogue-translation">強火で炒めるの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Now. Put them in and cook for two minutes.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Now. Put them in and cook for two minutes.</span>
+            <div class="dialogue-translation">そう！強火で手早く炒めるのがコツだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It smells great! What about soy sauce?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It smells great! What about soy sauce?</span>
+            <div class="dialogue-translation">いい匂い！おいしそう！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Add a little soy sauce now. Then it is done!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Add a little soy sauce now. Then it is done!</span>
+            <div class="dialogue-translation">しょうゆで味付けして完成！食べてみて！</div>
+          </div>
         </div>
         <div class="conversation-line">
           <span class="speaker">A:</span>
@@ -698,6 +825,7 @@
           <span class="dialogue">Thank you! Let's eat together.</span>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -855,6 +983,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

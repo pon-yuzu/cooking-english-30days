@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>唐揚げは日本のフライドチキンです。外はカリカリで中はジューシーです。</p>
+          <p>1. 鶏もも肉を小さく切ります。</p>
+          <p>2. しょうゆ、にんにく、しょうが、酒をボウルで混ぜます。</p>
+          <p>3. 鶏肉をたれに入れて20分間つけます。</p>
+          <p>4. 鶏肉に片栗粉をまぶします。</p>
+          <p>5. 油を深い鍋で180度に熱します。</p>
+          <p>6. 鶏肉をきつね色になるまで4〜5分揚げます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Sunset Terrace Grill near Bondi Beach. I sat on the terrace and watched the sunset over the ocean. The sky was orange and pink. It was so beautiful. I ate karaage and it was very crispy and hot. The lemon made it even better. The restaurant was small and cozy. There were jasmine flowers near the door. I want to go back again soon.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>土曜日にBotanical Garden Kitchenに行きました。シドニーの植物園の近くにありました。テーブルのまわりには緑の植物がたくさんありました。唐揚げとサラダを注文しました。チキンはとてもカリカリで、中はジューシーでした。レモンを絞ったらさらにおいしくなりました。窓の近くにピンクの花がありました。とても素敵なランチでした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 ファーマーズマーケットで、地元のお客さんに唐揚げを説明する場面（フードスタンドでバイト中）</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hello! Would you like to try our karaage?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hello! Would you like to try our karaage?</span>
+            <div class="dialogue-translation">いい匂い！何を料理しているの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Karaage? What is that?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Karaage? What is that?</span>
+            <div class="dialogue-translation">唐揚げを作っているよ。日本のフライドチキンだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is Japanese fried chicken. It is very popular in Japan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is Japanese fried chicken. It is very popular in Japan.</span>
+            <div class="dialogue-translation">普通のフライドチキンと何が違うの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, fried chicken! I love fried chicken.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, fried chicken! I love fried chicken.</span>
+            <div class="dialogue-translation">しょうゆとしょうがを使うの。それから片栗粉もね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">This one has ginger and garlic. It is very tasty.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">This one has ginger and garlic. It is very tasty.</span>
+            <div class="dialogue-translation">片栗粉って何？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">How much is it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">How much is it?</span>
+            <div class="dialogue-translation">日本のでんぷんの粉だよ。鶏肉がカリカリになるの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is five dollars for six pieces.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is five dollars for six pieces.</span>
+            <div class="dialogue-translation">わぁ、おいしそう。手伝ってもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">That is cheap! I will take one, please.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That is cheap! I will take one, please.</span>
+            <div class="dialogue-translation">うん！鶏肉に粉をまぶしてくれる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Here you go. There is lemon too. Please try it.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Here you go. There is lemon too. Please try it.</span>
+            <div class="dialogue-translation">いいよ。こんな感じ？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Wow, this is so good! It is crispy!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Wow, this is so good! It is crispy!</span>
+            <div class="dialogue-translation">完璧！次は揚げるよ。気をつけてね、油が熱いよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you! We also have soy sauce if you want.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! We also have soy sauce if you want.</span>
+            <div class="dialogue-translation">きつね色になってきた！おいしそう！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">No, it is perfect like this. I will come back next week!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">No, it is perfect like this. I will come back next week!</span>
+            <div class="dialogue-translation">できたよ！レモンを絞って食べてね。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 0,
       quiz3: 2
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

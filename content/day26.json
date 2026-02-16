@@ -10,46 +10,124 @@
       "**Add** the onion to the pan and cook for two minutes.",
       "**Put** the pork cutlet on top of the onion and pour the beaten egg over it.",
       "**Cover** the pan and cook for one minute, then put everything on the rice. **Enjoy!**"
+    ],
+    "intro_ja": "カツ丼はとんかつと卵の丼です。日本でとても人気のある、ほっとする料理です。",
+    "steps_ja": [
+      "ご飯を炊いて丼に盛ります。",
+      "玉ねぎを薄く切ります。",
+      "しょうゆ、みりん、砂糖、だし汁を小さいフライパンで混ぜます。",
+      "玉ねぎを加えて2分煮ます。",
+      "とんかつを玉ねぎの上にのせ、溶き卵をかけます。",
+      "ふたをして1分煮たら、全部をご飯の上にのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "cutlet", "meaning": "カツ（揚げた肉）"},
-    {"word": "fried", "meaning": "揚げた"},
-    {"word": "comfort food", "meaning": "ほっとする食べ物"},
-    {"word": "thin", "meaning": "薄い"},
-    {"word": "stock", "meaning": "だし・スープの素"},
-    {"word": "pour", "meaning": "注ぐ"},
-    {"word": "beaten egg", "meaning": "溶き卵"},
-    {"word": "on top of", "meaning": "〜の上に"},
-    {"word": "bowl", "meaning": "丼・ボウル"},
-    {"word": "cover", "meaning": "ふたをする"}
+    {
+      "word": "cutlet",
+      "meaning": "カツ（揚げた肉）"
+    },
+    {
+      "word": "fried",
+      "meaning": "揚げた"
+    },
+    {
+      "word": "comfort food",
+      "meaning": "ほっとする食べ物"
+    },
+    {
+      "word": "thin",
+      "meaning": "薄い"
+    },
+    {
+      "word": "stock",
+      "meaning": "だし・スープの素"
+    },
+    {
+      "word": "pour",
+      "meaning": "注ぐ"
+    },
+    {
+      "word": "beaten egg",
+      "meaning": "溶き卵"
+    },
+    {
+      "word": "on top of",
+      "meaning": "〜の上に"
+    },
+    {
+      "word": "bowl",
+      "meaning": "丼・ボウル"
+    },
+    {
+      "word": "cover",
+      "meaning": "ふたをする"
+    }
   ],
   "quiz1": {
     "question": "カツ丼のレシピで、卵はどこにかけますか？",
-    "options": ["ごはんの上に", "カツの上に", "玉ねぎの下に"],
+    "options": [
+      "ごはんの上に",
+      "カツの上に",
+      "玉ねぎの下に"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Harbour View Donburi House",
     "location": "Barangaroo, Sydney",
     "stars": 5,
-    "content": "I went to Harbour View Donburi House last Saturday. It was in Barangaroo, near the water. I could see the Harbour Bridge from my seat. The restaurant was small and cozy. I ordered katsudon and it was so good. The pork was crispy and the egg was soft. There were pretty yellow flowers on each table. I felt warm and happy."
+    "content": "I went to Harbour View Donburi House last Saturday. It was in Barangaroo, near the water. I could see the Harbour Bridge from my seat. The restaurant was small and cozy. I ordered katsudon and it was so good. The pork was crispy and the egg was soft. There were pretty yellow flowers on each table. I felt warm and happy.",
+    "content_ja": "先週の土曜日にHarbour View Donburi Houseに行きました。バランガルーの水辺にありました。席からハーバーブリッジが見えました。小さくて居心地のいいレストランでした。カツ丼を注文したらとてもおいしかったです。豚肉はカリカリで卵はやわらかかったです。テーブルにきれいな黄色い花がありました。あたたかくて幸せな気持ちになりました。"
   },
   "review_vocab": [
-    {"word": "harbour", "meaning": "港"},
-    {"word": "bridge", "meaning": "橋"},
-    {"word": "seat", "meaning": "席"},
-    {"word": "ordered", "meaning": "注文した"},
-    {"word": "crispy", "meaning": "サクサクした"},
-    {"word": "soft", "meaning": "やわらかい"},
-    {"word": "pretty", "meaning": "きれいな"},
-    {"word": "warm", "meaning": "あたたかい"},
-    {"word": "felt", "meaning": "感じた（feelの過去形）"},
-    {"word": "near", "meaning": "〜の近くに"}
+    {
+      "word": "harbour",
+      "meaning": "港"
+    },
+    {
+      "word": "bridge",
+      "meaning": "橋"
+    },
+    {
+      "word": "seat",
+      "meaning": "席"
+    },
+    {
+      "word": "ordered",
+      "meaning": "注文した"
+    },
+    {
+      "word": "crispy",
+      "meaning": "サクサクした"
+    },
+    {
+      "word": "soft",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "pretty",
+      "meaning": "きれいな"
+    },
+    {
+      "word": "warm",
+      "meaning": "あたたかい"
+    },
+    {
+      "word": "felt",
+      "meaning": "感じた（feelの過去形）"
+    },
+    {
+      "word": "near",
+      "meaning": "〜の近くに"
+    }
   ],
   "quiz2": {
     "question": "レビューのレストランから何が見えましたか？",
-    "options": ["山", "ハーバーブリッジ", "ビーチ"],
+    "options": [
+      "山",
+      "ハーバーブリッジ",
+      "ビーチ"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "日本食レストランでアルバイト中、お客さんにカツ丼を説明する場面",
     "lines": [
-      {"speaker": "A", "text": "Excuse me, what is katsudon?"},
-      {"speaker": "B", "text": "It is a rice bowl with a fried pork cutlet and egg on top."},
-      {"speaker": "A", "text": "That sounds good! Is it big?"},
-      {"speaker": "B", "text": "Yes, it is quite big. Most people feel full after eating it."},
-      {"speaker": "A", "text": "Is the pork crispy?"},
-      {"speaker": "B", "text": "Yes, it is very crispy. We cook it fresh every time."},
-      {"speaker": "A", "text": "Great! I will have one katsudon, please."},
-      {"speaker": "B", "text": "Sure. Would you like a drink too?"},
-      {"speaker": "A", "text": "Yes, can I have green tea?"},
-      {"speaker": "B", "text": "Of course. One katsudon and one green tea."},
-      {"speaker": "A", "text": "How long will it take?"},
-      {"speaker": "B", "text": "About ten minutes. Please wait here."}
+      {
+        "speaker": "A",
+        "text": "Excuse me, what is katsudon?",
+        "translation": "すみません、カツ丼って何ですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "It is a rice bowl with a fried pork cutlet and egg on top.",
+        "translation": "トンカツと卵をご飯にのせた丼ですよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds good! Is it big?",
+        "translation": "おいしそう！大きいですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is quite big. Most people feel full after eating it.",
+        "translation": "はい、かなり大きいです。ほとんどの人がお腹いっぱいになりますよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Is the pork crispy?",
+        "translation": "豚肉はカリカリですか？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is very crispy. We cook it fresh every time.",
+        "translation": "はい、とてもカリカリです。毎回揚げたてで作っています。"
+      },
+      {
+        "speaker": "A",
+        "text": "Great! I will have one katsudon, please.",
+        "translation": "いいですね！カツ丼をひとつお願いします。"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure. Would you like a drink too?",
+        "translation": "かしこまりました。お飲み物もいかがですか？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, can I have green tea?",
+        "translation": "はい、緑茶をお願いします。"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course. One katsudon and one green tea.",
+        "translation": "カツ丼1つと緑茶1つですね。"
+      },
+      {
+        "speaker": "A",
+        "text": "How long will it take?",
+        "translation": "どのくらいかかりますか？"
+      },
+      {
+        "speaker": "B",
+        "text": "About ten minutes. Please wait here.",
+        "translation": "10分ほどです。こちらでお待ちください。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "excuse me", "meaning": "すみません"},
-    {"word": "sounds good", "meaning": "おいしそう・よさそう"},
-    {"word": "quite", "meaning": "かなり"},
-    {"word": "full", "meaning": "お腹いっぱい"},
-    {"word": "fresh", "meaning": "できたての・新鮮な"},
-    {"word": "every time", "meaning": "毎回"},
-    {"word": "would you like", "meaning": "〜はいかがですか"},
-    {"word": "drink", "meaning": "飲み物"},
-    {"word": "how long", "meaning": "どのくらい（時間）"},
-    {"word": "wait", "meaning": "待つ"}
+    {
+      "word": "excuse me",
+      "meaning": "すみません"
+    },
+    {
+      "word": "sounds good",
+      "meaning": "おいしそう・よさそう"
+    },
+    {
+      "word": "quite",
+      "meaning": "かなり"
+    },
+    {
+      "word": "full",
+      "meaning": "お腹いっぱい"
+    },
+    {
+      "word": "fresh",
+      "meaning": "できたての・新鮮な"
+    },
+    {
+      "word": "every time",
+      "meaning": "毎回"
+    },
+    {
+      "word": "would you like",
+      "meaning": "〜はいかがですか"
+    },
+    {
+      "word": "drink",
+      "meaning": "飲み物"
+    },
+    {
+      "word": "how long",
+      "meaning": "どのくらい（時間）"
+    },
+    {
+      "word": "wait",
+      "meaning": "待つ"
+    }
   ],
   "quiz3": {
     "question": "会話の中で、お客さんは飲み物に何を頼みましたか？",
-    "options": ["コーヒー", "水", "緑茶"],
+    "options": [
+      "コーヒー",
+      "水",
+      "緑茶"
+    ],
     "correct": 2
   },
   "try_it_hint": "「〇〇はどんな料理ですか？」と聞かれたときの答え方を練習しましょう。例：It is a rice bowl with chicken and egg on top.",
-  "meta": {"day": 26, "en": "Katsudon", "ja": "カツ丼", "emoji": "\ud83c\udf71"}
+  "meta": {
+    "day": 26,
+    "en": "Katsudon",
+    "ja": "カツ丼",
+    "emoji": "🍱"
+  }
 }

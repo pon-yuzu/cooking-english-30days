@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>肉じゃがは日本のお肉とじゃがいもの煮物です。甘くてあたたかい、寒い日にぴったりの料理です。</p>
+          <p>1. じゃがいもとにんじんを大きめに切ります。</p>
+          <p>2. 玉ねぎを薄く切ります。</p>
+          <p>3. 大きな鍋に油を熱し、牛肉を炒めます。</p>
+          <p>4. 玉ねぎ、じゃがいも、にんじんを鍋に加えます。</p>
+          <p>5. 水、しょうゆ、砂糖、みりんを鍋に入れます。</p>
+          <p>6. 弱火で20分、やわらかくなるまで煮ます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Jasmine River Kitchen last Sunday. It was by the river in Southbank. The view of the water was so pretty. I sat at a table near the window. The nikujaga was very warm and sweet. The potatoes were so soft. It was like my mother's cooking. The restaurant was small and cozy. I saw pink flowers on each table. I want to go there again.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週の日曜日にJasmine River Kitchenに行きました。サウスバンクの川沿いにありました。窓からの水の景色がとてもきれいでした。窓際のテーブルに座りました。肉じゃがはとてもあたたかくて甘かったです。じゃがいもがとてもやわらかくて、お母さんの料理みたいでした。小さくて居心地のいいレストランでした。テーブルにピンクの花がありました。また行きたいです。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 シェアハウスのキッチンで、肉じゃがを作っている時にハウスメイトが来た場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hi! What are you cooking? It smells good!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi! What are you cooking? It smells good!</span>
+            <div class="dialogue-translation">こんにちは！何を料理しているの？いい匂い！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Hi! I am making nikujaga. It is a Japanese stew.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi! I am making nikujaga. It is a Japanese stew.</span>
+            <div class="dialogue-translation">こんにちは！肉じゃがを作っているよ。日本の煮物だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Nikujaga? What is in it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Nikujaga? What is in it?</span>
+            <div class="dialogue-translation">肉じゃが？中には何が入っているの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Meat, potatoes, onion, and carrot.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Meat, potatoes, onion, and carrot.</span>
+            <div class="dialogue-translation">お肉、じゃがいも、玉ねぎ、にんじんだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Oh, it looks warm and nice.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, it looks warm and nice.</span>
+            <div class="dialogue-translation">あたたかそうでいいね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes! It is sweet and salty. Do you want some?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! It is sweet and salty. Do you want some?</span>
+            <div class="dialogue-translation">うん！甘くてしょっぱいの。食べる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Really? Can I try it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Really? Can I try it?</span>
+            <div class="dialogue-translation">本当に？食べてみてもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Of course! Please wait ten minutes. It is almost ready.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Of course! Please wait ten minutes. It is almost ready.</span>
+            <div class="dialogue-translation">もちろん！あと10分待ってね。もうすぐできるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you! I love trying new food.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! I love trying new food.</span>
+            <div class="dialogue-translation">ありがとう！新しい料理を試すの大好き。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">I am happy. This is my mother's recipe.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I am happy. This is my mother's recipe.</span>
+            <div class="dialogue-translation">うれしい。これ、お母さんのレシピなんだ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">That is so nice. Your mother is a good cook!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That is so nice. Your mother is a good cook!</span>
+            <div class="dialogue-translation">それは素敵だね。お母さん、料理上手なんだね！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Thank you! Please sit down. I will bring it to you.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! Please sit down. I will bring it to you.</span>
+            <div class="dialogue-translation">ありがとう！座ってて。持っていくね。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 1,
       quiz3: 2
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

@@ -10,46 +10,124 @@
       "**Add** the edamame to the boiling water.",
       "**Cook** for 4 minutes, then take them out.",
       "**Put** a little more salt on top and eat them from the shell. **Enjoy!**"
+    ],
+    "intro_ja": "枝豆はゆでた若い大豆です。シンプルでヘルシーな日本のおつまみです。",
+    "steps_ja": [
+      "枝豆を冷たい水で洗います。",
+      "枝豆に塩をふって手でもみます。",
+      "大きな鍋で塩を入れたお湯を沸かします。",
+      "枝豆を沸騰したお湯に入れます。",
+      "4分ゆでたら取り出します。",
+      "もう少し塩をふって、さやから出して食べます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "boil", "meaning": "ゆでる、沸騰させる"},
-    {"word": "soybean", "meaning": "大豆"},
-    {"word": "snack", "meaning": "おやつ、おつまみ"},
-    {"word": "shell", "meaning": "さや、殻"},
-    {"word": "rub", "meaning": "こする"},
-    {"word": "healthy", "meaning": "健康的な"},
-    {"word": "salt", "meaning": "塩"},
-    {"word": "wash", "meaning": "洗う"},
-    {"word": "simple", "meaning": "シンプルな、簡単な"},
-    {"word": "young", "meaning": "若い"}
+    {
+      "word": "boil",
+      "meaning": "ゆでる、沸騰させる"
+    },
+    {
+      "word": "soybean",
+      "meaning": "大豆"
+    },
+    {
+      "word": "snack",
+      "meaning": "おやつ、おつまみ"
+    },
+    {
+      "word": "shell",
+      "meaning": "さや、殻"
+    },
+    {
+      "word": "rub",
+      "meaning": "こする"
+    },
+    {
+      "word": "healthy",
+      "meaning": "健康的な"
+    },
+    {
+      "word": "salt",
+      "meaning": "塩"
+    },
+    {
+      "word": "wash",
+      "meaning": "洗う"
+    },
+    {
+      "word": "simple",
+      "meaning": "シンプルな、簡単な"
+    },
+    {
+      "word": "young",
+      "meaning": "若い"
+    }
   ],
   "quiz1": {
     "question": "レシピによると、枝豆をゆでる時間はどのくらいですか？",
-    "options": ["2分", "4分", "6分"],
+    "options": [
+      "2分",
+      "4分",
+      "6分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Ocean Breeze Cafe",
     "location": "West End, Brisbane",
     "stars": 5,
-    "content": "I visited Ocean Breeze Cafe last week. It was near the river in West End. There was a lovely ocean-blue wall inside. I sat on a soft sofa by the window. The breeze from outside was nice and cool. I ordered edamame and a cold drink. The edamame had just the right amount of salt. It was so good with my drink. There were jasmine flowers in a small vase on the table. The cafe was very relaxing. I stayed for two hours and read my book."
+    "content": "I visited Ocean Breeze Cafe last week. It was near the river in West End. There was a lovely ocean-blue wall inside. I sat on a soft sofa by the window. The breeze from outside was nice and cool. I ordered edamame and a cold drink. The edamame had just the right amount of salt. It was so good with my drink. There were jasmine flowers in a small vase on the table. The cafe was very relaxing. I stayed for two hours and read my book.",
+    "content_ja": "先週、Ocean Breeze Cafeに行きました。ウェストエンドの川沿いにありました。中にはきれいなオーシャンブルーの壁がありました。窓際のソファに座りました。外からのそよ風が涼しくて気持ちよかったです。枝豆と冷たい飲み物を注文しました。枝豆の塩加減がちょうどよかったです。飲み物との相性ばっちりでした。テーブルの小さな花瓶にジャスミンの花がありました。とてもリラックスできるカフェでした。2時間も本を読んで過ごしました。"
   },
   "review_vocab": [
-    {"word": "breeze", "meaning": "そよ風"},
-    {"word": "wall", "meaning": "壁"},
-    {"word": "sofa", "meaning": "ソファ"},
-    {"word": "amount", "meaning": "量"},
-    {"word": "vase", "meaning": "花瓶"},
-    {"word": "relaxing", "meaning": "リラックスできる"},
-    {"word": "stayed", "meaning": "滞在した"},
-    {"word": "hour", "meaning": "時間"},
-    {"word": "read", "meaning": "読んだ"},
-    {"word": "inside", "meaning": "中に"}
+    {
+      "word": "breeze",
+      "meaning": "そよ風"
+    },
+    {
+      "word": "wall",
+      "meaning": "壁"
+    },
+    {
+      "word": "sofa",
+      "meaning": "ソファ"
+    },
+    {
+      "word": "amount",
+      "meaning": "量"
+    },
+    {
+      "word": "vase",
+      "meaning": "花瓶"
+    },
+    {
+      "word": "relaxing",
+      "meaning": "リラックスできる"
+    },
+    {
+      "word": "stayed",
+      "meaning": "滞在した"
+    },
+    {
+      "word": "hour",
+      "meaning": "時間"
+    },
+    {
+      "word": "read",
+      "meaning": "読んだ"
+    },
+    {
+      "word": "inside",
+      "meaning": "中に"
+    }
   ],
   "quiz2": {
     "question": "レビューによると、テーブルの上の花瓶には何の花がありましたか？",
-    "options": ["ミモザ", "バラ", "ジャスミン"],
+    "options": [
+      "ミモザ",
+      "バラ",
+      "ジャスミン"
+    ],
     "correct": 2
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "オーストラリアのパブで友達と枝豆を注文する場面",
     "lines": [
-      {"speaker": "A", "text": "Let's get some snacks. What do you want?"},
-      {"speaker": "B", "text": "How about edamame? Do they have it here?"},
-      {"speaker": "A", "text": "Yes, look! It is on the menu. Good idea!"},
-      {"speaker": "B", "text": "Great. I love edamame with a cold drink."},
-      {"speaker": "A", "text": "Me too! Excuse me, can we get one edamame, please?"},
-      {"speaker": "B", "text": "And two lemonades, please."},
-      {"speaker": "A", "text": "Do you eat edamame a lot in Japan?"},
-      {"speaker": "B", "text": "Yes, we eat it in summer. It is a popular snack."},
-      {"speaker": "A", "text": "How do you eat it? I am new to this."},
-      {"speaker": "B", "text": "You push the beans out of the shell with your fingers."},
-      {"speaker": "A", "text": "Like this? Oh, it is easy and fun!"},
-      {"speaker": "B", "text": "Yes! And do not eat the shell. Only the beans inside."}
+      {
+        "speaker": "A",
+        "text": "Let's get some snacks. What do you want?",
+        "translation": "おつまみ買おうよ。何がいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "How about edamame? Do they have it here?",
+        "translation": "枝豆はどう？ここにある？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, look! It is on the menu. Good idea!",
+        "translation": "うん、見て！メニューにあるよ。いいアイデア！"
+      },
+      {
+        "speaker": "B",
+        "text": "Great. I love edamame with a cold drink.",
+        "translation": "やった。枝豆と冷たい飲み物の組み合わせが大好き。"
+      },
+      {
+        "speaker": "A",
+        "text": "Me too! Excuse me, can we get one edamame, please?",
+        "translation": "わたしも！すみません、枝豆ひとつお願いします！"
+      },
+      {
+        "speaker": "B",
+        "text": "And two lemonades, please.",
+        "translation": "あとレモネード2つお願いします。"
+      },
+      {
+        "speaker": "A",
+        "text": "Do you eat edamame a lot in Japan?",
+        "translation": "日本で枝豆よく食べるの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we eat it in summer. It is a popular snack.",
+        "translation": "うん、夏に食べるよ。人気のおつまみなの。"
+      },
+      {
+        "speaker": "A",
+        "text": "How do you eat it? I am new to this.",
+        "translation": "どうやって食べるの？初めてなんだ。"
+      },
+      {
+        "speaker": "B",
+        "text": "You push the beans out of the shell with your fingers.",
+        "translation": "指でさやから豆を押し出すんだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Like this? Oh, it is easy and fun!",
+        "translation": "こう？あ、簡単で楽しいね！"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! And do not eat the shell. Only the beans inside.",
+        "translation": "でしょ！さやは食べないでね。中の豆だけだよ。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "snack", "meaning": "おつまみ、軽食"},
-    {"word": "how about", "meaning": "〜はどう？"},
-    {"word": "idea", "meaning": "考え、アイデア"},
-    {"word": "excuse me", "meaning": "すみません"},
-    {"word": "lemonade", "meaning": "レモネード"},
-    {"word": "summer", "meaning": "夏"},
-    {"word": "new", "meaning": "初めての、新しい"},
-    {"word": "push", "meaning": "押す"},
-    {"word": "bean", "meaning": "豆"},
-    {"word": "finger", "meaning": "指"}
+    {
+      "word": "snack",
+      "meaning": "おつまみ、軽食"
+    },
+    {
+      "word": "how about",
+      "meaning": "〜はどう？"
+    },
+    {
+      "word": "idea",
+      "meaning": "考え、アイデア"
+    },
+    {
+      "word": "excuse me",
+      "meaning": "すみません"
+    },
+    {
+      "word": "lemonade",
+      "meaning": "レモネード"
+    },
+    {
+      "word": "summer",
+      "meaning": "夏"
+    },
+    {
+      "word": "new",
+      "meaning": "初めての、新しい"
+    },
+    {
+      "word": "push",
+      "meaning": "押す"
+    },
+    {
+      "word": "bean",
+      "meaning": "豆"
+    },
+    {
+      "word": "finger",
+      "meaning": "指"
+    }
   ],
   "quiz3": {
     "question": "会話で、Bさんは枝豆の食べ方をどう説明しましたか？",
-    "options": ["箸で食べる", "指でさやから豆を押し出す", "さやごと食べる"],
+    "options": [
+      "箸で食べる",
+      "指でさやから豆を押し出す",
+      "さやごと食べる"
+    ],
     "correct": 1
   },
   "try_it_hint": "「How about ___? Do they have it here?」のように、お店で食べたいものを提案してみましょう！",
-  "meta": {"day": 20, "en": "Edamame", "ja": "枝豆", "emoji": "🫛"}
+  "meta": {
+    "day": 20,
+    "en": "Edamame",
+    "ja": "枝豆",
+    "emoji": "🫛"
+  }
 }

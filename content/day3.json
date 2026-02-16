@@ -10,46 +10,124 @@
       "**Add** egg and corn starch to the chicken and mix well.",
       "**Fry** the chicken in hot oil until it is golden brown.",
       "**Serve** on a plate with a piece of lemon. **Enjoy!**"
+    ],
+    "intro_ja": "唐揚げは日本のフライドチキンです。外はカリカリで中はジューシーです。",
+    "steps_ja": [
+      "鶏もも肉を小さく切ります。",
+      "しょうゆ、にんにく、しょうが、酒をボウルで混ぜます。",
+      "鶏肉をたれに入れて20分間つけます。",
+      "鶏肉に片栗粉をまぶします。",
+      "油を深い鍋で180度に熱します。",
+      "鶏肉をきつね色になるまで4〜5分揚げます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "fried", "meaning": "揚げた"},
-    {"word": "chicken thigh", "meaning": "鶏もも肉"},
-    {"word": "bite-size", "meaning": "一口サイズの"},
-    {"word": "sake", "meaning": "料理酒"},
-    {"word": "wait", "meaning": "待つ"},
-    {"word": "flour", "meaning": "小麦粉"},
-    {"word": "fry", "meaning": "揚げる"},
-    {"word": "golden brown", "meaning": "きつね色の"},
-    {"word": "serve", "meaning": "盛り付ける"},
-    {"word": "lemon", "meaning": "レモン"}
+    {
+      "word": "fried",
+      "meaning": "揚げた"
+    },
+    {
+      "word": "chicken thigh",
+      "meaning": "鶏もも肉"
+    },
+    {
+      "word": "bite-size",
+      "meaning": "一口サイズの"
+    },
+    {
+      "word": "sake",
+      "meaning": "料理酒"
+    },
+    {
+      "word": "wait",
+      "meaning": "待つ"
+    },
+    {
+      "word": "flour",
+      "meaning": "小麦粉"
+    },
+    {
+      "word": "fry",
+      "meaning": "揚げる"
+    },
+    {
+      "word": "golden brown",
+      "meaning": "きつね色の"
+    },
+    {
+      "word": "serve",
+      "meaning": "盛り付ける"
+    },
+    {
+      "word": "lemon",
+      "meaning": "レモン"
+    }
   ],
   "quiz1": {
     "question": "鶏肉を調味料に漬けてからどのくらい待ちますか？",
-    "options": ["5分", "15分", "30分"],
+    "options": [
+      "5分",
+      "15分",
+      "30分"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Sunset Terrace Grill",
     "location": "Bondi Beach, Sydney",
     "stars": 5,
-    "content": "I went to Sunset Terrace Grill near Bondi Beach. I sat on the terrace and watched the sunset over the ocean. The sky was orange and pink. It was so beautiful. I ate karaage and it was very crispy and hot. The lemon made it even better. The restaurant was small and cozy. There were jasmine flowers near the door. I want to go back again soon."
+    "content": "I went to Sunset Terrace Grill near Bondi Beach. I sat on the terrace and watched the sunset over the ocean. The sky was orange and pink. It was so beautiful. I ate karaage and it was very crispy and hot. The lemon made it even better. The restaurant was small and cozy. There were jasmine flowers near the door. I want to go back again soon.",
+    "content_ja": "土曜日にBotanical Garden Kitchenに行きました。シドニーの植物園の近くにありました。テーブルのまわりには緑の植物がたくさんありました。唐揚げとサラダを注文しました。チキンはとてもカリカリで、中はジューシーでした。レモンを絞ったらさらにおいしくなりました。窓の近くにピンクの花がありました。とても素敵なランチでした。"
   },
   "review_vocab": [
-    {"word": "sunset", "meaning": "夕日・日没"},
-    {"word": "grill", "meaning": "グリル料理店"},
-    {"word": "watched", "meaning": "見た・眺めた"},
-    {"word": "sky", "meaning": "空"},
-    {"word": "orange", "meaning": "オレンジ色の"},
-    {"word": "even better", "meaning": "さらに良い"},
-    {"word": "small", "meaning": "小さい"},
-    {"word": "jasmine", "meaning": "ジャスミン"},
-    {"word": "door", "meaning": "ドア"},
-    {"word": "again", "meaning": "また"}
+    {
+      "word": "sunset",
+      "meaning": "夕日・日没"
+    },
+    {
+      "word": "grill",
+      "meaning": "グリル料理店"
+    },
+    {
+      "word": "watched",
+      "meaning": "見た・眺めた"
+    },
+    {
+      "word": "sky",
+      "meaning": "空"
+    },
+    {
+      "word": "orange",
+      "meaning": "オレンジ色の"
+    },
+    {
+      "word": "even better",
+      "meaning": "さらに良い"
+    },
+    {
+      "word": "small",
+      "meaning": "小さい"
+    },
+    {
+      "word": "jasmine",
+      "meaning": "ジャスミン"
+    },
+    {
+      "word": "door",
+      "meaning": "ドア"
+    },
+    {
+      "word": "again",
+      "meaning": "また"
+    }
   ],
   "quiz2": {
     "question": "レストランのドアの近くには何がありましたか？",
-    "options": ["ジャスミンの花", "レモンの木", "ピンクのランプ"],
+    "options": [
+      "ジャスミンの花",
+      "レモンの木",
+      "ピンクのランプ"
+    ],
     "correct": 0
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "ファーマーズマーケットで、地元のお客さんに唐揚げを説明する場面（フードスタンドでバイト中）",
     "lines": [
-      {"speaker": "A", "text": "Hello! Would you like to try our karaage?"},
-      {"speaker": "B", "text": "Karaage? What is that?"},
-      {"speaker": "A", "text": "It is Japanese fried chicken. It is very popular in Japan."},
-      {"speaker": "B", "text": "Oh, fried chicken! I love fried chicken."},
-      {"speaker": "A", "text": "This one has ginger and garlic. It is very tasty."},
-      {"speaker": "B", "text": "How much is it?"},
-      {"speaker": "A", "text": "It is five dollars for six pieces."},
-      {"speaker": "B", "text": "That is cheap! I will take one, please."},
-      {"speaker": "A", "text": "Here you go. There is lemon too. Please try it."},
-      {"speaker": "B", "text": "Wow, this is so good! It is crispy!"},
-      {"speaker": "A", "text": "Thank you! We also have soy sauce if you want."},
-      {"speaker": "B", "text": "No, it is perfect like this. I will come back next week!"}
+      {
+        "speaker": "A",
+        "text": "Hello! Would you like to try our karaage?",
+        "translation": "いい匂い！何を料理しているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Karaage? What is that?",
+        "translation": "唐揚げを作っているよ。日本のフライドチキンだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "It is Japanese fried chicken. It is very popular in Japan.",
+        "translation": "普通のフライドチキンと何が違うの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, fried chicken! I love fried chicken.",
+        "translation": "しょうゆとしょうがを使うの。それから片栗粉もね。"
+      },
+      {
+        "speaker": "A",
+        "text": "This one has ginger and garlic. It is very tasty.",
+        "translation": "片栗粉って何？"
+      },
+      {
+        "speaker": "B",
+        "text": "How much is it?",
+        "translation": "日本のでんぷんの粉だよ。鶏肉がカリカリになるの。"
+      },
+      {
+        "speaker": "A",
+        "text": "It is five dollars for six pieces.",
+        "translation": "わぁ、おいしそう。手伝ってもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "That is cheap! I will take one, please.",
+        "translation": "うん！鶏肉に粉をまぶしてくれる？"
+      },
+      {
+        "speaker": "A",
+        "text": "Here you go. There is lemon too. Please try it.",
+        "translation": "いいよ。こんな感じ？"
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, this is so good! It is crispy!",
+        "translation": "完璧！次は揚げるよ。気をつけてね、油が熱いよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you! We also have soy sauce if you want.",
+        "translation": "きつね色になってきた！おいしそう！"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it is perfect like this. I will come back next week!",
+        "translation": "できたよ！レモンを絞って食べてね。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "would you like", "meaning": "〜はいかがですか"},
-    {"word": "popular", "meaning": "人気のある"},
-    {"word": "ginger", "meaning": "生姜"},
-    {"word": "garlic", "meaning": "にんにく"},
-    {"word": "how much", "meaning": "いくらですか"},
-    {"word": "dollar", "meaning": "ドル"},
-    {"word": "piece", "meaning": "1個・1つ"},
-    {"word": "cheap", "meaning": "安い"},
-    {"word": "here you go", "meaning": "はい、どうぞ"},
-    {"word": "perfect", "meaning": "完璧な"}
+    {
+      "word": "would you like",
+      "meaning": "〜はいかがですか"
+    },
+    {
+      "word": "popular",
+      "meaning": "人気のある"
+    },
+    {
+      "word": "ginger",
+      "meaning": "生姜"
+    },
+    {
+      "word": "garlic",
+      "meaning": "にんにく"
+    },
+    {
+      "word": "how much",
+      "meaning": "いくらですか"
+    },
+    {
+      "word": "dollar",
+      "meaning": "ドル"
+    },
+    {
+      "word": "piece",
+      "meaning": "1個・1つ"
+    },
+    {
+      "word": "cheap",
+      "meaning": "安い"
+    },
+    {
+      "word": "here you go",
+      "meaning": "はい、どうぞ"
+    },
+    {
+      "word": "perfect",
+      "meaning": "完璧な"
+    }
   ],
   "quiz3": {
     "question": "唐揚げは1つのセットでいくつ入っていますか？",
-    "options": ["4個", "5個", "6個"],
+    "options": [
+      "4個",
+      "5個",
+      "6個"
+    ],
     "correct": 2
   },
   "try_it_hint": "「〇〇を試してみませんか？日本でとても人気があります。」という文を英語で書いてみましょう。例：Would you like to try miso soup? It is very popular in Japan.",
-  "meta": {"day": 3, "en": "Karaage", "ja": "唐揚げ", "emoji": "\ud83c\udf57"}
+  "meta": {
+    "day": 3,
+    "en": "Karaage",
+    "ja": "唐揚げ",
+    "emoji": "🍗"
+  }
 }

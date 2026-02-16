@@ -10,46 +10,124 @@
       "**Turn** the chicken over and cook for three more minutes.",
       "**Add** soy sauce, mirin, and sugar to the pan.",
       "**Cook** until the sauce is thick and shiny. **Enjoy!**"
+    ],
+    "intro_ja": "照り焼きチキンは日本で人気の料理です。鶏肉に甘くてつやのあるたれがかかっています。",
+    "steps_ja": [
+      "鶏もも肉を大きめに切ります。",
+      "フライパンに油を熱します。",
+      "鶏肉を皮面を下にしてフライパンに入れ、5分間焼きます。",
+      "鶏肉をひっくり返してさらに3分焼きます。",
+      "しょうゆ、みりん、砂糖をフライパンに加えます。",
+      "たれにとろみがつくまで煮詰めます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "chicken", "meaning": "鶏肉"},
-    {"word": "thigh", "meaning": "もも肉"},
-    {"word": "shiny", "meaning": "ツヤのある"},
-    {"word": "sauce", "meaning": "ソース・たれ"},
-    {"word": "skin", "meaning": "皮"},
-    {"word": "turn over", "meaning": "ひっくり返す"},
-    {"word": "thick", "meaning": "とろっとした"},
-    {"word": "until", "meaning": "〜まで"},
-    {"word": "sesame seeds", "meaning": "ごま"},
-    {"word": "side", "meaning": "面・側"}
+    {
+      "word": "chicken",
+      "meaning": "鶏肉"
+    },
+    {
+      "word": "thigh",
+      "meaning": "もも肉"
+    },
+    {
+      "word": "shiny",
+      "meaning": "ツヤのある"
+    },
+    {
+      "word": "sauce",
+      "meaning": "ソース・たれ"
+    },
+    {
+      "word": "skin",
+      "meaning": "皮"
+    },
+    {
+      "word": "turn over",
+      "meaning": "ひっくり返す"
+    },
+    {
+      "word": "thick",
+      "meaning": "とろっとした"
+    },
+    {
+      "word": "until",
+      "meaning": "〜まで"
+    },
+    {
+      "word": "sesame seeds",
+      "meaning": "ごま"
+    },
+    {
+      "word": "side",
+      "meaning": "面・側"
+    }
   ],
   "quiz1": {
     "question": "鶏肉をフライパンに入れるとき、最初にどちら側を下にしますか？",
-    "options": ["皮の側を下にする", "肉の側を下にする", "どちらでもよい"],
+    "options": [
+      "皮の側を下にする",
+      "肉の側を下にする",
+      "どちらでもよい"
+    ],
     "correct": 0
   },
   "review": {
     "restaurant": "The Rooftop Jasmine",
     "location": "Kangaroo Point, Brisbane",
     "stars": 5,
-    "content": "I visited The Rooftop Jasmine last Friday night. It was on top of a building at Kangaroo Point. I could see the city lights and the river from the rooftop. Jasmine flowers were everywhere and the smell was lovely. I ordered teriyaki chicken with rice. The sauce was sweet and the chicken was very tender. The night was warm and the pink lights made the place very romantic."
+    "content": "I visited The Rooftop Jasmine last Friday night. It was on top of a building at Kangaroo Point. I could see the city lights and the river from the rooftop. Jasmine flowers were everywhere and the smell was lovely. I ordered teriyaki chicken with rice. The sauce was sweet and the chicken was very tender. The night was warm and the pink lights made the place very romantic.",
+    "content_ja": "先週の金曜日の夜にThe Rooftop Jasmineに行きました。カンガルーポイントのビルの屋上にありました。屋上から街の明かりと川が見えました。あちこちにジャスミンの花があって、いい香りでした。照り焼きチキンとご飯を注文しました。たれは甘くて、鶏肉はとてもやわらかかったです。夜は暖かくて、ピンクの照明がロマンチックな雰囲気でした。"
   },
   "review_vocab": [
-    {"word": "rooftop", "meaning": "屋上"},
-    {"word": "building", "meaning": "建物"},
-    {"word": "city lights", "meaning": "街の明かり"},
-    {"word": "river", "meaning": "川"},
-    {"word": "everywhere", "meaning": "どこにでも"},
-    {"word": "lovely", "meaning": "すてきな"},
-    {"word": "ordered", "meaning": "注文した"},
-    {"word": "tender", "meaning": "やわらかい"},
-    {"word": "romantic", "meaning": "ロマンチックな"},
-    {"word": "smell", "meaning": "香り"}
+    {
+      "word": "rooftop",
+      "meaning": "屋上"
+    },
+    {
+      "word": "building",
+      "meaning": "建物"
+    },
+    {
+      "word": "city lights",
+      "meaning": "街の明かり"
+    },
+    {
+      "word": "river",
+      "meaning": "川"
+    },
+    {
+      "word": "everywhere",
+      "meaning": "どこにでも"
+    },
+    {
+      "word": "lovely",
+      "meaning": "すてきな"
+    },
+    {
+      "word": "ordered",
+      "meaning": "注文した"
+    },
+    {
+      "word": "tender",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "romantic",
+      "meaning": "ロマンチックな"
+    },
+    {
+      "word": "smell",
+      "meaning": "香り"
+    }
   ],
   "quiz2": {
     "question": "レストランのテラスから何が見えましたか？",
-    "options": ["海とビーチ", "街の明かりと川", "山と森"],
+    "options": [
+      "海とビーチ",
+      "街の明かりと川",
+      "山と森"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "職場のランチタイムに、同僚のSophieとお弁当について話す場面",
     "lines": [
-      {"speaker": "A", "text": "Sophie, what did you bring for lunch today?"},
-      {"speaker": "B", "text": "Just a sandwich. What about you?"},
-      {"speaker": "A", "text": "I made teriyaki chicken and rice."},
-      {"speaker": "B", "text": "Oh, I love teriyaki! Did you make the sauce too?"},
-      {"speaker": "A", "text": "Yes! I used soy sauce, mirin, and sugar."},
-      {"speaker": "B", "text": "It smells so good. Is it hard to make?"},
-      {"speaker": "A", "text": "No, it is very easy. You just cook the chicken and add the sauce."},
-      {"speaker": "B", "text": "How long does it take?"},
-      {"speaker": "A", "text": "About fifteen minutes."},
-      {"speaker": "B", "text": "That is fast! Can you teach me sometime?"},
-      {"speaker": "A", "text": "Of course! We can cook together this weekend."},
-      {"speaker": "B", "text": "Great! I will buy the chicken. You bring the sauce."}
+      {
+        "speaker": "A",
+        "text": "Sophie, what did you bring for lunch today?",
+        "translation": "ソフィー、今日のお昼は何を持ってきたの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a sandwich. What about you?",
+        "translation": "サンドイッチだけ。あなたは？"
+      },
+      {
+        "speaker": "A",
+        "text": "I made teriyaki chicken and rice.",
+        "translation": "照り焼きチキンとご飯を作ったよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, I love teriyaki! Did you make the sauce too?",
+        "translation": "あ、照り焼き大好き！たれも自分で作ったの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes! I used soy sauce, mirin, and sugar.",
+        "translation": "うん！しょうゆ、みりん、砂糖を使ったよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "It smells so good. Is it hard to make?",
+        "translation": "すごくいい匂い。作るの難しい？"
+      },
+      {
+        "speaker": "A",
+        "text": "No, it is very easy. You just cook the chicken and add the sauce.",
+        "translation": "ぜんぜん。鶏肉を焼いてたれを加えるだけだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "How long does it take?",
+        "translation": "どのくらい時間かかるの？"
+      },
+      {
+        "speaker": "A",
+        "text": "About fifteen minutes.",
+        "translation": "15分くらいだよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "That is fast! Can you teach me sometime?",
+        "translation": "早いね！今度教えて！"
+      },
+      {
+        "speaker": "A",
+        "text": "Of course! We can cook together this weekend.",
+        "translation": "もちろん！今週末一緒に料理しよう！"
+      },
+      {
+        "speaker": "B",
+        "text": "Great! I will buy the chicken. You bring the sauce.",
+        "translation": "やった！わたしが鶏肉を買うね。たれはお願い。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "bring", "meaning": "持ってくる"},
-    {"word": "sandwich", "meaning": "サンドイッチ"},
-    {"word": "sauce", "meaning": "ソース・たれ"},
-    {"word": "hard", "meaning": "難しい"},
-    {"word": "easy", "meaning": "簡単な"},
-    {"word": "how long", "meaning": "どのくらい（時間）"},
-    {"word": "fifteen", "meaning": "15"},
-    {"word": "fast", "meaning": "早い"},
-    {"word": "teach", "meaning": "教える"},
-    {"word": "weekend", "meaning": "週末"}
+    {
+      "word": "bring",
+      "meaning": "持ってくる"
+    },
+    {
+      "word": "sandwich",
+      "meaning": "サンドイッチ"
+    },
+    {
+      "word": "sauce",
+      "meaning": "ソース・たれ"
+    },
+    {
+      "word": "hard",
+      "meaning": "難しい"
+    },
+    {
+      "word": "easy",
+      "meaning": "簡単な"
+    },
+    {
+      "word": "how long",
+      "meaning": "どのくらい（時間）"
+    },
+    {
+      "word": "fifteen",
+      "meaning": "15"
+    },
+    {
+      "word": "fast",
+      "meaning": "早い"
+    },
+    {
+      "word": "teach",
+      "meaning": "教える"
+    },
+    {
+      "word": "weekend",
+      "meaning": "週末"
+    }
   ],
   "quiz3": {
     "question": "二人は週末に何をする予定ですか？",
-    "options": ["レストランに行く", "一緒に照り焼きチキンを作る", "スーパーに買い物に行く"],
+    "options": [
+      "レストランに行く",
+      "一緒に照り焼きチキンを作る",
+      "スーパーに買い物に行く"
+    ],
     "correct": 1
   },
   "try_it_hint": "「作るのは難しいですか？」「いいえ、とても簡単です。」という会話を英語で書いてみましょう。例：Is it hard to make? No, it is very easy.",
-  "meta": {"day": 12, "en": "Teriyaki Chicken", "ja": "照り焼きチキン", "emoji": "\ud83c\udf57"}
+  "meta": {
+    "day": 12,
+    "en": "Teriyaki Chicken",
+    "ja": "照り焼きチキン",
+    "emoji": "🍗"
+  }
 }

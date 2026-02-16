@@ -10,46 +10,124 @@
       "**Chop** the green onion into small pieces.",
       "**Make** the sauce by mixing soy sauce, rice vinegar, sugar, sesame oil, garlic, and ginger.",
       "**Put** the chicken on lettuce, pour the green onion sauce on top, and serve. **Enjoy!**"
+    ],
+    "intro_ja": "油淋鶏は中華風の揚げ鶏です。甘酸っぱいネギだれがかかっています。",
+    "steps_ja": [
+      "鶏もも肉に塩とこしょうをふります。",
+      "鶏肉に片栗粉をまぶします。",
+      "油を鍋で170度に熱し、鶏肉をきつね色になるまで揚げます。",
+      "長ネギ、しょうゆ、酢、砂糖、ごま油を小さいボウルで混ぜてたれを作ります。",
+      "揚げた鶏肉を切って皿に盛ります。",
+      "ネギだれをたっぷりかけます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "Chinese-style", "meaning": "中華風の"},
-    {"word": "green onion", "meaning": "ねぎ"},
-    {"word": "flat", "meaning": "平らな"},
-    {"word": "both sides", "meaning": "両面"},
-    {"word": "chop", "meaning": "刻む"},
-    {"word": "sauce", "meaning": "ソース・たれ"},
-    {"word": "lettuce", "meaning": "レタス"},
-    {"word": "pour", "meaning": "かける・注ぐ"},
-    {"word": "rice vinegar", "meaning": "米酢"},
-    {"word": "sesame oil", "meaning": "ごま油"}
+    {
+      "word": "Chinese-style",
+      "meaning": "中華風の"
+    },
+    {
+      "word": "green onion",
+      "meaning": "ねぎ"
+    },
+    {
+      "word": "flat",
+      "meaning": "平らな"
+    },
+    {
+      "word": "both sides",
+      "meaning": "両面"
+    },
+    {
+      "word": "chop",
+      "meaning": "刻む"
+    },
+    {
+      "word": "sauce",
+      "meaning": "ソース・たれ"
+    },
+    {
+      "word": "lettuce",
+      "meaning": "レタス"
+    },
+    {
+      "word": "pour",
+      "meaning": "かける・注ぐ"
+    },
+    {
+      "word": "rice vinegar",
+      "meaning": "米酢"
+    },
+    {
+      "word": "sesame oil",
+      "meaning": "ごま油"
+    }
   ],
   "quiz1": {
     "question": "油淋鶏のソースに入っていないものはどれですか？",
-    "options": ["ねぎ", "マヨネーズ", "ごま油"],
+    "options": [
+      "ねぎ",
+      "マヨネーズ",
+      "ごま油"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Harbour Blossom Cafe",
     "location": "Darling Harbour, Sydney",
     "stars": 5,
-    "content": "I went to Harbour Blossom Cafe at Darling Harbour in Sydney. The restaurant was right next to the water. I sat outside and enjoyed the harbour view. There were boats and city lights on the water. It was a cool evening. I ordered Yurinjii and it was wonderful. The chicken was very crispy and the green onion sauce was fresh and sour. There were pink flowers on the table and the chairs were very comfortable. I had a really nice time."
+    "content": "I went to Harbour Blossom Cafe at Darling Harbour in Sydney. The restaurant was right next to the water. I sat outside and enjoyed the harbour view. There were boats and city lights on the water. It was a cool evening. I ordered Yurinjii and it was wonderful. The chicken was very crispy and the green onion sauce was fresh and sour. There were pink flowers on the table and the chairs were very comfortable. I had a really nice time.",
+    "content_ja": "木曜日の夜にStarlight Terrace Kitchenに行きました。ダーリングハーバーにありました。テラスからきれいな夜景が見えました。油淋鶏を注文しました。鶏肉はカリカリで、ネギだれはさっぱりしていてとてもおいしかったです。テーブルにジャスミンの花がありました。星がきれいな素敵な夜でした。"
   },
   "review_vocab": [
-    {"word": "harbour", "meaning": "港"},
-    {"word": "blossom", "meaning": "花"},
-    {"word": "right next to", "meaning": "すぐ隣に"},
-    {"word": "outside", "meaning": "外で"},
-    {"word": "boat", "meaning": "ボート・船"},
-    {"word": "evening", "meaning": "夕方・夜"},
-    {"word": "wonderful", "meaning": "すばらしい"},
-    {"word": "fresh", "meaning": "新鮮な・さわやかな"},
-    {"word": "comfortable", "meaning": "快適な"},
-    {"word": "really", "meaning": "本当に"}
+    {
+      "word": "harbour",
+      "meaning": "港"
+    },
+    {
+      "word": "blossom",
+      "meaning": "花"
+    },
+    {
+      "word": "right next to",
+      "meaning": "すぐ隣に"
+    },
+    {
+      "word": "outside",
+      "meaning": "外で"
+    },
+    {
+      "word": "boat",
+      "meaning": "ボート・船"
+    },
+    {
+      "word": "evening",
+      "meaning": "夕方・夜"
+    },
+    {
+      "word": "wonderful",
+      "meaning": "すばらしい"
+    },
+    {
+      "word": "fresh",
+      "meaning": "新鮮な・さわやかな"
+    },
+    {
+      "word": "comfortable",
+      "meaning": "快適な"
+    },
+    {
+      "word": "really",
+      "meaning": "本当に"
+    }
   ],
   "quiz2": {
     "question": "レストランの外には何が見えましたか？",
-    "options": ["山と森", "ボートとシティライト", "ビーチとサーファー"],
+    "options": [
+      "山と森",
+      "ボートとシティライト",
+      "ビーチとサーファー"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,41 +137,140 @@
   "conversation": {
     "scene": "シェアハウスのディナーパーティーで、いろいろな国の人たちに油淋鶏を紹介する場面",
     "lines": [
-      {"speaker": "A", "text": "Everyone, please try this dish. It is called Yurinjii."},
-      {"speaker": "B", "text": "Yurinjii? How do you spell it?"},
-      {"speaker": "A", "text": "Y-U-R-I-N-J-I-I. It is fried chicken with green onion sauce."},
-      {"speaker": "B", "text": "It smells amazing! What is in the sauce?"},
-      {"speaker": "A", "text": "Green onion, soy sauce, vinegar, and sesame oil."},
-      {"speaker": "B", "text": "Oh, I can smell the sesame oil. I love it."},
-      {"speaker": "A", "text": "Please take some lettuce too. It is good together."},
-      {"speaker": "B", "text": "Mmm! The chicken is so crispy and the sauce is really fresh."},
-      {"speaker": "A", "text": "I am happy you like it! It is a popular dish in Japan."},
-      {"speaker": "B", "text": "Is it Chinese food or Japanese food?"},
-      {"speaker": "A", "text": "It is Chinese-style, but many Japanese people eat it at home."},
-      {"speaker": "B", "text": "That is interesting. I want to learn this recipe!"},
-      {"speaker": "A", "text": "Sure! It is not difficult. I can teach you this weekend."},
-      {"speaker": "B", "text": "Thank you so much! This is the best dinner party."}
+      {
+        "speaker": "A",
+        "text": "Everyone, please try this dish. It is called Yurinjii.",
+        "translation": "今夜は油淋鶏を作るよ！"
+      },
+      {
+        "speaker": "B",
+        "text": "Yurinjii? How do you spell it?",
+        "translation": "ユーリンチー？何それ？"
+      },
+      {
+        "speaker": "A",
+        "text": "Y-U-R-I-N-J-I-I. It is fried chicken with green onion sauce.",
+        "translation": "揚げた鶏肉にネギの甘酸っぱいたれをかけた料理だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "It smells amazing! What is in the sauce?",
+        "translation": "おいしそう！難しくないの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Green onion, soy sauce, vinegar, and sesame oil.",
+        "translation": "ぜんぜん！鶏肉を揚げてたれをかけるだけ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, I can smell the sesame oil. I love it.",
+        "translation": "たれは何で作るの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Please take some lettuce too. It is good together.",
+        "translation": "長ネギ、しょうゆ、お酢、砂糖、ごま油だよ。"
+      },
+      {
+        "speaker": "B",
+        "text": "Mmm! The chicken is so crispy and the sauce is really fresh.",
+        "translation": "わたしがたれを作ろうか？"
+      },
+      {
+        "speaker": "A",
+        "text": "I am happy you like it! It is a popular dish in Japan.",
+        "translation": "ありがとう！ネギを細かく切ってくれる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Is it Chinese food or Japanese food?",
+        "translation": "いいよ。あ、目が痛い！"
+      },
+      {
+        "speaker": "A",
+        "text": "It is Chinese-style, but many Japanese people eat it at home.",
+        "translation": "大丈夫？水で洗ってね。"
+      },
+      {
+        "speaker": "B",
+        "text": "That is interesting. I want to learn this recipe!",
+        "translation": "大丈夫！おいしいもののためなら頑張れるよ！"
+      },
+      {
+        "speaker": "A",
+        "text": "Sure! It is not difficult. I can teach you this weekend."
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you so much! This is the best dinner party."
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "everyone", "meaning": "みなさん"},
-    {"word": "please", "meaning": "どうぞ"},
-    {"word": "spell", "meaning": "つづる"},
-    {"word": "amazing", "meaning": "すばらしい"},
-    {"word": "take", "meaning": "取る"},
-    {"word": "happy", "meaning": "うれしい"},
-    {"word": "Chinese-style", "meaning": "中華風の"},
-    {"word": "at home", "meaning": "家で"},
-    {"word": "difficult", "meaning": "難しい"},
-    {"word": "weekend", "meaning": "週末"},
-    {"word": "best", "meaning": "最高の"},
-    {"word": "dinner party", "meaning": "ディナーパーティー"}
+    {
+      "word": "everyone",
+      "meaning": "みなさん"
+    },
+    {
+      "word": "please",
+      "meaning": "どうぞ"
+    },
+    {
+      "word": "spell",
+      "meaning": "つづる"
+    },
+    {
+      "word": "amazing",
+      "meaning": "すばらしい"
+    },
+    {
+      "word": "take",
+      "meaning": "取る"
+    },
+    {
+      "word": "happy",
+      "meaning": "うれしい"
+    },
+    {
+      "word": "Chinese-style",
+      "meaning": "中華風の"
+    },
+    {
+      "word": "at home",
+      "meaning": "家で"
+    },
+    {
+      "word": "difficult",
+      "meaning": "難しい"
+    },
+    {
+      "word": "weekend",
+      "meaning": "週末"
+    },
+    {
+      "word": "best",
+      "meaning": "最高の"
+    },
+    {
+      "word": "dinner party",
+      "meaning": "ディナーパーティー"
+    }
   ],
   "quiz3": {
     "question": "Bさんは油淋鶏について最後に何と言いましたか？",
-    "options": ["レシピを教えてほしいと言った", "あまり好きではないと言った", "もう一つ食べたいと言った"],
+    "options": [
+      "レシピを教えてほしいと言った",
+      "あまり好きではないと言った",
+      "もう一つ食べたいと言った"
+    ],
     "correct": 0
   },
   "try_it_hint": "「みなさん、この料理を食べてみてください。〇〇といいます。」という文を英語で書いてみましょう。例：Everyone, please try this dish. It is called okonomiyaki.",
-  "meta": {"day": 5, "en": "Yurinjii", "ja": "油淋鶏", "emoji": "\ud83d\udc14"}
+  "meta": {
+    "day": 5,
+    "en": "Yurinjii",
+    "ja": "油淋鶏",
+    "emoji": "🐔"
+  }
 }

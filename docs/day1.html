@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>餃子は小さな日本の包み料理です。中にお肉と野菜が入っています。</p>
+          <p>1. キャベツをとても小さく切ります。</p>
+          <p>2. 豚肉、キャベツ、にんにく、しょうが、しょうゆ、ごま油、塩、こしょうを大きなボウルで混ぜます。</p>
+          <p>3. それぞれの餃子の皮に少しのお肉をのせます。</p>
+          <p>4. 皮を半分に折って、ふちを押し合わせます。</p>
+          <p>5. フライパンに油を熱し、餃子をフライパンに入れます。</p>
+          <p>6. 少し水を加え、ふたをして5分間焼きます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Ocean Breeze Dumpling Cafe last Sunday. It was near Manly Beach. I sat on the terrace and saw the beautiful ocean. The wind was warm and nice. I ate gyoza and they were very good. The skin was crispy and the meat was juicy. Pink and yellow flowers were on the table. It was a very cozy and happy place.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週の日曜日にOcean Breeze Dumpling Cafeに行きました。マンリービーチの近くにありました。テラスに座って美しい海を見ました。風は暖かくて気持ちよかったです。餃子を食べたらとてもおいしかったです。皮はパリパリで、お肉はジューシーでした。テーブルにはピンクと黄色の花がありました。とても居心地のいい幸せな場所でした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 シェアハウスのキッチンで、ハウスメイトのEmmaと一緒に餃子を作る場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hi Emma! I will make gyoza tonight. Do you want to help me?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi Emma! I will make gyoza tonight. Do you want to help me?</span>
+            <div class="dialogue-translation">こんにちは、エマ！今夜、餃子を作るよ。手伝ってくれる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Sure! I love gyoza. What do we need?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Sure! I love gyoza. What do we need?</span>
+            <div class="dialogue-translation">もちろん！餃子大好き。何が必要？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">We need pork, cabbage, garlic, and gyoza wrappers.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">We need pork, cabbage, garlic, and gyoza wrappers.</span>
+            <div class="dialogue-translation">豚肉、キャベツ、にんにく、餃子の皮が必要だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">OK. I can cut the cabbage. How small?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK. I can cut the cabbage. How small?</span>
+            <div class="dialogue-translation">わかった。キャベツを切れるよ。どのくらい小さく？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Very small, please. Like this.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Very small, please. Like this.</span>
+            <div class="dialogue-translation">とても小さく、お願い。こんな感じで。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Got it! What do you do next?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Got it! What do you do next?</span>
+            <div class="dialogue-translation">了解！次は何をするの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">I mix the pork and vegetables together.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I mix the pork and vegetables together.</span>
+            <div class="dialogue-translation">豚肉と野菜を一緒に混ぜるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Can I try to fold one?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Can I try to fold one?</span>
+            <div class="dialogue-translation">ひとつ折ってみてもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Of course! Put a little meat here. Then fold it like this.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Of course! Put a little meat here. Then fold it like this.</span>
+            <div class="dialogue-translation">もちろん！ここに少しお肉をのせて。それからこうやって折るの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, it is not easy! But it is fun.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, it is not easy! But it is fun.</span>
+            <div class="dialogue-translation">あ、簡単じゃないね！でも楽しい。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">You are good at it! Now I will cook them in the pan.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You are good at it! Now I will cook them in the pan.</span>
+            <div class="dialogue-translation">上手だよ！じゃあフライパンで焼くね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Wow, they smell so good! Can I eat one now?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Wow, they smell so good! Can I eat one now?</span>
+            <div class="dialogue-translation">わぁ、すごくいい匂い！今ひとつ食べていい？</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>そばはそば粉で作った細い日本の麺です。温かくても冷たくても食べられます。</p>
+          <p>1. 大きな鍋でたっぷりのお湯を沸かします。</p>
+          <p>2. そばを4〜5分ゆでます。</p>
+          <p>3. 麺をザルにあけて冷たい水で洗います。</p>
+          <p>4. しょうゆ、みりん、だし汁を小さい鍋で混ぜて温めます。</p>
+          <p>5. 冷たいそばをお皿に盛り、ネギをのせます。</p>
+          <p>6. つけ汁、わさび、のりを添えます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Teneriffe Sunset Terrace last Friday evening. It was by the Brisbane River. The terrace was very big and I could see the river and the sunset. The sky turned pink and purple. I ordered cold soba with dipping sauce. The noodles were smooth and the sauce was delicious. There were small yellow flowers on every table. The music was soft and the feeling was very cozy. I really liked this place.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>金曜日の夕方にTeneriffe Sunset Terraceに行きました。ブリスベン川のほとりにありました。テラスはとても広くて、川と夕日が見えました。空がピンクと紫に変わりました。冷たいそばをつけ汁で注文しました。麺はなめらかでつゆはおいしかったです。テーブルに小さな黄色い花がありました。音楽はやさしくて居心地がよかったです。とても気に入りました。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,63 +732,106 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 レストランのキッチンで働いていて、シェフにそばの作り方を説明する場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Can you show me how to make soba?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Can you show me how to make soba?</span>
+            <div class="dialogue-translation">そばの作り方を教えてくれる？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Sure! First, we boil a lot of water.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Sure! First, we boil a lot of water.</span>
+            <div class="dialogue-translation">いいよ！まず、たっぷりのお湯を沸かすよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">OK. How long do we cook the noodles?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK. How long do we cook the noodles?</span>
+            <div class="dialogue-translation">わかった。麺はどのくらいゆでるの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">About four or five minutes.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">About four or five minutes.</span>
+            <div class="dialogue-translation">だいたい4〜5分だよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">And then?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">And then?</span>
+            <div class="dialogue-translation">その次は？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Then we drain them and wash them in cold water.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Then we drain them and wash them in cold water.</span>
+            <div class="dialogue-translation">ザルにあけて冷たい水で洗うよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Why cold water?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Why cold water?</span>
+            <div class="dialogue-translation">なんで冷たい水で？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">It makes the noodles smooth and firm.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It makes the noodles smooth and firm.</span>
+            <div class="dialogue-translation">麺がなめらかでしっかりするの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">I see. What about the sauce?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I see. What about the sauce?</span>
+            <div class="dialogue-translation">なるほど。つゆはどうするの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">We mix soy sauce, mirin, and dashi together.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">We mix soy sauce, mirin, and dashi together.</span>
+            <div class="dialogue-translation">しょうゆ、みりん、だしを混ぜるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Do we serve it hot or cold?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Do we serve it hot or cold?</span>
+            <div class="dialogue-translation">温かくするの？冷たいまま？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Today we will serve it cold. It is very good on a hot day.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Today we will serve it cold. It is very good on a hot day.</span>
+            <div class="dialogue-translation">今日は冷たいまま出すよ。暑い日にぴったりだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Great! I will try making it now.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Great! I will try making it now.</span>
+            <div class="dialogue-translation">いいね！今から作ってみるね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Good luck! Call me if you need help.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Good luck! Call me if you need help.</span>
+            <div class="dialogue-translation">がんばって！困ったら呼んでね。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -855,6 +989,11 @@
       quiz2: 2,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

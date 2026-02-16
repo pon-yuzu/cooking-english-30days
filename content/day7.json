@@ -10,46 +10,124 @@
       "**Add** the rice and stir it well with the egg.",
       "**Put** the ham, carrot, and green onion in the pan and cook for two minutes.",
       "**Add** soy sauce, salt, and pepper, then mix everything together. **Enjoy!**"
+    ],
+    "intro_ja": "チャーハンは日本風の炒飯です。ご飯を野菜や卵と一緒に炒めた料理です。",
+    "steps_ja": [
+      "卵を割ってボウルで混ぜます。",
+      "ハム、長ネギ、にんじんを小さく切ります。",
+      "フライパンに油を熱して卵を炒めます。",
+      "ご飯を入れて強火で炒めます。",
+      "ハム、長ネギ、にんじんを加えて一緒に炒めます。",
+      "しょうゆ、塩、こしょうで味付けします。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "fried", "meaning": "炒めた"},
-    {"word": "cooked rice", "meaning": "炊いたごはん"},
-    {"word": "carrot", "meaning": "にんじん"},
-    {"word": "ham", "meaning": "ハム"},
-    {"word": "crack", "meaning": "（卵を）割る"},
-    {"word": "stir", "meaning": "かき混ぜる"},
-    {"word": "high heat", "meaning": "強火"},
-    {"word": "pan", "meaning": "フライパン"},
-    {"word": "quickly", "meaning": "すばやく"},
-    {"word": "together", "meaning": "一緒に"}
+    {
+      "word": "fried",
+      "meaning": "炒めた"
+    },
+    {
+      "word": "cooked rice",
+      "meaning": "炊いたごはん"
+    },
+    {
+      "word": "carrot",
+      "meaning": "にんじん"
+    },
+    {
+      "word": "ham",
+      "meaning": "ハム"
+    },
+    {
+      "word": "crack",
+      "meaning": "（卵を）割る"
+    },
+    {
+      "word": "stir",
+      "meaning": "かき混ぜる"
+    },
+    {
+      "word": "high heat",
+      "meaning": "強火"
+    },
+    {
+      "word": "pan",
+      "meaning": "フライパン"
+    },
+    {
+      "word": "quickly",
+      "meaning": "すばやく"
+    },
+    {
+      "word": "together",
+      "meaning": "一緒に"
+    }
   ],
   "quiz1": {
     "question": "チャーハンを作るとき、最初にフライパンに入れるものは何ですか？",
-    "options": ["ごはん", "卵", "野菜"],
+    "options": [
+      "ごはん",
+      "卵",
+      "野菜"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Jasmine Garden Kitchen",
     "location": "Fortitude Valley, Brisbane",
     "stars": 5,
-    "content": "I visited Jasmine Garden Kitchen in Fortitude Valley last Friday. The restaurant had a beautiful garden terrace. I could see jasmine flowers everywhere. The smell was so nice. I ordered fried rice with chicken. It was hot and very tasty. The place was casual and cozy. I sat in a pink chair under a big tree. I want to go back again."
+    "content": "I visited Jasmine Garden Kitchen in Fortitude Valley last Friday. The restaurant had a beautiful garden terrace. I could see jasmine flowers everywhere. The smell was so nice. I ordered fried rice with chicken. It was hot and very tasty. The place was casual and cozy. I sat in a pink chair under a big tree. I want to go back again.",
+    "content_ja": "金曜日のランチにSakura Wok Kitchenに行きました。シドニーのChippendale にありました。お店の中は明るくてモダンでした。チャーハンを注文しました。ご飯はパラパラで卵はふわふわでした。テーブルに小さなピンクの花がありました。また来たいと思いました。"
   },
   "review_vocab": [
-    {"word": "visited", "meaning": "訪れた"},
-    {"word": "garden", "meaning": "庭・ガーデン"},
-    {"word": "everywhere", "meaning": "どこにでも"},
-    {"word": "ordered", "meaning": "注文した"},
-    {"word": "tasty", "meaning": "おいしい"},
-    {"word": "casual", "meaning": "カジュアルな"},
-    {"word": "chair", "meaning": "いす"},
-    {"word": "under", "meaning": "〜の下に"},
-    {"word": "smell", "meaning": "香り"},
-    {"word": "go back", "meaning": "また行く"}
+    {
+      "word": "visited",
+      "meaning": "訪れた"
+    },
+    {
+      "word": "garden",
+      "meaning": "庭・ガーデン"
+    },
+    {
+      "word": "everywhere",
+      "meaning": "どこにでも"
+    },
+    {
+      "word": "ordered",
+      "meaning": "注文した"
+    },
+    {
+      "word": "tasty",
+      "meaning": "おいしい"
+    },
+    {
+      "word": "casual",
+      "meaning": "カジュアルな"
+    },
+    {
+      "word": "chair",
+      "meaning": "いす"
+    },
+    {
+      "word": "under",
+      "meaning": "〜の下に"
+    },
+    {
+      "word": "smell",
+      "meaning": "香り"
+    },
+    {
+      "word": "go back",
+      "meaning": "また行く"
+    }
   ],
   "quiz2": {
     "question": "レストランにはどんな花がありましたか？",
-    "options": ["バラ", "ジャスミン", "ミモザ"],
+    "options": [
+      "バラ",
+      "ジャスミン",
+      "ミモザ"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,39 +137,132 @@
   "conversation": {
     "scene": "レストランのキッチンでアルバイト中、同僚にチャーハンの作り方を教える場面",
     "lines": [
-      {"speaker": "A", "text": "Can you teach me how to make fried rice?"},
-      {"speaker": "B", "text": "Sure! First, heat oil in the pan."},
-      {"speaker": "A", "text": "OK. What is next?"},
-      {"speaker": "B", "text": "Crack an egg and mix it quickly."},
-      {"speaker": "A", "text": "Like this?"},
-      {"speaker": "B", "text": "Yes, that is good! Now add the rice."},
-      {"speaker": "A", "text": "Should I stir it?"},
-      {"speaker": "B", "text": "Yes, stir it well on high heat."},
-      {"speaker": "A", "text": "When do I add the vegetables?"},
-      {"speaker": "B", "text": "Now. Put them in and cook for two minutes."},
-      {"speaker": "A", "text": "It smells great! What about soy sauce?"},
-      {"speaker": "B", "text": "Add a little soy sauce now. Then it is done!"},
-      {"speaker": "A", "text": "Wow, it looks delicious!"},
-      {"speaker": "B", "text": "Thank you! Let's eat together."}
+      {
+        "speaker": "A",
+        "text": "Can you teach me how to make fried rice?",
+        "translation": "チャーハンを作ってみたいの。教えてくれる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure! First, heat oil in the pan.",
+        "translation": "もちろん！まず冷やご飯が必要だよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "OK. What is next?",
+        "translation": "冷やご飯？温かいのじゃだめ？"
+      },
+      {
+        "speaker": "B",
+        "text": "Crack an egg and mix it quickly.",
+        "translation": "冷やご飯の方がパラパラに炒められるの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Like this?",
+        "translation": "なるほど！他に何が必要？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, that is good! Now add the rice.",
+        "translation": "卵、ハム、長ネギ、にんじんだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Should I stir it?",
+        "translation": "わかった。まず何をする？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, stir it well on high heat.",
+        "translation": "まず卵を炒めて、それからご飯を入れるよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "When do I add the vegetables?",
+        "translation": "強火で炒めるの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Now. Put them in and cook for two minutes.",
+        "translation": "そう！強火で手早く炒めるのがコツだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "It smells great! What about soy sauce?",
+        "translation": "いい匂い！おいしそう！"
+      },
+      {
+        "speaker": "B",
+        "text": "Add a little soy sauce now. Then it is done!",
+        "translation": "しょうゆで味付けして完成！食べてみて！"
+      },
+      {
+        "speaker": "A",
+        "text": "Wow, it looks delicious!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you! Let's eat together."
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "teach", "meaning": "教える"},
-    {"word": "first", "meaning": "最初に"},
-    {"word": "next", "meaning": "次に"},
-    {"word": "like this", "meaning": "こんなふうに"},
-    {"word": "should", "meaning": "〜すべき"},
-    {"word": "when", "meaning": "いつ"},
-    {"word": "a little", "meaning": "少し"},
-    {"word": "done", "meaning": "できた・完成"},
-    {"word": "looks", "meaning": "〜に見える"},
-    {"word": "delicious", "meaning": "おいしい"}
+    {
+      "word": "teach",
+      "meaning": "教える"
+    },
+    {
+      "word": "first",
+      "meaning": "最初に"
+    },
+    {
+      "word": "next",
+      "meaning": "次に"
+    },
+    {
+      "word": "like this",
+      "meaning": "こんなふうに"
+    },
+    {
+      "word": "should",
+      "meaning": "〜すべき"
+    },
+    {
+      "word": "when",
+      "meaning": "いつ"
+    },
+    {
+      "word": "a little",
+      "meaning": "少し"
+    },
+    {
+      "word": "done",
+      "meaning": "できた・完成"
+    },
+    {
+      "word": "looks",
+      "meaning": "〜に見える"
+    },
+    {
+      "word": "delicious",
+      "meaning": "おいしい"
+    }
   ],
   "quiz3": {
     "question": "Bさんは醤油をいつ入れると言いましたか？",
-    "options": ["最初に", "最後に", "卵と一緒に"],
+    "options": [
+      "最初に",
+      "最後に",
+      "卵と一緒に"
+    ],
     "correct": 1
   },
   "try_it_hint": "「Can you teach me how to make ○○?」の形を使って、作り方を聞いてみましょう。例：Can you teach me how to make pancakes?",
-  "meta": {"day": 7, "en": "Fried Rice", "ja": "チャーハン", "emoji": "🍳"}
+  "meta": {
+    "day": 7,
+    "en": "Fried Rice",
+    "ja": "チャーハン",
+    "emoji": "🍳"
+  }
 }

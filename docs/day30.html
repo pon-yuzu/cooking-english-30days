@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>抹茶プリンは甘くてクリーミーな日本のデザートです。きれいな緑色でやさしいお茶の味がします。</p>
+          <p>1. 抹茶パウダーと少しのお湯をカップでなめらかになるまで混ぜます。</p>
+          <p>2. 鍋で牛乳と砂糖を温めます。沸騰させないでください。</p>
+          <p>3. ゼラチンパウダーを温かい牛乳に加えてよく混ぜます。</p>
+          <p>4. 抹茶を鍋に入れてまた混ぜます。</p>
+          <p>5. 小さなカップやグラスに注ぎます。</p>
+          <p>6. 冷蔵庫で3時間冷やして、クリームをのせます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I visited Jasmine & Mimosa Dessert Cafe in Mosman to celebrate my last day of the 30-day cooking challenge. The cafe was on a hill and I could see the harbour and the blue ocean. The walls were painted in soft pink and lavender. There were jasmine and mimosa flowers by the window. I ordered matcha pudding and it was the best dessert I ever had. It was smooth and sweet. I felt so happy and proud of myself. This was a perfect ending to my 30-day journey.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>30日間クッキングチャレンジの最終日を祝うためにモスマンのJasmine & Mimosa Dessert Cafeに行きました。丘の上にあるカフェでハーバーと青い海が見えました。壁はやさしいピンクとラベンダーに塗られていました。窓辺にジャスミンとミモザの花がありました。抹茶プリンを注文したら今まで食べた中で一番おいしいデザートでした。なめらかで甘かったです。とても幸せで、自分を誇りに思いました。30日間の旅の完璧な締めくくりでした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,63 +732,106 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 30日チャレンジの最終日、シェアハウスの友達と一緒にお祝いパーティーをする場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Today is my last day of the 30-day cooking challenge!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Today is my last day of the 30-day cooking challenge!</span>
+            <div class="dialogue-translation">今日で30日間クッキングチャレンジの最終日だよ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Congratulations! That is amazing. What will you make today?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Congratulations! That is amazing. What will you make today?</span>
+            <div class="dialogue-translation">おめでとう！すごいね。今日は何を作るの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Matcha pudding! It is a Japanese green tea dessert.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Matcha pudding! It is a Japanese green tea dessert.</span>
+            <div class="dialogue-translation">抹茶プリン！日本の緑茶デザートだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">I love matcha! Can I watch you make it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I love matcha! Can I watch you make it?</span>
+            <div class="dialogue-translation">抹茶大好き！作るところ見てもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Of course! First, I mix matcha and hot water.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Of course! First, I mix matcha and hot water.</span>
+            <div class="dialogue-translation">もちろん！まず抹茶とお湯を混ぜるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">The color is so beautiful. It is bright green.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">The color is so beautiful. It is bright green.</span>
+            <div class="dialogue-translation">色がきれいだね。鮮やかな緑！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you. Now I add it to the warm milk.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you. Now I add it to the warm milk.</span>
+            <div class="dialogue-translation">ありがとう。次は温かい牛乳に加えるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">When can we eat it?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">When can we eat it?</span>
+            <div class="dialogue-translation">いつ食べられるの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">We need to wait three hours. It goes in the fridge.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">We need to wait three hours. It goes in the fridge.</span>
+            <div class="dialogue-translation">3時間待たないと。冷蔵庫に入れるの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">OK! I will wait. You learned so many recipes in 30 days.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK! I will wait. You learned so many recipes in 30 days.</span>
+            <div class="dialogue-translation">わかった！待つよ。30日間でたくさんのレシピ覚えたんだね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Yes! I learned new English words too. I feel more confident now.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! I learned new English words too. I feel more confident now.</span>
+            <div class="dialogue-translation">うん！新しい英単語も覚えたよ。自信がついた。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">You should be proud. Your English is much better now!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You should be proud. Your English is much better now!</span>
+            <div class="dialogue-translation">誇りに思っていいよ。英語がすごく上手になったよ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you, that means a lot. Let us enjoy the pudding together!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you, that means a lot. Let us enjoy the pudding together!</span>
+            <div class="dialogue-translation">ありがとう、すごくうれしい。一緒にプリン食べよう！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Cheers to 30 days! You did a great job!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Cheers to 30 days! You did a great job!</span>
+            <div class="dialogue-translation">30日間に乾杯！よく頑張ったね！</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -855,6 +989,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

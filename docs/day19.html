@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>焼き鳥は日本のグリルチキンの串焼きです。たれは甘くてしょっぱいです。</p>
+          <p>1. 鶏肉を小さく切ります。</p>
+          <p>2. 長ネギを短く切ります。</p>
+          <p>3. 鶏肉とネギを竹串に刺します。</p>
+          <p>4. しょうゆ、砂糖、みりん、酒を小さい鍋で混ぜて沸かします。</p>
+          <p>5. 串をアツいフライパンで片面3分ずつ焼きます。</p>
+          <p>6. たれをはけで塗ってもう1分焼きます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Hilltop Lantern with my friends on Friday night. It was on a small hill in Surry Hills. We could see the city lights from the terrace. The night was cool and nice. We ordered many yakitori sticks. The chicken was juicy and the sauce was perfect. We also had cold drinks. The lanterns on the terrace were so pretty. They had warm yellow light. We talked and laughed all night. It was a very fun time.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>金曜日の夜に友達とHilltop Lanternに行きました。サリーヒルズの小さな丘の上にありました。テラスから街の明かりが見えました。夜は涼しくて気持ちよかったです。焼き鳥をたくさん注文しました。鶏肉はジューシーでたれは最高でした。冷たい飲み物も飲みました。テラスのランタンがとてもきれいでした。あたたかい黄色い光でした。夜中ずっとおしゃべりして笑いました。とても楽しい時間でした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 オーストラリアの公園でBBQをしている場面で、焼き鳥を紹介する</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">What are those sticks? They look interesting!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">What are those sticks? They look interesting!</span>
+            <div class="dialogue-translation">その串は何？面白そう！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">These are yakitori. It is Japanese grilled chicken.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">These are yakitori. It is Japanese grilled chicken.</span>
+            <div class="dialogue-translation">焼き鳥だよ。日本のグリルチキンなの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Oh nice! Did you make the sauce too?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh nice! Did you make the sauce too?</span>
+            <div class="dialogue-translation">いいね！たれも自分で作ったの？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes! I mixed soy sauce, sugar, and mirin.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes! I mixed soy sauce, sugar, and mirin.</span>
+            <div class="dialogue-translation">うん！しょうゆ、砂糖、みりんを混ぜたの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It smells amazing. Can I try one?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It smells amazing. Can I try one?</span>
+            <div class="dialogue-translation">すごくいい匂い。ひとつ食べてもいい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, please! Be careful, it is very hot.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, please! Be careful, it is very hot.</span>
+            <div class="dialogue-translation">どうぞ！気をつけてね、すごくアツいよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Mmm! This is so good! The sauce is sweet.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Mmm! This is so good! The sauce is sweet.</span>
+            <div class="dialogue-translation">うーん！おいしい！たれが甘いね。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Thank you! In Japan, we eat yakitori at small shops.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! In Japan, we eat yakitori at small shops.</span>
+            <div class="dialogue-translation">ありがとう！日本では小さなお店で焼き鳥を食べるんだよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Really? I want to go to Japan someday.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Really? I want to go to Japan someday.</span>
+            <div class="dialogue-translation">へぇ、いつか日本に行きたいな。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">You should! Japan has many good food shops.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">You should! Japan has many good food shops.</span>
+            <div class="dialogue-translation">行くべきだよ！日本にはおいしいお店がたくさんあるよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Can you make more yakitori? Everyone wants some!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Can you make more yakitori? Everyone wants some!</span>
+            <div class="dialogue-translation">もっと焼き鳥作れる？みんな欲しがってるよ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Of course! I am happy everyone likes it.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Of course! I am happy everyone likes it.</span>
+            <div class="dialogue-translation">もちろん！みんなが気に入ってくれてうれしい。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 0,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

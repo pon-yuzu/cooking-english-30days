@@ -10,47 +10,128 @@
       "**Add** the tofu and wakame to the pot when the water is hot.",
       "**Turn** off the heat and add the miso paste, then stir well.",
       "**Pour** the soup into bowls and add green onion on top. **Enjoy!**"
+    ],
+    "intro_ja": "味噌汁は日本の伝統的なスープです。味噌、豆腐、わかめで作ります。",
+    "steps_ja": [
+      "豆腐を小さな四角に切ります。",
+      "わかめを水でもどします。",
+      "鍋に水とだしの素を入れて沸かします。",
+      "豆腐とわかめを入れて2分煮ます。",
+      "火を弱めて味噌を溶かし入れます。沸騰させないでください。",
+      "お椀に盛り、ネギをのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "traditional", "meaning": "伝統的な"},
-    {"word": "miso paste", "meaning": "味噌"},
-    {"word": "tofu", "meaning": "豆腐"},
-    {"word": "seaweed", "meaning": "海藻"},
-    {"word": "dashi stock", "meaning": "だし"},
-    {"word": "cube", "meaning": "さいの目・角切り"},
-    {"word": "soften", "meaning": "やわらかくする"},
-    {"word": "turn off", "meaning": "（火を）消す"},
-    {"word": "heat", "meaning": "火・熱"},
-    {"word": "stir", "meaning": "かき混ぜる"}
+    {
+      "word": "traditional",
+      "meaning": "伝統的な"
+    },
+    {
+      "word": "miso paste",
+      "meaning": "味噌"
+    },
+    {
+      "word": "tofu",
+      "meaning": "豆腐"
+    },
+    {
+      "word": "seaweed",
+      "meaning": "海藻"
+    },
+    {
+      "word": "dashi stock",
+      "meaning": "だし"
+    },
+    {
+      "word": "cube",
+      "meaning": "さいの目・角切り"
+    },
+    {
+      "word": "soften",
+      "meaning": "やわらかくする"
+    },
+    {
+      "word": "turn off",
+      "meaning": "（火を）消す"
+    },
+    {
+      "word": "heat",
+      "meaning": "火・熱"
+    },
+    {
+      "word": "stir",
+      "meaning": "かき混ぜる"
+    }
   ],
   "quiz1": {
     "question": "味噌を入れるとき、火はどうしますか？",
-    "options": ["強火にする", "火を消す", "弱火にする"],
+    "options": [
+      "強火にする",
+      "火を消す",
+      "弱火にする"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Manly Sunset Café",
     "location": "Manly, Sydney",
     "stars": 5,
-    "content": "I went to Manly Sunset Café last evening. It was on the hill near Manly Beach. I sat on the terrace and watched the sunset over the ocean. The sky turned pink and lavender. It was so beautiful. I ordered miso soup with a rice set. The soup was warm and made me feel at home. The café had wooden tables and soft music. Jasmine flowers were growing near the door. It was my favorite evening in Australia."
+    "content": "I went to Manly Sunset Café last evening. It was on the hill near Manly Beach. I sat on the terrace and watched the sunset over the ocean. The sky turned pink and lavender. It was so beautiful. I ordered miso soup with a rice set. The soup was warm and made me feel at home. The café had wooden tables and soft music. Jasmine flowers were growing near the door. It was my favorite evening in Australia.",
+    "content_ja": "先週の日曜日にOcean Mist Tea Houseに行きました。マンリービーチの近くにありました。海に沈む夕日が見えました。空がピンクとラベンダー色になりました。とてもきれいでした。味噌汁付きのご飯セットを注文しました。スープはあたたかくて、ほっとする味でした。木のテーブルとやさしい音楽があるカフェでした。ドアの近くにジャスミンの花が咲いていました。オーストラリアで一番好きな夕べでした。"
   },
   "review_vocab": [
-    {"word": "sunset", "meaning": "夕日・日の入り"},
-    {"word": "hill", "meaning": "丘"},
-    {"word": "sky", "meaning": "空"},
-    {"word": "turned", "meaning": "変わった（色が変わる）"},
-    {"word": "beautiful", "meaning": "美しい"},
-    {"word": "at home", "meaning": "家にいるような気分"},
-    {"word": "wooden", "meaning": "木製の"},
-    {"word": "music", "meaning": "音楽"},
-    {"word": "growing", "meaning": "育っている・咲いている"},
-    {"word": "favorite", "meaning": "お気に入りの"},
-    {"word": "evening", "meaning": "夕方・夜"}
+    {
+      "word": "sunset",
+      "meaning": "夕日・日の入り"
+    },
+    {
+      "word": "hill",
+      "meaning": "丘"
+    },
+    {
+      "word": "sky",
+      "meaning": "空"
+    },
+    {
+      "word": "turned",
+      "meaning": "変わった（色が変わる）"
+    },
+    {
+      "word": "beautiful",
+      "meaning": "美しい"
+    },
+    {
+      "word": "at home",
+      "meaning": "家にいるような気分"
+    },
+    {
+      "word": "wooden",
+      "meaning": "木製の"
+    },
+    {
+      "word": "music",
+      "meaning": "音楽"
+    },
+    {
+      "word": "growing",
+      "meaning": "育っている・咲いている"
+    },
+    {
+      "word": "favorite",
+      "meaning": "お気に入りの"
+    },
+    {
+      "word": "evening",
+      "meaning": "夕方・夜"
+    }
   ],
   "quiz2": {
     "question": "夕日のとき、空は何色になりましたか？",
-    "options": ["オレンジと赤", "ピンクとラベンダー色", "黄色と青"],
+    "options": [
+      "オレンジと赤",
+      "ピンクとラベンダー色",
+      "黄色と青"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -60,37 +141,124 @@
   "conversation": {
     "scene": "朝ごはんの時間に、シェアハウスで味噌汁を作っている場面",
     "lines": [
-      {"speaker": "A", "text": "Good morning! What are you making?"},
-      {"speaker": "B", "text": "Good morning! I am making miso soup."},
-      {"speaker": "A", "text": "Miso soup? For breakfast?"},
-      {"speaker": "B", "text": "Yes! In Japan, we drink miso soup every morning."},
-      {"speaker": "A", "text": "That is interesting. What is in it?"},
-      {"speaker": "B", "text": "Tofu, seaweed, and miso paste."},
-      {"speaker": "A", "text": "Is it hard to make?"},
-      {"speaker": "B", "text": "No, it is very easy. It takes only ten minutes."},
-      {"speaker": "A", "text": "Really? Can I try some?"},
-      {"speaker": "B", "text": "Of course! Here, try this."},
-      {"speaker": "A", "text": "Oh, it is warm and nice. I like it!"},
-      {"speaker": "B", "text": "I am glad! It is good for your health, too."}
+      {
+        "speaker": "A",
+        "text": "Good morning! What are you making?",
+        "translation": "おはよう！何を作っているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Good morning! I am making miso soup.",
+        "translation": "おはよう！味噌汁を作っているよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Miso soup? For breakfast?",
+        "translation": "味噌汁？朝ごはんに？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! In Japan, we drink miso soup every morning.",
+        "translation": "うん！日本では毎朝味噌汁を飲むんだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "That is interesting. What is in it?",
+        "translation": "面白いね。中には何が入っているの？"
+      },
+      {
+        "speaker": "B",
+        "text": "Tofu, seaweed, and miso paste.",
+        "translation": "豆腐、わかめ、味噌だよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Is it hard to make?",
+        "translation": "作るのは難しい？"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it is very easy. It takes only ten minutes.",
+        "translation": "ぜんぜん。とても簡単で、10分しかかからないよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Really? Can I try some?",
+        "translation": "本当に？少し飲んでみてもいい？"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! Here, try this.",
+        "translation": "もちろん！はい、飲んでみて。"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it is warm and nice. I like it!",
+        "translation": "あ、あたたかくていいね。気に入った！"
+      },
+      {
+        "speaker": "B",
+        "text": "I am glad! It is good for your health, too.",
+        "translation": "よかった！体にもいいんだよ。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "good morning", "meaning": "おはよう"},
-    {"word": "breakfast", "meaning": "朝ごはん"},
-    {"word": "every morning", "meaning": "毎朝"},
-    {"word": "hard", "meaning": "難しい"},
-    {"word": "only", "meaning": "たった・だけ"},
-    {"word": "takes", "meaning": "（時間が）かかる"},
-    {"word": "ten minutes", "meaning": "10分"},
-    {"word": "warm", "meaning": "温かい"},
-    {"word": "glad", "meaning": "うれしい"},
-    {"word": "health", "meaning": "健康"}
+    {
+      "word": "good morning",
+      "meaning": "おはよう"
+    },
+    {
+      "word": "breakfast",
+      "meaning": "朝ごはん"
+    },
+    {
+      "word": "every morning",
+      "meaning": "毎朝"
+    },
+    {
+      "word": "hard",
+      "meaning": "難しい"
+    },
+    {
+      "word": "only",
+      "meaning": "たった・だけ"
+    },
+    {
+      "word": "takes",
+      "meaning": "（時間が）かかる"
+    },
+    {
+      "word": "ten minutes",
+      "meaning": "10分"
+    },
+    {
+      "word": "warm",
+      "meaning": "温かい"
+    },
+    {
+      "word": "glad",
+      "meaning": "うれしい"
+    },
+    {
+      "word": "health",
+      "meaning": "健康"
+    }
   ],
   "quiz3": {
     "question": "Bさんによると、味噌汁を作るのにどのくらいかかりますか？",
-    "options": ["5分", "10分", "20分"],
+    "options": [
+      "5分",
+      "10分",
+      "20分"
+    ],
     "correct": 1
   },
   "try_it_hint": "「Is it hard to make?」「No, it is very easy.」のやり取りを使って、料理の難しさについて話してみましょう。例：Is it hard to make cookies? — No, it is very easy.",
-  "meta": {"day": 10, "en": "Miso Soup", "ja": "味噌汁", "emoji": "🥣"}
+  "meta": {
+    "day": 10,
+    "en": "Miso Soup",
+    "ja": "味噌汁",
+    "emoji": "🥣"
+  }
 }

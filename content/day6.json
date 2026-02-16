@@ -10,46 +10,124 @@
       "**Add** water and cook on low heat for two hours.",
       "**Boil** eggs and peel them, then put them in the pot for thirty minutes.",
       "**Serve** the pork and eggs on a plate. **Enjoy!**"
+    ],
+    "intro_ja": "角煮は日本の豚の角煮です。豚バラ肉を甘辛いたれでゆっくり煮込んだ料理です。",
+    "steps_ja": [
+      "豚バラ肉を大きめに切ります。",
+      "鍋で水を沸かし、豚肉を10分間ゆでます。取り出して水で洗います。",
+      "鍋に豚肉、水、しょうゆ、砂糖、酒、しょうがを入れます。",
+      "沸騰したら弱火にしてふたをします。",
+      "1時間半、お肉がやわらかくなるまで煮ます。",
+      "からしをつけてお皿に盛ります。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "pork belly", "meaning": "豚バラ肉"},
-    {"word": "piece", "meaning": "かたまり、一切れ"},
-    {"word": "boil", "meaning": "ゆでる・煮る"},
-    {"word": "low heat", "meaning": "弱火"},
-    {"word": "ginger", "meaning": "しょうが"},
-    {"word": "peel", "meaning": "皮をむく"},
-    {"word": "soft", "meaning": "やわらかい"},
-    {"word": "sweet", "meaning": "甘い"},
-    {"word": "pot", "meaning": "鍋"},
-    {"word": "hour", "meaning": "時間"}
+    {
+      "word": "pork belly",
+      "meaning": "豚バラ肉"
+    },
+    {
+      "word": "piece",
+      "meaning": "かたまり、一切れ"
+    },
+    {
+      "word": "boil",
+      "meaning": "ゆでる・煮る"
+    },
+    {
+      "word": "low heat",
+      "meaning": "弱火"
+    },
+    {
+      "word": "ginger",
+      "meaning": "しょうが"
+    },
+    {
+      "word": "peel",
+      "meaning": "皮をむく"
+    },
+    {
+      "word": "soft",
+      "meaning": "やわらかい"
+    },
+    {
+      "word": "sweet",
+      "meaning": "甘い"
+    },
+    {
+      "word": "pot",
+      "meaning": "鍋"
+    },
+    {
+      "word": "hour",
+      "meaning": "時間"
+    }
   ],
   "quiz1": {
     "question": "角煮は弱火でどのくらい煮ますか？",
-    "options": ["30分", "1時間", "2時間"],
+    "options": [
+      "30分",
+      "1時間",
+      "2時間"
+    ],
     "correct": 2
   },
   "review": {
     "restaurant": "River Bloom Café",
     "location": "New Farm, Brisbane",
     "stars": 5,
-    "content": "I went to River Bloom Café in New Farm last Sunday. It was near the Brisbane River. I sat outside on the terrace. I could see the river and many flowers. There were yellow mimosa flowers on the table. I ate kakuni with rice. The pork was very soft and sweet. The café was quiet and cozy. I loved it."
+    "content": "I went to River Bloom Café in New Farm last Sunday. It was near the Brisbane River. I sat outside on the terrace. I could see the river and many flowers. There were yellow mimosa flowers on the table. I ate kakuni with rice. The pork was very soft and sweet. The café was quiet and cozy. I loved it.",
+    "content_ja": "先週の日曜日にRiver Blossom Kitchenに行きました。メルボルンのYarraリバー沿いにありました。窓から川と桜のような花が見えました。角煮を注文しました。お肉はとてもやわらかくて口の中でとろけました。たれは甘くて濃厚でした。あたたかくて居心地のいい場所でした。"
   },
   "review_vocab": [
-    {"word": "river", "meaning": "川"},
-    {"word": "terrace", "meaning": "テラス"},
-    {"word": "outside", "meaning": "外で"},
-    {"word": "flower", "meaning": "花"},
-    {"word": "quiet", "meaning": "静かな"},
-    {"word": "cozy", "meaning": "居心地のよい"},
-    {"word": "near", "meaning": "〜の近くに"},
-    {"word": "loved", "meaning": "大好きだった"},
-    {"word": "last Sunday", "meaning": "先週の日曜日"},
-    {"word": "table", "meaning": "テーブル"}
+    {
+      "word": "river",
+      "meaning": "川"
+    },
+    {
+      "word": "terrace",
+      "meaning": "テラス"
+    },
+    {
+      "word": "outside",
+      "meaning": "外で"
+    },
+    {
+      "word": "flower",
+      "meaning": "花"
+    },
+    {
+      "word": "quiet",
+      "meaning": "静かな"
+    },
+    {
+      "word": "cozy",
+      "meaning": "居心地のよい"
+    },
+    {
+      "word": "near",
+      "meaning": "〜の近くに"
+    },
+    {
+      "word": "loved",
+      "meaning": "大好きだった"
+    },
+    {
+      "word": "last Sunday",
+      "meaning": "先週の日曜日"
+    },
+    {
+      "word": "table",
+      "meaning": "テーブル"
+    }
   ],
   "quiz2": {
     "question": "このカフェはどこの近くにありましたか？",
-    "options": ["海の近く", "山の近く", "ブリスベン川の近く"],
+    "options": [
+      "海の近く",
+      "山の近く",
+      "ブリスベン川の近く"
+    ],
     "correct": 2
   },
   "australia_tips": {
@@ -59,37 +137,124 @@
   "conversation": {
     "scene": "シェアハウスのキッチンで、ハウスメイトに角煮について説明する場面",
     "lines": [
-      {"speaker": "A", "text": "Something smells good! What are you making?"},
-      {"speaker": "B", "text": "I am making kakuni. It is Japanese pork."},
-      {"speaker": "A", "text": "Oh, nice! What is in it?"},
-      {"speaker": "B", "text": "Pork belly, soy sauce, sugar, and ginger."},
-      {"speaker": "A", "text": "How long does it take?"},
-      {"speaker": "B", "text": "About two hours. I cook it on low heat."},
-      {"speaker": "A", "text": "Two hours! That is a long time."},
-      {"speaker": "B", "text": "Yes, but it becomes very soft."},
-      {"speaker": "A", "text": "Can I try some?"},
-      {"speaker": "B", "text": "Of course! It will be ready soon."},
-      {"speaker": "A", "text": "Thank you! I love Japanese food."},
-      {"speaker": "B", "text": "I hope you like it. I also made eggs."}
+      {
+        "speaker": "A",
+        "text": "Something smells good! What are you making?",
+        "translation": "何を料理しているの？すごくいい匂い！"
+      },
+      {
+        "speaker": "B",
+        "text": "I am making kakuni. It is Japanese pork.",
+        "translation": "角煮を作っているよ。日本の豚の煮込みだよ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, nice! What is in it?",
+        "translation": "いい匂い！長くかかる？"
+      },
+      {
+        "speaker": "B",
+        "text": "Pork belly, soy sauce, sugar, and ginger.",
+        "translation": "うん、1時間半くらいかかるよ。でもほとんど待つだけ。"
+      },
+      {
+        "speaker": "A",
+        "text": "How long does it take?",
+        "translation": "どうやって作るの？"
+      },
+      {
+        "speaker": "B",
+        "text": "About two hours. I cook it on low heat.",
+        "translation": "まず豚肉をゆでて、それからしょうゆと砂糖で煮るんだ。"
+      },
+      {
+        "speaker": "A",
+        "text": "Two hours! That is a long time.",
+        "translation": "簡単そうだね。"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but it becomes very soft.",
+        "translation": "そうだよ。ゆっくり煮るとお肉がとてもやわらかくなるの。"
+      },
+      {
+        "speaker": "A",
+        "text": "Can I try some?",
+        "translation": "楽しみ！もう少しで出来上がり？"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course! It will be ready soon.",
+        "translation": "あと30分だよ。ちょっと味見してみる？"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you! I love Japanese food.",
+        "translation": "うん、お願い！…わぁ、おいしい！お肉がやわらかい！"
+      },
+      {
+        "speaker": "B",
+        "text": "I hope you like it. I also made eggs.",
+        "translation": "うれしい！もう少し待ってね。"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "smell", "meaning": "におい・においがする"},
-    {"word": "making", "meaning": "作っている"},
-    {"word": "soy sauce", "meaning": "醤油"},
-    {"word": "how long", "meaning": "どのくらい"},
-    {"word": "become", "meaning": "〜になる"},
-    {"word": "try", "meaning": "試す・食べてみる"},
-    {"word": "of course", "meaning": "もちろん"},
-    {"word": "ready", "meaning": "準備ができた"},
-    {"word": "soon", "meaning": "もうすぐ"},
-    {"word": "hope", "meaning": "〜だといいな"}
+    {
+      "word": "smell",
+      "meaning": "におい・においがする"
+    },
+    {
+      "word": "making",
+      "meaning": "作っている"
+    },
+    {
+      "word": "soy sauce",
+      "meaning": "醤油"
+    },
+    {
+      "word": "how long",
+      "meaning": "どのくらい"
+    },
+    {
+      "word": "become",
+      "meaning": "〜になる"
+    },
+    {
+      "word": "try",
+      "meaning": "試す・食べてみる"
+    },
+    {
+      "word": "of course",
+      "meaning": "もちろん"
+    },
+    {
+      "word": "ready",
+      "meaning": "準備ができた"
+    },
+    {
+      "word": "soon",
+      "meaning": "もうすぐ"
+    },
+    {
+      "word": "hope",
+      "meaning": "〜だといいな"
+    }
   ],
   "quiz3": {
     "question": "Bさんは角煮のほかに何を作りましたか？",
-    "options": ["ごはん", "卵", "サラダ"],
+    "options": [
+      "ごはん",
+      "卵",
+      "サラダ"
+    ],
     "correct": 1
   },
   "try_it_hint": "「I am making ○○. It is ○○.」の形を使って、自分が作っている料理を説明してみましょう。例：I am making curry. It is Japanese curry.",
-  "meta": {"day": 6, "en": "Kakuni", "ja": "角煮", "emoji": "🍖"}
+  "meta": {
+    "day": 6,
+    "en": "Kakuni",
+    "ja": "角煮",
+    "emoji": "🍖"
+  }
 }

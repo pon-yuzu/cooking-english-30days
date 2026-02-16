@@ -10,46 +10,124 @@
       "**Drop** a piece of octopus and some green onion into each hole.",
       "**Turn** each ball with a pick when the bottom is cooked.",
       "**Cook** until all the balls are round and golden brown. Put sauce, mayonnaise, and bonito flakes on top. **Enjoy!**"
+    ],
+    "intro_ja": "たこ焼きは大阪の小さな丸いボールです。中にタコが入っていて、外はカリカリです。",
+    "steps_ja": [
+      "小麦粉、卵、水、だしの素をボウルで混ぜて生地を作ります。",
+      "タコ、ネギ、紅しょうがを小さく切ります。",
+      "たこ焼き器に油を熱し、それぞれの穴に生地を流します。",
+      "タコとネギをそれぞれの穴に入れます。",
+      "底が焼けたら竹串でひとつずつ返します。",
+      "丸くきつね色になるまで焼きます。ソース、マヨネーズ、かつお節をのせます。できあがり！"
     ]
   },
   "recipe_vocab": [
-    {"word": "octopus", "meaning": "タコ"},
-    {"word": "ball", "meaning": "ボール・丸い玉"},
-    {"word": "dashi", "meaning": "だし"},
-    {"word": "green onion", "meaning": "ねぎ"},
-    {"word": "pickled ginger", "meaning": "紅しょうが"},
-    {"word": "hole", "meaning": "穴"},
-    {"word": "drop", "meaning": "落とす・入れる"},
-    {"word": "pick", "meaning": "ピック・串"},
-    {"word": "bottom", "meaning": "底"},
-    {"word": "golden brown", "meaning": "きつね色の"}
+    {
+      "word": "octopus",
+      "meaning": "タコ"
+    },
+    {
+      "word": "ball",
+      "meaning": "ボール・丸い玉"
+    },
+    {
+      "word": "dashi",
+      "meaning": "だし"
+    },
+    {
+      "word": "green onion",
+      "meaning": "ねぎ"
+    },
+    {
+      "word": "pickled ginger",
+      "meaning": "紅しょうが"
+    },
+    {
+      "word": "hole",
+      "meaning": "穴"
+    },
+    {
+      "word": "drop",
+      "meaning": "落とす・入れる"
+    },
+    {
+      "word": "pick",
+      "meaning": "ピック・串"
+    },
+    {
+      "word": "bottom",
+      "meaning": "底"
+    },
+    {
+      "word": "golden brown",
+      "meaning": "きつね色の"
+    }
   ],
   "quiz1": {
     "question": "たこ焼きを丸くするために何を使いますか？",
-    "options": ["はし", "ピック（串）", "スプーン"],
+    "options": [
+      "はし",
+      "ピック（串）",
+      "スプーン"
+    ],
     "correct": 1
   },
   "review": {
     "restaurant": "Sunset Bay Kitchen",
     "location": "Woolloongabba, Brisbane",
     "stars": 5,
-    "content": "I went to Sunset Bay Kitchen last Thursday. It was a fun little restaurant in Woolloongabba. The inside was warm and colorful. There were yellow and pink lights on the walls. I ordered takoyaki and a cold drink. The takoyaki were hot and crispy outside. The octopus inside was soft. The staff were very friendly. I sat on a comfortable sofa and enjoyed my meal. It was a wonderful evening."
+    "content": "I went to Sunset Bay Kitchen last Thursday. It was a fun little restaurant in Woolloongabba. The inside was warm and colorful. There were yellow and pink lights on the walls. I ordered takoyaki and a cold drink. The takoyaki were hot and crispy outside. The octopus inside was soft. The staff were very friendly. I sat on a comfortable sofa and enjoyed my meal. It was a wonderful evening.",
+    "content_ja": "木曜日にSunset Bay Kitchenに行きました。ウーロンガバーにある楽しい小さなレストランでした。中はあたたかくてカラフルでした。壁に黄色やピンクのライトがありました。たこ焼きと冷たい飲み物を注文しました。たこ焼きは外がカリカリで中がアツアツでした。中のタコはやわらかかったです。スタッフはとてもフレンドリーでした。心地よいソファに座って食事を楽しみました。素敵な夕べでした。"
   },
   "review_vocab": [
-    {"word": "sunset", "meaning": "夕日"},
-    {"word": "colorful", "meaning": "カラフルな"},
-    {"word": "light", "meaning": "照明・ライト"},
-    {"word": "cold drink", "meaning": "冷たい飲み物"},
-    {"word": "outside", "meaning": "外側"},
-    {"word": "staff", "meaning": "スタッフ・店員"},
-    {"word": "friendly", "meaning": "親切な・フレンドリーな"},
-    {"word": "comfortable", "meaning": "快適な"},
-    {"word": "sofa", "meaning": "ソファ"},
-    {"word": "wonderful", "meaning": "すばらしい"}
+    {
+      "word": "sunset",
+      "meaning": "夕日"
+    },
+    {
+      "word": "colorful",
+      "meaning": "カラフルな"
+    },
+    {
+      "word": "light",
+      "meaning": "照明・ライト"
+    },
+    {
+      "word": "cold drink",
+      "meaning": "冷たい飲み物"
+    },
+    {
+      "word": "outside",
+      "meaning": "外側"
+    },
+    {
+      "word": "staff",
+      "meaning": "スタッフ・店員"
+    },
+    {
+      "word": "friendly",
+      "meaning": "親切な・フレンドリーな"
+    },
+    {
+      "word": "comfortable",
+      "meaning": "快適な"
+    },
+    {
+      "word": "sofa",
+      "meaning": "ソファ"
+    },
+    {
+      "word": "wonderful",
+      "meaning": "すばらしい"
+    }
   ],
   "quiz2": {
     "question": "レストランの壁にはどんな色のライトがありましたか？",
-    "options": ["青と緑", "黄色とピンク", "白とラベンダー"],
+    "options": [
+      "青と緑",
+      "黄色とピンク",
+      "白とラベンダー"
+    ],
     "correct": 1
   },
   "australia_tips": {
@@ -59,39 +137,134 @@
   "conversation": {
     "scene": "週末のパーティーで、友達のOliviaとたこ焼きを焼きながら話す場面",
     "lines": [
-      {"speaker": "A", "text": "Olivia, have you ever eaten takoyaki?"},
-      {"speaker": "B", "text": "No, I have not. What is it?"},
-      {"speaker": "A", "text": "It is a small round ball with octopus inside. It is from Osaka."},
-      {"speaker": "B", "text": "Octopus? That sounds fun! How do you cook it?"},
-      {"speaker": "A", "text": "You pour batter into this special pan. See the small holes?"},
-      {"speaker": "B", "text": "Yes! They are so cute. What do I put in?"},
-      {"speaker": "A", "text": "Put one piece of octopus and some green onion in each hole."},
-      {"speaker": "B", "text": "OK, I did it. What is next?"},
-      {"speaker": "A", "text": "Now we wait. When the bottom is cooked, turn it with this pick."},
-      {"speaker": "B", "text": "Oh, it is hard to turn! But I will try."},
-      {"speaker": "A", "text": "You did it! Look, it is a perfect ball!"},
-      {"speaker": "B", "text": "Wow, I am so proud! Can I eat it now?"},
-      {"speaker": "A", "text": "Yes! But be careful. It is very hot inside."},
-      {"speaker": "B", "text": "Mmm! It is crispy and delicious. I love takoyaki!"}
+      {
+        "speaker": "A",
+        "text": "Olivia, have you ever eaten takoyaki?",
+        "translation": "オリビア、たこ焼き食べたことある？"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I have not. What is it?",
+        "translation": "ないよ。何それ？"
+      },
+      {
+        "speaker": "A",
+        "text": "It is a small round ball with octopus inside. It is from Osaka.",
+        "translation": "中にタコが入った小さな丸いボールだよ。大阪のなの。"
+      },
+      {
+        "speaker": "B",
+        "text": "Octopus? That sounds fun! How do you cook it?",
+        "translation": "タコ？楽しそう！どうやって作るの？"
+      },
+      {
+        "speaker": "A",
+        "text": "You pour batter into this special pan. See the small holes?",
+        "translation": "この特別な鉄板に生地を流すの。小さな穴が見える？"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes! They are so cute. What do I put in?",
+        "translation": "うん！かわいいね。何を入れるの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Put one piece of octopus and some green onion in each hole.",
+        "translation": "タコをひとつとネギをそれぞれの穴に入れてね。"
+      },
+      {
+        "speaker": "B",
+        "text": "OK, I did it. What is next?",
+        "translation": "できた。次はどうするの？"
+      },
+      {
+        "speaker": "A",
+        "text": "Now we wait. When the bottom is cooked, turn it with this pick.",
+        "translation": "待って。底が焼けたらこの竹串で返すの。"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it is hard to turn! But I will try.",
+        "translation": "あ、返すの難しい！でもやってみる。"
+      },
+      {
+        "speaker": "A",
+        "text": "You did it! Look, it is a perfect ball!",
+        "translation": "できた！見て、きれいな丸だよ！"
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, I am so proud! Can I eat it now?",
+        "translation": "わぁ、すごい！もう食べていい？"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes! But be careful. It is very hot inside.",
+        "translation": "うん！でも気をつけてね。中がすごくアツいから。"
+      },
+      {
+        "speaker": "B",
+        "text": "Mmm! It is crispy and delicious. I love takoyaki!",
+        "translation": "うーん！カリカリでおいしい。たこ焼き大好き！"
+      }
     ]
   },
   "conversation_vocab": [
-    {"word": "ever", "meaning": "今までに"},
-    {"word": "eaten", "meaning": "食べた（eatの過去分詞）"},
-    {"word": "special", "meaning": "特別な"},
-    {"word": "cute", "meaning": "かわいい"},
-    {"word": "each", "meaning": "それぞれの"},
-    {"word": "wait", "meaning": "待つ"},
-    {"word": "turn", "meaning": "回す・ひっくり返す"},
-    {"word": "proud", "meaning": "誇らしい・うれしい"},
-    {"word": "careful", "meaning": "気をつけて"},
-    {"word": "delicious", "meaning": "おいしい"}
+    {
+      "word": "ever",
+      "meaning": "今までに"
+    },
+    {
+      "word": "eaten",
+      "meaning": "食べた（eatの過去分詞）"
+    },
+    {
+      "word": "special",
+      "meaning": "特別な"
+    },
+    {
+      "word": "cute",
+      "meaning": "かわいい"
+    },
+    {
+      "word": "each",
+      "meaning": "それぞれの"
+    },
+    {
+      "word": "wait",
+      "meaning": "待つ"
+    },
+    {
+      "word": "turn",
+      "meaning": "回す・ひっくり返す"
+    },
+    {
+      "word": "proud",
+      "meaning": "誇らしい・うれしい"
+    },
+    {
+      "word": "careful",
+      "meaning": "気をつけて"
+    },
+    {
+      "word": "delicious",
+      "meaning": "おいしい"
+    }
   ],
   "quiz3": {
     "question": "Oliviaはたこ焼きを食べてどう思いましたか？",
-    "options": ["辛すぎると思った", "カリッとしておいしいと思った", "まあまあだと思った"],
+    "options": [
+      "辛すぎると思った",
+      "カリッとしておいしいと思った",
+      "まあまあだと思った"
+    ],
     "correct": 1
   },
   "try_it_hint": "「〇〇を食べたことがありますか？」「いいえ、ありません。それは何ですか？」という会話を英語で書いてみましょう。例：Have you ever eaten takoyaki? No, I have not. What is it?",
-  "meta": {"day": 15, "en": "Takoyaki", "ja": "たこ焼き", "emoji": "\ud83d\udc19"}
+  "meta": {
+    "day": 15,
+    "en": "Takoyaki",
+    "ja": "たこ焼き",
+    "emoji": "🐙"
+  }
 }

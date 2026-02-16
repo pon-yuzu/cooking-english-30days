@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>親子丼は鶏肉と卵の丼です。「親子」という名前は親と子どもを意味します。</p>
+          <p>1. 鶏もも肉と玉ねぎを小さく切ります。</p>
+          <p>2. しょうゆ、みりん、砂糖、だし汁を小さいフライパンで混ぜます。</p>
+          <p>3. 玉ねぎと鶏肉をたれの中で中火で煮ます。</p>
+          <p>4. 卵を2〜3個ボウルで溶きます。</p>
+          <p>5. 鶏肉の上に卵をまわしかけ、1分煮ます。</p>
+          <p>6. あつあつのご飯の上にのせます。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I went to Riverbank Jasmine Cafe in Bulimba last Wednesday. It was right next to the Brisbane River. I sat on the wooden deck and watched boats on the river. The air smelled like jasmine flowers. I ordered oyakodon and green tea. The chicken was soft and the egg was creamy. The rice was hot and fluffy. It was a simple but wonderful meal. I felt like I was in Japan.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>水曜日にブリンバのRiverbank Jasmine Cafeに行きました。ブリスベン川のすぐそばにありました。木のデッキに座って川のボートを見ました。ジャスミンの花の香りがしました。親子丼と緑茶を注文しました。鶏肉はやわらかくて卵はクリーミーでした。ご飯はあつあつでふっくらしていました。シンプルだけど素敵な食事でした。まるで日本にいるような気分でした。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 ワーホリ先のレストランで、お客さんにおすすめのメニューを紹介する場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hi, welcome! Are you ready to order?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi, welcome! Are you ready to order?</span>
+            <div class="dialogue-translation">いらっしゃいませ！ご注文はお決まりですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Not yet. What do you recommend?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Not yet. What do you recommend?</span>
+            <div class="dialogue-translation">まだです。おすすめは何ですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Today, I recommend the oyakodon.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Today, I recommend the oyakodon.</span>
+            <div class="dialogue-translation">今日は親子丼がおすすめです。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">What is oyakodon?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">What is oyakodon?</span>
+            <div class="dialogue-translation">親子丼って何ですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">It is chicken and egg on rice. It is a Japanese rice bowl.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is chicken and egg on rice. It is a Japanese rice bowl.</span>
+            <div class="dialogue-translation">鶏肉と卵をご飯にのせた丼です。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Why is it called oyakodon?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Why is it called oyakodon?</span>
+            <div class="dialogue-translation">なんで「親子丼」って言うんですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Oyako means parent and child. The chicken is the parent and the egg is the child.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oyako means parent and child. The chicken is the parent and the egg is the child.</span>
+            <div class="dialogue-translation">「親子」は親と子どもという意味です。鶏が親で卵が子どもなの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Oh, that is interesting! Is it good?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Oh, that is interesting! Is it good?</span>
+            <div class="dialogue-translation">面白い！おいしい？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Yes, it is very popular in Japan. The egg is soft and creamy.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, it is very popular in Japan. The egg is soft and creamy.</span>
+            <div class="dialogue-translation">はい、日本でとても人気がありますよ。卵がやわらかくてクリーミーなの。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">OK, I will try it! And a green tea, please.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK, I will try it! And a green tea, please.</span>
+            <div class="dialogue-translation">じゃあそれにします！あと緑茶もお願いします。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Good choice! It will be ready in ten minutes.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Good choice! It will be ready in ten minutes.</span>
+            <div class="dialogue-translation">いい選択ですね！10分ほどでできますよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Great, thank you!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Great, thank you!</span>
+            <div class="dialogue-translation">ありがとうございます！</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 1,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {

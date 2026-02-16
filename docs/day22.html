@@ -391,6 +391,77 @@
     .nav-link {
       text-decoration: none;
     }
+
+    .translation-toggle {
+      margin-top: 12px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #e8a4b8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 12px;
+      background: #fff0f5;
+      border-radius: 8px;
+      list-style: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle[open] summary {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .translation-content {
+      background: #fff0f5;
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .translation-content p {
+      margin-bottom: 8px;
+    }
+
+    .translation-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conversation-line {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dialogue-wrap {
+      flex: 1;
+    }
+
+    .dialogue-translation {
+      display: none;
+      color: #999;
+      font-size: 13px;
+      margin-top: 2px;
+      padding-left: 8px;
+      border-left: 2px solid #e8a4b8;
+    }
+
+    .conversation-line.show-trans .dialogue-translation {
+      display: block;
+    }
+
+    .tap-hint {
+      color: #999;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -426,12 +497,25 @@
         
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>天ぷらは日本の揚げ物です。えびと野菜に薄い衣をつけて揚げます。</p>
+          <p>1. えびの殻をむいて、野菜を切ります。</p>
+          <p>2. 小麦粉、卵1つ、とても冷たい水をボウルで混ぜて衣を作ります。</p>
+          <p>3. 深い鍋にたっぷりの油を180度に熱します。</p>
+          <p>4. えびと野菜を衣につけます。</p>
+          <p>5. 油で2〜3分、きつね色になるまで揚げます。</p>
+          <p>6. 紙の上にのせて余分な油を切り、天つゆと一緒に出します。できあがり！</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('recipeText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab1')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab1">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -526,12 +610,19 @@
         <p>I visited Cliff Garden Dining at Cremorne Point last weekend. The restaurant was on a cliff near the water. I could see the Sydney Harbour Bridge from my seat. The garden had lavender and yellow flowers. I ordered tempura and it was so crispy and light. The shrimp was big and fresh. The place was very relaxing. I want to go back again.</p>
       </div>
       
+            <details class="translation-toggle">
+        <summary>👆 日本語訳を見る</summary>
+        <div class="translation-content">
+          <p>先週末にクレモーンポイントのCliff Garden Diningに行きました。レストランは水辺の崖の上にありました。席からシドニーハーバーブリッジが見えました。庭にはラベンダーと黄色い花がありました。天ぷらを注文したら、とてもカリカリで軽かったです。えびは大きくて新鮮でした。とてもリラックスできる場所でした。また行きたいです。</p>
+        </div>
+      </details>
+
       <div class="btn-row">
         <button class="btn btn-secondary" onclick="copyText('reviewText')">📋 コピー</button>
         <button class="btn btn-secondary" onclick="openNaturalReader()">🔊 Natural Reader</button>
         <button class="btn btn-primary" onclick="toggleVocab('vocab2')">📚 単語リストを見る</button>
       </div>
-      
+
       <div class="vocab-section" id="vocab2">
         <h4>💡 わからなかった単語にチェック ✓</h4>
                 <div class="vocab-item">
@@ -641,55 +732,92 @@
       
       <div class="conversation-box" id="conversationText">
         <p style="color: #666; font-size: 14px; margin-bottom: 12px;">🏠 オーストラリアのフードマーケットで、お客さんに天ぷらを売る場面</p>
-                <div class="conversation-line">
+                <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Hello! What are you selling?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hello! What are you selling?</span>
+            <div class="dialogue-translation">こんにちは！何を売っているんですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Hi! I am selling tempura. It is Japanese fried food.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Hi! I am selling tempura. It is Japanese fried food.</span>
+            <div class="dialogue-translation">こんにちは！天ぷらを売っています。日本の揚げ物ですよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">What kind of tempura do you have?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">What kind of tempura do you have?</span>
+            <div class="dialogue-translation">どんな天ぷらがありますか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">I have shrimp, sweet potato, and eggplant.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I have shrimp, sweet potato, and eggplant.</span>
+            <div class="dialogue-translation">えび、さつまいも、なすがあります。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">How much is the shrimp tempura?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">How much is the shrimp tempura?</span>
+            <div class="dialogue-translation">えびの天ぷらはいくらですか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">It is five dollars for three pieces.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">It is five dollars for three pieces.</span>
+            <div class="dialogue-translation">3つで5ドルです。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">That is good. I will take the shrimp, please.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">That is good. I will take the shrimp, please.</span>
+            <div class="dialogue-translation">いいですね。えびをお願いします。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">OK! It is very fresh today.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">OK! It is very fresh today.</span>
+            <div class="dialogue-translation">はい！今日はとても新鮮ですよ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Do you have any sauce?</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Do you have any sauce?</span>
+            <div class="dialogue-translation">たれはありますか？</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">Yes, here is the dipping sauce. And some grated daikon too.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Yes, here is the dipping sauce. And some grated daikon too.</span>
+            <div class="dialogue-translation">はい、天つゆです。大根おろしもどうぞ。</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker">A:</span>
-          <span class="dialogue">Thank you! Wow, this is really crispy!</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">Thank you! Wow, this is really crispy!</span>
+            <div class="dialogue-translation">ありがとう！わぁ、すごくカリカリ！</div>
+          </div>
         </div>
-        <div class="conversation-line">
+        <div class="conversation-line" onclick="toggleTranslation(this)">
           <span class="speaker b">B:</span>
-          <span class="dialogue">I am glad you like it! Please come again.</span>
+          <div class="dialogue-wrap">
+            <span class="dialogue">I am glad you like it! Please come again.</span>
+            <div class="dialogue-translation">気に入ってもらえてうれしいです！またどうぞ。</div>
+          </div>
         </div>
 
+        <p class="tap-hint">💡 英文をタップすると日本語訳が見られます</p>
       </div>
       
       <div class="btn-row">
@@ -847,6 +975,11 @@
       quiz2: 0,
       quiz3: 1
     };
+
+    // Toggle conversation line translation
+    function toggleTranslation(el) {
+      el.closest('.conversation-line').classList.toggle('show-trans');
+    }
 
     // Toggle vocabulary section
     function toggleVocab(id) {
