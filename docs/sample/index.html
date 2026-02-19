@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30日間クッキング英語 — サンプル版</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Hiragino Sans', sans-serif;
+      background: linear-gradient(135deg, #e8a4b8 0%, #b8a4e8 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { color: white; text-align: center; margin-bottom: 8px; font-size: 28px; }
+    .subtitle { text-align: center; color: rgba(255,255,255,0.9); margin-bottom: 12px; }
+    .sample-badge {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .sample-badge span {
+      display: inline-block;
+      background: rgba(255,255,255,0.25);
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 6px 18px;
+      border-radius: 50px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .day-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .day-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #333;
+      transition: all 0.2s;
+    }
+    .day-link:hover {
+      background: #e8a4b8;
+      color: white;
+      transform: translateY(-2px);
+    }
+    .day-emoji { font-size: 32px; margin-bottom: 8px; }
+    .day-number { font-weight: bold; font-size: 14px; }
+    .day-name { font-size: 12px; color: #666; }
+    .day-link:hover .day-name { color: rgba(255,255,255,0.8); }
+    .locked {
+      opacity: 0.4;
+      pointer-events: none;
+      position: relative;
+    }
+    .locked::after {
+      content: '🔒';
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 16px;
+    }
+    .info {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 30日間クッキング英語</h1>
+    <p class="subtitle">料理しながら英検5級レベルの英語を学ぼう！</p>
+    <div class="sample-badge"><span>📌 サンプル版（Day 1〜5）</span></div>
+
+    <div class="card">
+      <div class="day-grid">
+        <a href="day1.html" class="day-link">
+          <span class="day-emoji">🥟</span>
+          <span class="day-number">Day 1</span>
+          <span class="day-name">Gyoza</span>
+        </a>
+        <a href="day2.html" class="day-link">
+          <span class="day-emoji">🟡</span>
+          <span class="day-number">Day 2</span>
+          <span class="day-name">Shumai</span>
+        </a>
+        <a href="day3.html" class="day-link">
+          <span class="day-emoji">🍗</span>
+          <span class="day-number">Day 3</span>
+          <span class="day-name">Karaage</span>
+        </a>
+        <a href="day4.html" class="day-link">
+          <span class="day-emoji">🍗</span>
+          <span class="day-number">Day 4</span>
+          <span class="day-name">Chicken Nanban</span>
+        </a>
+        <a href="day5.html" class="day-link">
+          <span class="day-emoji">🐔</span>
+          <span class="day-number">Day 5</span>
+          <span class="day-name">Yurinjii</span>
+        </a>
+        <div class="day-link locked">
+          <span class="day-emoji">🍖</span>
+          <span class="day-number">Day 6</span>
+          <span class="day-name">Kakuni</span>
+        </div>
+        <div class="day-link locked">
+          <span class="day-emoji">🍳</span>
+          <span class="day-number">Day 7</span>
+          <span class="day-name">Fried Rice</span>
+        </div>
+        <div class="day-link locked">
+          <span class="day-emoji">🍜</span>
+          <span class="day-number">Day 8</span>
+          <span class="day-name">Ramen</span>
+        </div>
+        <div class="day-link locked">
+          <span class="day-emoji">🍙</span>
+          <span class="day-number">Day 9</span>
+          <span class="day-name">Onigiri</span>
+        </div>
+        <div class="day-link locked">
+          <span class="day-emoji">🥣</span>
+          <span class="day-number">Day 10</span>
+          <span class="day-name">Miso Soup</span>
+        </div>
+      </div>
+      <p class="info">Day 6〜30 は製品版でご利用いただけます ✨</p>
+    </div>
+  </div>
+</body>
+</html>
